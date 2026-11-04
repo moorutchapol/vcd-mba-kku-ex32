@@ -1,0 +1,3338 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA KKU EX32 — VCD Visual Infographic v3 (Full-Width All-Infographic Edition)</title>
+    <style>
+        :root {
+            --kku-orange: #E65100;
+            --kku-orange-light: #FF9800;
+            --kku-orange-dark: #BF360C;
+            --kku-bg: #FFF7ED;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --text-dark: #0F172A;
+            --text-body: #334155;
+            --text-muted: #64748B;
+            --border-color: #E2E8F0;
+            --radius-lg: 16px;
+            --radius-md: 10px;
+            --radius-sm: 6px;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.04);
+            --shadow-md: 0 6px 18px rgba(0,0,0,0.06);
+            --shadow-lg: 0 12px 28px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, 'Prompt', 'Sarabun', 'Noto Sans Thai', BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding-bottom: 100px;
+        }
+
+        /* Top Header */
+        header {
+            background: #FFFFFF;
+            border-bottom: 2px solid #FED7AA;
+            padding: 20px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-wrap {
+            max-width: 1360px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .brand-box {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .kku-tag {
+            background: linear-gradient(135deg, var(--kku-orange-dark), var(--kku-orange));
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 1.15rem;
+            padding: 8px 18px;
+            border-radius: var(--radius-md);
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 10px rgba(230, 81, 0, 0.25);
+        }
+
+        .brand-titles h1 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--kku-orange);
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .brand-titles h1 span {
+            color: var(--text-dark);
+        }
+
+        .brand-titles p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .top-nav-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 24px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        .nav-btn-orange {
+            background: var(--kku-orange);
+            color: #FFFFFF;
+        }
+        .nav-btn-orange:hover {
+            background: var(--kku-orange-dark);
+            transform: translateY(-1px);
+        }
+
+        .nav-btn-outline {
+            background: #FFFFFF;
+            border-color: #CBD5E1;
+            color: var(--text-dark);
+        }
+        .nav-btn-outline:hover {
+            background: #F1F5F9;
+        }
+
+        /* Main Container */
+        .page-container {
+            max-width: 1360px;
+            margin: 28px auto;
+            padding: 0 20px;
+        }
+
+        /* Infographic Title Box */
+        .info-title-banner {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .info-title-banner h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #1E293B;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .info-title-banner h2 span {
+            color: var(--kku-orange);
+        }
+
+        .dots-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .info-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* Track Container */
+        .track-block {
+            background: #FFFFFF;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            padding: 28px 24px;
+            margin-bottom: 32px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .track-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #F1F5F9;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .track-badge-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .track-badge {
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        .badge-t1 {
+            background: #FFF7ED;
+            color: var(--kku-orange-dark);
+            border: 1px solid #FFEDD5;
+        }
+
+        .badge-t2 {
+            background: #F0FDFA;
+            color: #0F766E;
+            border: 1px solid #CCFBF1;
+        }
+
+        .track-heading {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #1E293B;
+        }
+
+        .track-lecturer {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        /* Responsive Chevron Timeline Wrapper */
+        .timeline-scroll-wrap {
+            overflow-x: auto;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .timeline-container {
+            min-width: 980px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* 1. Interlocking Chevron Bar */
+        .chevron-bar {
+            display: flex;
+            width: 100%;
+            height: 54px;
+            align-items: center;
+        }
+
+        .chevron-item {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 1.05rem;
+            cursor: pointer;
+            position: relative;
+            user-select: none;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            /* Interlocking Chevron clip-path */
+            clip-path: polygon(0% 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 0% 100%, 20px 50%);
+            margin-left: -16px;
+            box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+        }
+
+        .chevron-item:first-child {
+            margin-left: 0;
+            clip-path: polygon(0% 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 0% 100%);
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        .chevron-item:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+            z-index: 5;
+        }
+
+        .chevron-item.active {
+            filter: brightness(1.15) contrast(1.05);
+            box-shadow: inset 0 0 0 3px #FFFFFF, 0 6px 14px rgba(0,0,0,0.25);
+            z-index: 10;
+        }
+
+        /* 2. Compact Cards Grid Under Chevrons */
+        .cards-bar {
+            display: flex;
+            width: 100%;
+            gap: 14px;
+        }
+
+        .step-mini-card {
+            flex: 1;
+            background: #FFFFFF;
+            border: 1.5px solid var(--border-color);
+            border-top: 5px solid var(--bar-color, #CBD5E1);
+            border-radius: var(--radius-md);
+            padding: 32px 14px 16px 14px;
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .step-mini-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+            background: #FFFFFF;
+        }
+
+        .step-mini-card.active {
+            border-color: var(--active-color, var(--kku-orange));
+            box-shadow: 0 0 0 2.5px var(--active-color, var(--kku-orange)), 0 8px 20px rgba(0,0,0,0.08);
+            background: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        /* Card Icon Floating Badge */
+        .card-icon-circle {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 2px solid var(--icon-border-color, #E2E8F0);
+            position: absolute;
+            top: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+
+        .step-mini-card:hover .card-icon-circle,
+        .step-mini-card.active .card-icon-circle {
+            transform: translateX(-50%) scale(1.12);
+        }
+
+        .card-header-bar {
+            height: 4px;
+            width: 100%;
+            border-radius: 2px;
+            background-color: var(--bar-color, #CBD5E1);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .mini-title {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--title-color, #0F172A);
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+
+        .mini-desc {
+            font-size: 0.8rem;
+            color: #1E293B; /* High-contrast crisp dark text */
+            font-weight: 500;
+            line-height: 1.45;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .mini-click-tag {
+            margin-top: 10px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--active-color, var(--kku-orange));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+        }
+
+        /* 3. Non-blocking Smart Callout Drawer */
+        .callout-drawer {
+            display: none;
+            background: #FFFFFF;
+            border: 2px solid var(--drawer-border, var(--kku-orange));
+            border-radius: var(--radius-lg);
+            margin-top: 20px;
+            padding: 24px 28px;
+            position: relative;
+            box-shadow: var(--shadow-lg);
+            animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* The Triangle Pointer pointing up to the active step */
+        .drawer-pointer {
+            position: absolute;
+            top: -14px;
+            left: 100px; /* updated dynamically via JS */
+            width: 0;
+            height: 0;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            border-bottom: 14px solid var(--drawer-border, var(--kku-orange));
+            transform: translateX(-50%);
+            transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .drawer-pointer::after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: -12px;
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid #FFFFFF;
+        }
+
+        .drawer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #F1F5F9;
+            gap: 16px;
+        }
+
+        .drawer-title-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .drawer-badge-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .drawer-step-badge {
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 6px;
+            color: #FFFFFF;
+            background: var(--drawer-border, var(--kku-orange));
+        }
+
+        .drawer-exam-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 6px;
+            background: #FEF3C7;
+            color: #92400E;
+        }
+
+        .drawer-h3 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #0F172A;
+            line-height: 1.3;
+        }
+
+        .drawer-en-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .drawer-close-btn {
+            background: #F1F5F9;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #64748B;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .drawer-close-btn:hover {
+            background: #E2E8F0;
+            color: #0F172A;
+        }
+
+        .drawer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        /* Inside Drawer Components */
+        .drawer-takeaway {
+            background: #FFF7ED;
+            border-left: 4px solid var(--drawer-border, var(--kku-orange));
+            border-radius: var(--radius-sm);
+            padding: 14px 18px;
+            font-size: 0.92rem;
+            color: #7C2D12;
+            display: flex;
+            gap: 10px;
+        }
+
+        .drawer-takeaway.teal {
+            background: #F0FDFA;
+            border-color: #0D9488;
+            color: #134E4A;
+        }
+
+        .section-box {
+            margin-bottom: 16px;
+        }
+
+        .section-box h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1E293B;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-box p {
+            font-size: 0.9rem;
+            color: var(--text-body);
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            margin: 12px 0;
+        }
+
+        .data-table th {
+            background: #F8FAFC;
+            color: #1E293B;
+            font-weight: 700;
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .data-table td {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            color: var(--text-body);
+        }
+
+        .formula-box {
+            background: #0F172A;
+            color: #F8FAFC;
+            padding: 16px 20px;
+            border-radius: var(--radius-md);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+            font-size: 0.92rem;
+            margin: 12px 0;
+            border-left: 4px solid var(--drawer-border, var(--kku-orange));
+        }
+
+        .formula-box strong {
+            color: #FDBA74;
+        }
+
+        .tip-box {
+            background: #FFFBEB;
+            border: 1px solid #FDE68A;
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            margin-top: 14px;
+        }
+
+        .tip-header {
+            font-weight: 800;
+            font-size: 0.92rem;
+            color: #B45309;
+            margin-bottom: 6px;
+        }
+
+        .tip-box ul {
+            padding-left: 20px;
+            font-size: 0.88rem;
+            color: #78350F;
+        }
+
+        .tip-box li {
+            margin-bottom: 4px;
+        }
+
+        /* Central Value Bridge */
+        .bridge-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 16px 24px;
+            margin: 16px 0 32px 0;
+            background: linear-gradient(90deg, #FFF7ED, #F0FDFA);
+            border: 2px dashed #CBD5E1;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .bridge-tag {
+            background: #1E293B;
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 0.82rem;
+            padding: 5px 14px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .bridge-info {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: #1E293B;
+        }
+
+        .bridge-arrow-icon {
+            color: var(--kku-orange);
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        /* Chevrons Background Styling */
+        .chevron-item.color-1 { background-color: #F59E0B; }
+        .chevron-item.color-2 { background-color: #FB923C; }
+        .chevron-item.color-3 { background-color: #F97316; }
+        .chevron-item.color-4 { background-color: #EA580C; }
+        .chevron-item.color-5 { background-color: #E11D48; }
+        .chevron-item.color-6 { background-color: #C026D3; }
+
+        .chevron-item.color-7 { background-color: #0D9488; }
+        .chevron-item.color-8 { background-color: #0891B2; }
+        .chevron-item.color-9 { background-color: #0284C7; }
+        .chevron-item.color-10 { background-color: #2563EB; }
+        .chevron-item.color-11 { background-color: #4F46E5; }
+
+        /* Step Mini Cards: Very Light Pastel Background (จางๆ) & Dark Readable Text (อักษรสีเข้ม) */
+        .step-mini-card.color-1 {
+            background-color: #FFFDF5;
+            border-color: #FDE68A;
+            --bar-color: #F59E0B;
+            --title-color: #92400E;
+            --icon-border-color: #F59E0B;
+            --active-color: #F59E0B;
+        }
+        .step-mini-card.color-2 {
+            background-color: #FFFBF7;
+            border-color: #FED7AA;
+            --bar-color: #FB923C;
+            --title-color: #9A3412;
+            --icon-border-color: #FB923C;
+            --active-color: #FB923C;
+        }
+        .step-mini-card.color-3 {
+            background-color: #FFF9F5;
+            border-color: #FDBA74;
+            --bar-color: #F97316;
+            --title-color: #9A3412;
+            --icon-border-color: #F97316;
+            --active-color: #F97316;
+        }
+        .step-mini-card.color-4 {
+            background-color: #FFF8F5;
+            border-color: #FCA5A5;
+            --bar-color: #EA580C;
+            --title-color: #7C2D12;
+            --icon-border-color: #EA580C;
+            --active-color: #EA580C;
+        }
+        .step-mini-card.color-5 {
+            background-color: #FFF5F5;
+            border-color: #FECACA;
+            --bar-color: #E11D48;
+            --title-color: #881337;
+            --icon-border-color: #E11D48;
+            --active-color: #E11D48;
+        }
+        .step-mini-card.color-6 {
+            background-color: #FDF4FF;
+            border-color: #F5D0FE;
+            --bar-color: #C026D3;
+            --title-color: #701A75;
+            --icon-border-color: #C026D3;
+            --active-color: #C026D3;
+        }
+
+        .step-mini-card.color-7 {
+            background-color: #F4FDFB;
+            border-color: #99F6E4;
+            --bar-color: #0D9488;
+            --title-color: #134E4A;
+            --icon-border-color: #0D9488;
+            --active-color: #0D9488;
+        }
+        .step-mini-card.color-8 {
+            background-color: #F0FDFF;
+            border-color: #A5F3FC;
+            --bar-color: #0891B2;
+            --title-color: #164E63;
+            --icon-border-color: #0891B2;
+            --active-color: #0891B2;
+        }
+        .step-mini-card.color-9 {
+            background-color: #F0F9FF;
+            border-color: #BAE6FD;
+            --bar-color: #0284C7;
+            --title-color: #0C4A6E;
+            --icon-border-color: #0284C7;
+            --active-color: #0284C7;
+        }
+        .step-mini-card.color-10 {
+            background-color: #EFF6FF;
+            border-color: #BFDBFE;
+            --bar-color: #2563EB;
+            --title-color: #1E3A8A;
+            --icon-border-color: #2563EB;
+            --active-color: #2563EB;
+        }
+        .step-mini-card.color-11 {
+            background-color: #EEF2FF;
+            border-color: #C7D2FE;
+            --bar-color: #4F46E5;
+            --title-color: #312E81;
+            --icon-border-color: #4F46E5;
+            --active-color: #4F46E5;
+        }
+
+        /* Floating Fast Navigator */
+        .fast-nav {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #FFFFFF;
+            border-radius: 30px;
+            padding: 8px 16px;
+            display: flex;
+            gap: 10px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid #CBD5E1;
+            z-index: 90;
+        }
+
+        .fast-nav-btn {
+            border: none;
+            background: none;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #475569;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 12px;
+            transition: all 0.2s;
+        }
+
+        .fast-nav-btn:hover {
+            color: var(--kku-orange);
+            background: #FFF7ED;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 900px) {
+            .header-wrap {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .info-title-banner h2 {
+                font-size: 1.5rem;
+            }
+            .track-block {
+                padding: 20px 14px;
+            }
+        }
+    
+        /* ================================================================
+           V3 — INFOGRAPHIC COMPONENTS (ใช้ภายในแผงข้อมูลที่คลี่ออกมา)
+           --drawer-border = สีประจำ Step (ตั้งค่าโดย JavaScript)
+           ================================================================ */
+        .viz-hint {
+            justify-self: start;
+            font-size: 0.8rem;
+            color: #475569;
+            background: #F8FAFC;
+            border: 1px dashed #CBD5E1;
+            border-radius: 20px;
+            padding: 4px 12px;
+        }
+        .viz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 16px;
+        }
+        .viz-panel {
+            background: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 14px;
+            padding: 16px 18px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+            min-width: 0;
+        }
+        .viz-panel.wide { grid-column: 1 / -1; }
+        .viz-h {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: #0F172A;
+            margin-bottom: 14px;
+        }
+        .viz-h .n {
+            width: 24px; height: 24px;
+            border-radius: 50%;
+            background: var(--drawer-border, #E65100);
+            color: #FFFFFF;
+            font-size: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .viz-cap {
+            font-size: 0.78rem;
+            color: #475569;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .viz-scroll {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding: 6px 2px 6px 2px;
+        }
+
+        /* Accent helpers */
+        .soft  { background: #FFF7ED; background: color-mix(in srgb, var(--drawer-border, #E65100) 9%, #FFFFFF); }
+        .soft2 { background: #FFEDD5; background: color-mix(in srgb, var(--drawer-border, #E65100) 18%, #FFFFFF); }
+        .bg-a1 { background: var(--drawer-border, #E65100); }
+        .bg-a2 { background: var(--drawer-border, #E65100); background: color-mix(in srgb, var(--drawer-border, #E65100) 82%, #0F172A); }
+        .bg-a3 { background: var(--drawer-border, #E65100); background: color-mix(in srgb, var(--drawer-border, #E65100) 64%, #0F172A); }
+        .bg-a4 { background: var(--drawer-border, #E65100); background: color-mix(in srgb, var(--drawer-border, #E65100) 48%, #0F172A); }
+        .bg-l1 { background: color-mix(in srgb, var(--drawer-border, #E65100) 14%, #FFFFFF); }
+        .bg-l2 { background: color-mix(in srgb, var(--drawer-border, #E65100) 30%, #FFFFFF); }
+        .bg-l3 { background: color-mix(in srgb, var(--drawer-border, #E65100) 50%, #FFFFFF); }
+        .acc   { color: var(--drawer-border, #E65100); }
+
+        /* Interactive tooltip targets */
+        [data-tip] { cursor: help; transition: box-shadow 0.15s ease, filter 0.15s ease; }
+        [data-tip]:hover, .tip-on {
+            box-shadow: 0 0 0 3px var(--drawer-border, #E65100) !important;
+            filter: brightness(1.03);
+            z-index: 4;
+        }
+        svg [data-tip]:hover { opacity: 0.75; }
+        #vizTip {
+            position: fixed;
+            z-index: 3000;
+            max-width: 310px;
+            background: #0F172A;
+            color: #F8FAFC;
+            font-size: 0.82rem;
+            line-height: 1.55;
+            padding: 10px 13px;
+            border-radius: 10px;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.28);
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(4px);
+            transition: opacity 0.12s ease, transform 0.12s ease;
+        }
+        #vizTip.show { opacity: 1; transform: none; }
+        #vizTip b { color: #FDBA74; }
+
+        /* Chips */
+        .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+        .chips.col { flex-direction: column; align-items: stretch; }
+        .chips.center { justify-content: center; }
+        .chip {
+            display: inline-flex; align-items: center; gap: 5px;
+            padding: 5px 11px;
+            border-radius: 20px;
+            font-size: 0.78rem; font-weight: 600;
+            background: #F1F5F9; color: #1E293B;
+            border: 1px solid #E2E8F0;
+        }
+        .chip.good { background: #ECFDF5; border-color: #A7F3D0; color: #065F46; }
+        .chip.bad  { background: #FEF2F2; border-color: #FECACA; color: #991B1B; }
+        .chip.warn { background: #FFFBEB; border-color: #FDE68A; color: #92400E; }
+        .chip.acc  { background: color-mix(in srgb, var(--drawer-border, #E65100) 12%, #FFFFFF); border-color: color-mix(in srgb, var(--drawer-border, #E65100) 40%, #FFFFFF); color: #0F172A; }
+
+        /* Flow chart */
+        .flow { display: flex; align-items: stretch; }
+        .flow.minw { min-width: 620px; }
+        .flow-node {
+            position: relative;
+            flex: 1;
+            min-width: 88px;
+            background: #FFFFFF;
+            border: 1.5px solid var(--drawer-border, #E65100);
+            border-radius: 10px;
+            padding: 10px 8px;
+            text-align: center;
+            font-size: 0.76rem;
+            color: #334155;
+            line-height: 1.4;
+        }
+        .flow-node.fill { background: color-mix(in srgb, var(--drawer-border, #E65100) 10%, #FFFFFF); }
+        .flow-node.dark { background: #0F172A; color: #E2E8F0; border-color: #0F172A; }
+        .flow-node.dark b { color: #FFFFFF; }
+        .flow-node .ico { display: block; font-size: 1.35rem; margin-bottom: 2px; }
+        .flow-node b { display: block; font-size: 0.85rem; color: #0F172A; }
+        .flow-arrow {
+            display: flex; align-items: center;
+            padding: 0 5px;
+            color: var(--drawer-border, #E65100);
+            font-weight: 900; font-size: 1.1rem;
+        }
+        .pin {
+            position: absolute; top: -11px; right: -6px;
+            background: #FEF2F2; color: #B91C1C;
+            border: 1px solid #FCA5A5;
+            font-size: 0.62rem; font-weight: 800;
+            border-radius: 10px; padding: 1px 6px;
+            white-space: nowrap;
+        }
+        .loop-back {
+            margin-top: 8px;
+            border: 2px dashed #94A3B8;
+            border-top: none;
+            border-radius: 0 0 14px 14px;
+            height: 18px;
+            position: relative;
+        }
+        .loop-back span {
+            position: absolute; left: 50%; bottom: -11px;
+            transform: translateX(-50%);
+            background: #FFFFFF; padding: 0 8px;
+            font-size: 0.72rem; font-weight: 700; color: #475569;
+            white-space: nowrap;
+        }
+
+        /* Inner chevron flow */
+        .chev-flow { display: flex; }
+        .chev-flow.minw { min-width: 600px; }
+        .chev-flow > div {
+            flex: 1;
+            color: #FFFFFF;
+            padding: 10px 14px 10px 24px;
+            margin-left: -10px;
+            text-align: center;
+            font-size: 0.78rem; font-weight: 700; line-height: 1.3;
+            clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);
+        }
+        .chev-flow > div:first-child { margin-left: 0; padding-left: 14px; clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%); border-radius: 6px 0 0 6px; }
+        .chev-flow > div small { display: block; font-weight: 500; font-size: 0.68rem; opacity: 0.95; }
+
+        /* Mind map (radial) */
+        .mindmap { position: relative; height: 370px; min-width: 580px; }
+        .mindmap .mm-lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+        .mm-lines line { stroke: var(--drawer-border, #E65100); stroke-width: 2; stroke-dasharray: 5 4; opacity: 0.55; vector-effect: non-scaling-stroke; }
+        .mm-hub {
+            position: absolute; left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            width: 124px; height: 124px;
+            border-radius: 50%;
+            background: var(--drawer-border, #E65100);
+            color: #FFFFFF;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            text-align: center; font-weight: 800; font-size: 0.95rem; line-height: 1.25;
+            box-shadow: 0 0 0 8px color-mix(in srgb, var(--drawer-border, #E65100) 15%, #FFFFFF);
+        }
+        .mm-hub small { font-weight: 600; font-size: 0.7rem; opacity: 0.95; }
+        .mm-node {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 158px;
+            background: #FFFFFF;
+            border: 2px solid var(--drawer-border, #E65100);
+            border-radius: 12px;
+            padding: 8px 10px;
+            text-align: center;
+            font-size: 0.74rem; color: #334155; line-height: 1.35;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+        }
+        .mm-node.alt { border-color: #64748B; }
+        .mm-node .ico { font-size: 1.2rem; display: block; }
+        .mm-node b { display: block; font-size: 0.84rem; color: #0F172A; }
+
+        /* Balance scale */
+        .scale-top { text-align: center; margin-bottom: 6px; }
+        .scale-formula {
+            display: inline-block;
+            background: #0F172A; color: #FDBA74;
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-weight: 700; font-size: 0.85rem;
+            padding: 6px 14px; border-radius: 20px;
+        }
+        .scale-beam { height: 6px; background: #334155; border-radius: 3px; margin: 10px 9% 0; transform: rotate(-4deg); }
+        .scale-fulcrum { width: 0; height: 0; margin: -1px auto 10px; border-left: 14px solid transparent; border-right: 14px solid transparent; border-bottom: 22px solid #334155; }
+        .scale-pans { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+        .pan { border-radius: 12px; padding: 10px; border: 2px solid; }
+        .pan-good { background: #F0FDF4; border-color: #86EFAC; margin-top: 14px; }
+        .pan-cost { background: #FEF2F2; border-color: #FCA5A5; }
+        .pan-title { font-weight: 800; font-size: 0.82rem; margin-bottom: 8px; text-align: center; color: #0F172A; }
+        .scale-note { margin-top: 12px; text-align: center; font-size: 0.82rem; font-weight: 700; color: #065F46; background: #F0FDF4; border-radius: 8px; padding: 6px; }
+
+        /* Horizontal timeline */
+        .tl { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; position: relative; min-width: 560px; }
+        .tl::before { content: ""; position: absolute; left: 12%; right: 12%; top: 17px; height: 3px; background: linear-gradient(90deg, #CBD5E1, var(--drawer-border, #E65100)); }
+        .tl-item { position: relative; text-align: center; font-size: 0.76rem; color: #334155; padding: 0 4px 6px; border-radius: 10px; }
+        .tl-dot { width: 36px; height: 36px; border-radius: 50%; background: var(--drawer-border, #E65100); color: #FFFFFF; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px; box-shadow: 0 0 0 5px #FFFFFF; position: relative; }
+        .tl-year { font-size: 0.7rem; font-weight: 800; color: var(--drawer-border, #E65100); }
+        .tl-item b { display: block; color: #0F172A; font-size: 0.84rem; }
+
+        /* Venn (3 circles) */
+        .venn { position: relative; width: 290px; height: 250px; margin: 0 auto; }
+        .venn .c { position: absolute; width: 150px; height: 150px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 0.76rem; font-weight: 700; text-align: center; color: #0F172A; line-height: 1.3; }
+        .venn .c small { font-weight: 500; font-size: 0.68rem; color: #334155; }
+        .venn .c1 { left: 10px; top: 0; background: rgba(249,115,22,0.20); border: 2px solid rgba(249,115,22,0.65); padding: 0 38px 40px 0; }
+        .venn .c2 { right: 10px; top: 0; background: rgba(14,165,233,0.20); border: 2px solid rgba(14,165,233,0.65); padding: 0 0 40px 38px; }
+        .venn .c3 { left: 70px; bottom: 0; background: rgba(16,185,129,0.20); border: 2px solid rgba(16,185,129,0.65); padding: 44px 0 0 0; }
+        .venn .vcenter { position: absolute; left: 50%; top: 47%; transform: translate(-50%, -50%); font-size: 0.68rem; font-weight: 800; background: #0F172A; color: #FFFFFF; padding: 3px 8px; border-radius: 10px; white-space: nowrap; }
+
+        /* Tiles */
+        .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; }
+        .tiles.t5 { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+        .tiles.t4 { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+        .tile { position: relative; border: 1.5px solid #E2E8F0; border-radius: 12px; padding: 12px 10px; text-align: center; background: #FFFFFF; font-size: 0.76rem; color: #334155; line-height: 1.4; }
+        .tile .big { font-size: 1.7rem; font-weight: 900; color: var(--drawer-border, #E65100); line-height: 1.1; }
+        .tile .ico { font-size: 1.5rem; display: block; margin-bottom: 2px; }
+        .tile b { display: block; color: #0F172A; font-size: 0.86rem; margin: 2px 0; }
+        .tile.hl { border-color: var(--drawer-border, #E65100); background: color-mix(in srgb, var(--drawer-border, #E65100) 8%, #FFFFFF); }
+        .tile.danger { border-color: #EF4444; background: #FEF2F2; }
+        .badge-corner { position: absolute; top: -9px; right: -6px; font-size: 0.62rem; font-weight: 800; padding: 1px 7px; border-radius: 10px; background: #0F172A; color: #FFFFFF; white-space: nowrap; }
+        .badge-corner.red { background: #DC2626; }
+
+        /* Pyramid */
+        .pyramid { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+        .pyr-cap { font-size: 0.7rem; font-weight: 800; letter-spacing: 1px; color: #475569; margin: 2px 0; }
+        .pyr-layer { height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 0.8rem; text-align: center; line-height: 1.2; clip-path: polygon(7% 0, 93% 0, 100% 100%, 0 100%); }
+        .pyr-layer small { font-weight: 500; font-size: 0.68rem; opacity: 0.95; }
+        .pyr-line { width: 100%; border-top: 2px dashed #0F172A; text-align: center; margin: 9px 0 7px; position: relative; height: 0; }
+        .pyr-line span { position: relative; top: -10px; background: #FFFFFF; padding: 0 8px; font-size: 0.7rem; font-weight: 800; color: #0F172A; }
+
+        /* Funnel */
+        .funnel { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+        .fn { color: #FFFFFF; text-align: center; padding: 10px 8px; font-size: 0.82rem; font-weight: 800; clip-path: polygon(0 0, 100% 0, 93% 100%, 7% 100%); line-height: 1.3; }
+        .fn small { display: block; font-weight: 500; font-size: 0.7rem; }
+
+        /* Concentric rings (bottom aligned) */
+        .rings { position: relative; width: 280px; height: 280px; margin: 0 auto; }
+        .ring { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); border-radius: 50%; border: 2px solid var(--drawer-border, #E65100); display: flex; flex-direction: column; align-items: center; text-align: center; font-size: 0.76rem; font-weight: 800; color: #0F172A; line-height: 1.25; }
+        .ring small { font-weight: 500; font-size: 0.68rem; color: #334155; }
+        .ring.r1 { width: 280px; height: 280px; padding-top: 18px; }
+        .ring.r2 { width: 196px; height: 196px; padding-top: 16px; }
+        .ring.r3 { width: 112px; height: 112px; padding-top: 30px; color: #FFFFFF; }
+        .ring.r3 small { color: #FFFFFF; }
+        .ring.r1:hover, .ring.r2:hover, .ring.r3:hover { transform: translateX(-50%); }
+
+        /* Versus */
+        .vs { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: stretch; }
+        .vs-mid { align-self: center; font-weight: 900; background: #0F172A; color: #FFFFFF; border-radius: 50%; width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; }
+        .vs-card { border-radius: 12px; padding: 12px; border: 1.5px solid #E2E8F0; font-size: 0.78rem; color: #334155; text-align: center; line-height: 1.45; }
+        .vs-card .ico { font-size: 1.8rem; display: block; }
+        .vs-card b { display: block; font-size: 0.92rem; color: #0F172A; margin-bottom: 4px; }
+        .vs-card.green { background: #F0FDF4; border-color: #86EFAC; }
+        .vs-card.red { background: #FEF2F2; border-color: #FCA5A5; }
+        .vs-card.blue { background: #EFF6FF; border-color: #93C5FD; }
+        .vs-card.amber { background: #FFFBEB; border-color: #FCD34D; }
+        .vs-card ul { text-align: left; padding-left: 16px; margin-top: 6px; }
+
+        /* Spectrum */
+        .spectrum-bar { height: 12px; border-radius: 6px; background: linear-gradient(90deg, #CBD5E1, var(--drawer-border, #E65100)); }
+        .spectrum-ends { display: flex; justify-content: space-between; font-size: 0.7rem; font-weight: 700; color: #475569; margin: 4px 0 10px; }
+        .spectrum-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+        .spectrum-cols.c3 { grid-template-columns: repeat(3, 1fr); }
+
+        /* Formula tiles */
+        .ftiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; }
+        .ftile { background: #0F172A; color: #F8FAFC; border-radius: 12px; padding: 12px 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.86rem; border-left: 4px solid var(--drawer-border, #E65100); line-height: 1.55; }
+        .ftile .lbl { font-family: system-ui, -apple-system, sans-serif; font-size: 0.7rem; color: #94A3B8; display: block; margin-bottom: 4px; letter-spacing: 0.4px; }
+        .ftile b { color: #FDBA74; }
+        .ftile .var { border-bottom: 1px dashed #FDBA74; padding: 0 1px; }
+        .ftile .note { display: block; font-family: system-ui, -apple-system, sans-serif; font-size: 0.7rem; color: #CBD5E1; margin-top: 4px; }
+
+        /* Bars */
+        .bar-row { display: grid; grid-template-columns: 70px 1fr; align-items: center; gap: 8px; font-size: 0.76rem; margin: 6px 0; color: #334155; font-weight: 600; }
+        .bar-track { background: #F1F5F9; border-radius: 6px; height: 22px; overflow: hidden; }
+        .bar-fill { height: 100%; border-radius: 6px; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px; color: #FFFFFF; font-weight: 700; font-size: 0.72rem; white-space: nowrap; }
+        .bar-fill.old { background: #94A3B8; }
+        .bar-fill.new { background: var(--drawer-border, #E65100); }
+        .delta { display: inline-block; margin-left: 6px; font-size: 0.75rem; font-weight: 800; color: #047857; background: #ECFDF5; border-radius: 10px; padding: 1px 8px; }
+
+        /* Donut */
+        .donut-wrap { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+        .donut { width: 160px; height: 160px; border-radius: 50%; position: relative; }
+        .donut::after { content: ""; position: absolute; inset: 30px; background: #FFFFFF; border-radius: 50%; }
+        .donut-c { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 1; font-size: 0.72rem; font-weight: 700; color: #475569; text-align: center; }
+        .donut-c b { font-size: 1rem; color: #0F172A; }
+        .legend { display: flex; flex-direction: column; gap: 6px; font-size: 0.78rem; }
+        .legend span { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+
+        /* Decision tree */
+        .dtree { display: flex; flex-direction: column; align-items: center; min-width: 560px; }
+        .dt-q { background: #0F172A; color: #FFFFFF; border-radius: 12px; padding: 10px 16px; font-weight: 700; font-size: 0.84rem; text-align: center; max-width: 380px; line-height: 1.4; }
+        .dt-start { background: #FFFFFF; color: #0F172A; border: 2px dashed #94A3B8; border-radius: 20px; padding: 5px 14px; font-size: 0.78rem; font-weight: 700; }
+        .dt-v { width: 2px; height: 16px; background: #94A3B8; }
+        .dt-split { display: grid; grid-template-columns: 1fr 1fr; width: 100%; position: relative; }
+        .dt-split::before { content: ""; position: absolute; top: 0; left: 25%; right: 25%; border-top: 2px solid #94A3B8; }
+        .dt-branch { display: flex; flex-direction: column; align-items: center; }
+        .dt-label { font-size: 0.72rem; font-weight: 800; padding: 2px 10px; border-radius: 10px; }
+        .dt-label.yes { background: #DCFCE7; color: #166534; }
+        .dt-label.no { background: #FEE2E2; color: #991B1B; }
+        .dt-leaf { border-radius: 12px; padding: 10px 14px; text-align: center; font-size: 0.78rem; border: 2px solid; min-width: 190px; max-width: 250px; line-height: 1.45; }
+        .dt-leaf b { display: block; font-size: 1rem; }
+        .leaf-va { background: #ECFDF5; border-color: #10B981; color: #065F46; }
+        .leaf-nnva { background: #FFFBEB; border-color: #F59E0B; color: #92400E; }
+        .leaf-nva { background: #FEF2F2; border-color: #EF4444; color: #991B1B; }
+
+        /* VPC canvas */
+        .vpc-wrap { min-width: 620px; }
+        .vpc-labels { display: grid; grid-template-columns: 1fr 80px 1fr; text-align: center; font-size: 0.78rem; font-weight: 800; color: #0F172A; margin-bottom: 6px; }
+        .vpc { display: grid; grid-template-columns: 1fr 80px 1fr; align-items: center; gap: 4px; }
+        .vpc-square { aspect-ratio: 1 / 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; border: 3px solid var(--drawer-border, #E65100); border-radius: 8px; overflow: hidden; }
+        .vpc-square > div, .vpc-circle > div { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 0.74rem; color: #334155; line-height: 1.35; padding: 8px; }
+        .vpc-square > div b, .vpc-circle > div b { font-size: 0.84rem; color: #0F172A; display: block; }
+        .vpc-square > div .ico, .vpc-circle > div .ico { font-size: 1.3rem; }
+        .vpc-square .ps { grid-column: 1; grid-row: 1 / 3; border-right: 2px solid var(--drawer-border, #E65100); }
+        .vpc-square .gc { grid-column: 2; grid-row: 1; border-bottom: 2px solid var(--drawer-border, #E65100); }
+        .vpc-square .pr { grid-column: 2; grid-row: 2; }
+        .vpc-circle { aspect-ratio: 1 / 1; border-radius: 50%; border: 3px solid var(--drawer-border, #E65100); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+        .vpc-circle .g { grid-column: 1; grid-row: 1; border-bottom: 2px solid var(--drawer-border, #E65100); border-right: 2px solid var(--drawer-border, #E65100); padding: 22% 6% 6% 20% !important; }
+        .vpc-circle .p { grid-column: 1; grid-row: 2; border-right: 2px solid var(--drawer-border, #E65100); padding: 6% 6% 22% 20% !important; }
+        .vpc-circle .j { grid-column: 2; grid-row: 1 / 3; padding: 0 20% 0 8% !important; }
+        .vpc-fit { display: flex; flex-direction: column; justify-content: space-around; align-self: stretch; align-items: center; font-size: 0.7rem; font-weight: 800; color: var(--drawer-border, #E65100); text-align: center; }
+        .vpc-fit span { background: #FFFFFF; border: 1.5px solid var(--drawer-border, #E65100); border-radius: 12px; padding: 3px 6px; }
+
+        /* Mapping rows (pain -> solution) */
+        .map-head { display: grid; grid-template-columns: 1fr 40px 1fr; font-size: 0.74rem; font-weight: 800; color: #475569; text-align: center; margin-bottom: 6px; }
+        .map-row { display: grid; grid-template-columns: 1fr 40px 1fr; align-items: center; margin-bottom: 8px; }
+        .map-row .from, .map-row .to { border-radius: 10px; padding: 8px 10px; font-size: 0.78rem; line-height: 1.35; }
+        .map-row .from { background: #FEF2F2; border: 1.5px solid #FCA5A5; color: #7F1D1D; }
+        .map-row .to { background: #F0FDF4; border: 1.5px solid #86EFAC; color: #14532D; }
+        .map-row .to b, .map-row .from b { display: block; font-size: 0.82rem; }
+        .map-row .arr { text-align: center; font-weight: 900; color: var(--drawer-border, #E65100); font-size: 1.2rem; }
+
+        /* Stairs */
+        .stairs { display: flex; align-items: flex-end; gap: 6px; height: 130px; }
+        .stair { flex: 1; border-radius: 8px 8px 0 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: 6px 4px; font-size: 0.72rem; font-weight: 700; text-align: center; color: #0F172A; line-height: 1.25; }
+        .stair small { font-weight: 500; font-size: 0.64rem; color: #334155; }
+
+        /* BMC */
+        .bmc-wrap { min-width: 700px; }
+        .bmc-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 4px; font-size: 0.7rem; font-weight: 800; text-align: center; }
+        .bmc-strip div { padding: 4px; border-radius: 6px; }
+        .bmc { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; }
+        .bmc > div { border: 1.5px solid #CBD5E1; border-radius: 8px; padding: 8px; font-size: 0.7rem; color: #334155; min-height: 86px; line-height: 1.4; }
+        .bmc b { display: block; font-size: 0.78rem; color: #0F172A; margin-bottom: 3px; }
+        .bmc .num { display: inline-flex; width: 18px; height: 18px; border-radius: 50%; background: var(--drawer-border, #E65100); color: #FFFFFF; font-size: 0.64rem; align-items: center; justify-content: center; margin-right: 4px; vertical-align: 1px; }
+        .bmc .kp { grid-column: 1 / 3; grid-row: 1 / 3; background: #F0FDFA; }
+        .bmc .ka { grid-column: 3 / 5; grid-row: 1; background: #F0FDFA; }
+        .bmc .kr { grid-column: 3 / 5; grid-row: 2; background: #F0FDFA; }
+        .bmc .vp { grid-column: 5 / 7; grid-row: 1 / 3; border-color: var(--drawer-border, #E65100); border-width: 2px; background: color-mix(in srgb, var(--drawer-border, #E65100) 10%, #FFFFFF); }
+        .bmc .cr { grid-column: 7 / 9; grid-row: 1; background: #FFF7ED; }
+        .bmc .ch { grid-column: 7 / 9; grid-row: 2; background: #FFF7ED; }
+        .bmc .cs { grid-column: 9 / 11; grid-row: 1 / 3; background: #FFF7ED; }
+        .bmc .cost { grid-column: 1 / 6; grid-row: 3; min-height: 60px; background: #F8FAFC; }
+        .bmc .rev { grid-column: 6 / 11; grid-row: 3; min-height: 60px; background: #F8FAFC; }
+
+        /* Porter value chain */
+        .vchain { display: grid; grid-template-columns: 1fr 58px; min-width: 660px; }
+        .vc-body { display: flex; flex-direction: column; gap: 4px; }
+        .vc-cap { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.6px; color: #475569; }
+        .vc-support { padding: 7px 12px; border-radius: 6px; background: #F0FDFA; border: 1.5px solid #99F6E4; font-size: 0.78rem; color: #134E4A; display: flex; justify-content: space-between; gap: 10px; }
+        .vc-support b { color: #0F172A; }
+        .vc-primary { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+        .vc-primary > div { color: #FFFFFF; border-radius: 6px; padding: 10px 6px; text-align: center; font-size: 0.72rem; min-height: 112px; display: flex; flex-direction: column; justify-content: center; line-height: 1.35; }
+        .vc-primary > div b { font-size: 0.82rem; display: block; margin-bottom: 3px; }
+        .vc-primary > div .ico { font-size: 1.2rem; }
+        .vc-margin { background: #0F172A; color: #FFFFFF; clip-path: polygon(0 0, 100% 50%, 0 100%); display: flex; align-items: center; justify-content: flex-start; padding-left: 10px; font-weight: 800; font-size: 0.72rem; writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 1px; }
+
+        /* CQT triangle */
+        .tri { position: relative; width: 300px; height: 270px; margin: 0 auto; }
+        .tri svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+        .tri-node { position: absolute; transform: translate(-50%, -50%); width: 104px; border-radius: 12px; padding: 8px 6px; text-align: center; color: #FFFFFF; font-size: 0.7rem; line-height: 1.3; }
+        .tri-node b { display: block; font-size: 1.2rem; }
+        .tri-center { position: absolute; left: 50%; top: 62%; transform: translate(-50%, -50%); text-align: center; font-size: 0.74rem; font-weight: 800; color: #0F172A; line-height: 1.3; }
+
+        /* ASME symbols */
+        .sym { height: 40px; display: flex; align-items: center; justify-content: center; margin-bottom: 4px; }
+        .sym-circle { width: 34px; height: 34px; border-radius: 50%; border: 4px solid var(--drawer-border, #E65100); }
+        .sym-arrow { font-size: 2rem; font-weight: 900; color: var(--drawer-border, #E65100); line-height: 1; }
+        .sym-square { width: 32px; height: 32px; border: 4px solid var(--drawer-border, #E65100); }
+        .sym-d { width: 28px; height: 34px; border: 4px solid var(--drawer-border, #E65100); border-radius: 0 18px 18px 0; }
+        .sym-tri { width: 0; height: 0; border-left: 19px solid transparent; border-right: 19px solid transparent; border-top: 32px solid var(--drawer-border, #E65100); }
+
+        /* SVG charts */
+        .chart svg { width: 100%; height: auto; display: block; }
+        .chart text { font-family: system-ui, -apple-system, sans-serif; }
+
+        /* RTO / RPO timeline */
+        .rto { display: flex; align-items: center; min-width: 560px; padding: 34px 4px 40px; }
+        .rto .pt { display: flex; flex-direction: column; align-items: center; width: 104px; text-align: center; font-size: 0.72rem; color: #334155; font-weight: 600; flex-shrink: 0; line-height: 1.3; }
+        .rto .pt .dot { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; border: 2.5px solid; background: #FFFFFF; margin-bottom: 4px; }
+        .rto .seg { flex: 1; height: 10px; border-radius: 5px; position: relative; margin: 0 4px 22px; }
+        .rto .seg.rpo { background: repeating-linear-gradient(45deg, #FCA5A5 0 6px, #FEE2E2 6px 12px); }
+        .rto .seg.rtoz { background: repeating-linear-gradient(45deg, #FCD34D 0 6px, #FEF3C7 6px 12px); }
+        .rto .seg .up { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.8rem; font-weight: 900; color: #0F172A; }
+        .rto .seg .down { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.7rem; color: #475569; font-weight: 600; }
+
+        /* Risk matrix */
+        .risk { display: grid; grid-template-columns: 26px repeat(3, 1fr); grid-template-rows: repeat(3, 44px) 22px; gap: 4px; max-width: 300px; margin: 0 auto; }
+        .risk .ax { font-size: 0.66rem; font-weight: 700; color: #475569; display: flex; align-items: center; justify-content: center; }
+        .risk .ax.y { writing-mode: vertical-rl; transform: rotate(180deg); grid-row: 1 / 4; grid-column: 1; }
+        .risk .ax.x { grid-column: 2 / 5; grid-row: 4; }
+        .risk .cell { border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.68rem; font-weight: 800; color: #0F172A; }
+        .r-g { background: #BBF7D0; } .r-y { background: #FDE68A; } .r-o { background: #FDBA74; } .r-r { background: #FCA5A5; }
+
+        /* PDCA wheel */
+        .pdca { position: relative; width: 230px; height: 230px; border-radius: 50%; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; margin: 0 auto; border: 3px solid #FFFFFF; box-shadow: 0 0 0 2px #E2E8F0; }
+        .pdca > div { display: flex; flex-direction: column; justify-content: center; font-size: 0.68rem; color: #FFFFFF; line-height: 1.3; padding: 12px; }
+        .pdca > div b { font-size: 1.05rem; display: block; }
+        .pdca .q1 { background: #0D9488; align-items: flex-start; text-align: left; padding-left: 26px; }
+        .pdca .q2 { background: #0284C7; align-items: flex-end; text-align: right; padding-right: 26px; }
+        .pdca .q3 { background: #4F46E5; align-items: flex-start; text-align: left; padding-left: 26px; grid-column: 1; grid-row: 2; }
+        .pdca .q4 { background: #7C3AED; align-items: flex-end; text-align: right; padding-right: 26px; grid-column: 2; grid-row: 2; }
+        .pdca-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 86px; height: 86px; border-radius: 50%; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 0.66rem; font-weight: 800; color: #0F172A; text-align: center; z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.15); line-height: 1.2; }
+
+        /* Persona card */
+        .persona { border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; }
+        .persona-head { display: flex; gap: 10px; align-items: center; padding: 10px 12px; color: #FFFFFF; }
+        .persona-head .avatar { width: 44px; height: 44px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+        .persona-head b { display: block; font-size: 0.88rem; }
+        .persona-head span { font-size: 0.72rem; opacity: 0.95; }
+        .persona-rows > div { padding: 8px 12px; border-top: 1px solid #F1F5F9; font-size: 0.76rem; color: #334155; }
+        .persona-rows > div span { display: block; font-weight: 800; color: #0F172A; font-size: 0.8rem; }
+
+        /* Exam tip strip */
+        .tip-strip { display: flex; gap: 10px; align-items: flex-start; background: #FFFBEB; border: 1px solid #FDE68A; border-radius: 12px; padding: 10px 14px; font-size: 0.85rem; color: #78350F; line-height: 1.55; }
+        .tip-strip .ti { font-size: 1.1rem; }
+        .tip-strip b { color: #B45309; }
+
+        @media (max-width: 700px) {
+            .viz-grid { grid-template-columns: 1fr; }
+            .viz-panel { padding: 14px 12px; }
+        }
+
+
+/* ================================================================
+   V3 CSS ADDITIONS: Fluid Full-Width & Split-Duo Components
+   ================================================================ */
+
+/* Split Duo Layout (Left: Diagram / Graphic 40-45%, Right: Context Info Cards 55-60%) */
+.split-duo {
+    display: grid;
+    grid-template-columns: minmax(280px, 44%) 1fr;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+.split-duo.top {
+    align-items: start;
+}
+.split-duo.wide-left {
+    grid-template-columns: minmax(320px, 50%) 1fr;
+}
+.duo-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    width: 100%;
+}
+.duo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+    width: 100%;
+}
+.info-card {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    color: #334155;
+    line-height: 1.48;
+    transition: all 0.15s ease;
+}
+.info-card:hover {
+    border-color: #CBD5E1;
+    background: #F1F5F9;
+}
+.info-card b {
+    display: block;
+    color: #0F172A;
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+}
+.info-card.acc {
+    background: color-mix(in srgb, var(--drawer-border, #E65100) 7%, #FFFFFF);
+    border-color: color-mix(in srgb, var(--drawer-border, #E65100) 25%, #FFFFFF);
+}
+.info-card.acc b {
+    color: var(--drawer-border, #E65100);
+}
+.info-card.green {
+    background: #F0FDF4;
+    border-color: #BBF7D0;
+}
+.info-card.green b {
+    color: #166534;
+}
+.info-card.amber {
+    background: #FFFBEB;
+    border-color: #FDE68A;
+}
+.info-card.amber b {
+    color: #B45309;
+}
+.info-card.blue {
+    background: #EFF6FF;
+    border-color: #BFDBFE;
+}
+.info-card.blue b {
+    color: #1E40AF;
+}
+
+@media (max-width: 900px) {
+    .split-duo, .split-duo.wide-left {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+
+        /* Fluid Full-Width Layout Overrides */
+        .header-wrap {
+            max-width: 96% !important;
+            width: 100% !important;
+        }
+        .page-container {
+            max-width: 96% !important;
+            width: 100% !important;
+            margin: 18px auto 60px !important;
+            padding: 0 10px !important;
+        }
+        .track-block {
+            width: 100% !important;
+            padding: 24px 22px !important;
+        }
+        .timeline-container {
+            width: 100% !important;
+            min-width: 980px !important;
+        }
+        .callout-drawer {
+            width: 100% !important;
+        }
+        .viz-grid {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)) !important;
+            gap: 18px !important;
+            width: 100% !important;
+        }
+        @media (max-width: 960px) {
+            .viz-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        .drawer-nav-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px dashed #E2E8F0;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .step-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 14px;
+            border-radius: 20px;
+            border: 1.5px solid #CBD5E1;
+            background: #FFFFFF;
+            color: #1E293B;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .step-nav-btn:hover:not(:disabled) {
+            border-color: var(--drawer-border, #E65100);
+            color: var(--drawer-border, #E65100);
+            background: #FFF7ED;
+            transform: translateY(-1px);
+        }
+        .step-nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-wrap">
+            <div class="brand-box">
+                <div class="kku-tag">MBA KKU EX32</div>
+                <div class="brand-titles">
+                    <h1>VCD <span>Visual Infographic v3</span></h1>
+                    <p>CM 028 813: การสร้างและส่งมอบคุณค่า (Value Creation & Delivery)</p>
+                </div>
+            </div>
+            <div class="top-nav-links">
+                <button class="nav-btn nav-btn-orange" onclick="jumpToTrack('track1')">🟧 แกน 1: อ.บุษ (Case)</button>
+                <button class="nav-btn nav-btn-outline" onclick="jumpToTrack('track2')">🟦 แกน 2: อ.เยลลี่ (คำนวณ/ปรนัย)</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+
+        <!-- ========================================== -->
+        <!-- TRACK 1: อาจารย์ ดร.บุษกร (6 Steps)        -->
+        <!-- ========================================== -->
+        <div class="track-block" id="track1">
+            <div class="track-meta">
+                <div class="track-badge-title">
+                    <span class="track-badge badge-t1">แกนที่ 1: หน้าบ้าน (Demand-Side)</span>
+                    <h3 class="track-heading">VALUE CREATION & MARKETING STRATEGY (สร้างคุณค่า)</h3>
+                </div>
+                <div class="track-lecturer">อาจารย์ ดร.บุษกร หลี่เจ้ยวรา • เน้นสอบ Case Study</div>
+            </div>
+
+            <!-- Scrollable Timeline Wrapper -->
+            <div class="timeline-scroll-wrap">
+                <div class="timeline-container">
+                    
+                    <!-- 1. Chevron Interlocking Arrows Bar -->
+                    <div class="chevron-bar" id="t1ChevronBar">
+                        <div class="chevron-item color-1" onclick="selectStep(1, this)" id="chev-1">Step 1</div>
+                        <div class="chevron-item color-2" onclick="selectStep(2, this)" id="chev-2">Step 2</div>
+                        <div class="chevron-item color-3" onclick="selectStep(3, this)" id="chev-3">Step 3</div>
+                        <div class="chevron-item color-4" onclick="selectStep(4, this)" id="chev-4">Step 4</div>
+                        <div class="chevron-item color-5" onclick="selectStep(5, this)" id="chev-5">Step 5</div>
+                        <div class="chevron-item color-6" onclick="selectStep(6, this)" id="chev-6">Step 6</div>
+                    </div>
+
+                    <!-- 2. Compact Cards Below Chevrons -->
+                    <div class="cards-bar" id="t1CardsBar">
+                        
+                        <!-- Card 1 -->
+                        <div class="step-mini-card color-1" onclick="selectStep(1, document.getElementById('chev-1'))" id="card-1">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">💡</div>
+                            <div class="mini-title">คุณค่า 5 มิติ</div>
+                            <div class="mini-desc">นิยามคุณค่า CPV, SDGs & วิวัฒนาการ Levitt/JTBD</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="step-mini-card color-2" onclick="selectStep(2, document.getElementById('chev-2'))" id="card-2">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">🔍</div>
+                            <div class="mini-title">โอกาสตลาด</div>
+                            <div class="mini-desc">Unmet Needs, โมเดล CAB & พีระมิด PMF 5 ขั้น</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="step-mini-card color-3" onclick="selectStep(3, document.getElementById('chev-3'))" id="card-3">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">🎯</div>
+                            <div class="mini-title">STP & Persona</div>
+                            <div class="mini-desc">เกณฑ์แบ่งตลาด 4 ด้าน, MASDA & TAM-SAM-SOM</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="step-mini-card color-4" onclick="selectStep(4, document.getElementById('chev-4'))" id="card-4">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">🧩</div>
+                            <div class="mini-title">ออกแบบ VPC</div>
+                            <div class="mini-desc">Jobs, Pains, Gains vs Solutions & Case เสื้อ GQ</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="step-mini-card color-5" onclick="selectStep(5, document.getElementById('chev-5'))" id="card-5">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">📊</div>
+                            <div class="mini-title">กลยุทธ์ 4Ps/7Ps</div>
+                            <div class="mini-desc">Traceability, สินค้า 3 ระดับ & Value-Based Pricing</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="step-mini-card color-6" onclick="selectStep(6, document.getElementById('chev-6'))" id="card-6">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">🚀</div>
+                            <div class="mini-title">BMC & ทดสอบ</div>
+                            <div class="mini-desc">BMC 9 ช่อง, สื่อ POEM & ทดสอบตลาด Smoke/MVP</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Smart Callout Drawer for Track 1 -->
+            <div class="callout-drawer" id="drawerTrack1">
+                <div class="drawer-pointer" id="pointerTrack1"></div>
+                <div class="drawer-header">
+                    <div class="drawer-title-group">
+                        <div class="drawer-badge-row">
+                            <span class="drawer-step-badge" id="d1StepBadge">STEP 01</span>
+                            <span class="drawer-exam-badge">Case Study Focus</span>
+                        </div>
+                        <h3 class="drawer-h3" id="d1Title">หัวข้อรายละเอียด</h3>
+                        <div class="drawer-en-title" id="d1EnTitle">English Title</div>
+                    </div>
+                    <button class="drawer-close-btn" onclick="closeDrawer('drawerTrack1')">✕</button>
+                </div>
+                <div class="drawer-content" id="d1Content">
+                    <!-- Dynamic Body -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- THE VALUE BRIDGE (ตัวเชื่อมต่อระหว่าง 2 แกน) -->
+        <!-- ========================================== -->
+        <div class="bridge-section">
+            <span class="bridge-tag">THE VALUE HANDSHAKE</span>
+            <span class="bridge-arrow-icon">➔</span>
+            <div class="bridge-info">
+                <strong>การส่งไม้ต่อระหว่างสองส่วน:</strong> ฝ่ายการตลาดออกแบบสัญญาคุณค่า (Demand-Side) ⟷ ฝ่ายปฏิบัติการต้องผลิตและส่งมอบจริงด้วยสมดุล <strong>C, Q, T</strong> (Supply-Side)
+            </div>
+            <span class="bridge-arrow-icon">➔</span>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TRACK 2: รศ.ดร.ปณัทพร (5 Steps)           -->
+        <!-- ========================================== -->
+        <div class="track-block" id="track2">
+            <div class="track-meta">
+                <div class="track-badge-title">
+                    <span class="track-badge badge-t2">แกนที่ 2: หลังบ้าน (Supply-Side)</span>
+                    <h3 class="track-heading">VALUE DELIVERY, OPERATIONS & PRODUCTIVITY (ส่งมอบคุณค่า)</h3>
+                </div>
+                <div class="track-lecturer">รองศาสตราจารย์ ดร.ปณัทพร เรืองเชิงชุม • ข้อสอบคำนวณ 4 ข้อ + ปรนัย 10 ข้อ</div>
+            </div>
+
+            <!-- Scrollable Timeline Wrapper -->
+            <div class="timeline-scroll-wrap">
+                <div class="timeline-container">
+                    
+                    <!-- 1. Chevron Interlocking Arrows Bar -->
+                    <div class="chevron-bar" id="t2ChevronBar">
+                        <div class="chevron-item color-7" onclick="selectStep(7, this)" id="chev-7">Step 7</div>
+                        <div class="chevron-item color-8" onclick="selectStep(8, this)" id="chev-8">Step 8</div>
+                        <div class="chevron-item color-9" onclick="selectStep(9, this)" id="chev-9">Step 9</div>
+                        <div class="chevron-item color-10" onclick="selectStep(10, this)" id="chev-10">Step 10</div>
+                        <div class="chevron-item color-11" onclick="selectStep(11, this)" id="chev-11">Step 11</div>
+                    </div>
+
+                    <!-- 2. Compact Cards Below Chevrons -->
+                    <div class="cards-bar" id="t2CardsBar">
+                        
+                        <!-- Card 7 -->
+                        <div class="step-mini-card color-7" onclick="selectStep(7, document.getElementById('chev-7'))" id="card-7">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">🏭</div>
+                            <div class="mini-title">Value Chain & C-Q-T</div>
+                            <div class="mini-desc">5 Primary + 4 Support, SIPOC & 5 สัญลักษณ์ ASME</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="step-mini-card color-8" onclick="selectStep(8, document.getElementById('chev-8'))" id="card-8">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">📦</div>
+                            <div class="mini-title">คำนวณ EOQ & ROP</div>
+                            <div class="mini-desc">สูตรสั่งซื้อประหยัดสุด, Safety Stock & ต้นทุนรวม TC</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 9 -->
+                        <div class="step-mini-card color-9" onclick="selectStep(9, document.getElementById('chev-9'))" id="card-9">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">📈</div>
+                            <div class="mini-title">วัด Productivity</div>
+                            <div class="mini-desc">Labor & Multi-Factor, % Change & กรณีศึกษา Lisa</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 10 -->
+                        <div class="step-mini-card color-10" onclick="selectStep(10, document.getElementById('chev-10'))" id="card-10">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">⚡</div>
+                            <div class="mini-title">ลีน & 8 Wastes</div>
+                            <div class="mini-desc">DOWNTIME, วิเคราะห์ VA/NVA/NNVA & Kaizen/Poka-Yoke</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 11 -->
+                        <div class="step-mini-card color-11" onclick="selectStep(11, document.getElementById('chev-11'))" id="card-11">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">🛡️</div>
+                            <div class="mini-title">Agility & BCM</div>
+                            <div class="mini-desc">Agility vs Resilience, BIA (RTO/RPO) & ISO 22301</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Smart Callout Drawer for Track 2 -->
+            <div class="callout-drawer" id="drawerTrack2">
+                <div class="drawer-pointer" id="pointerTrack2"></div>
+                <div class="drawer-header">
+                    <div class="drawer-title-group">
+                        <div class="drawer-badge-row">
+                            <span class="drawer-step-badge" id="d2StepBadge">STEP 07</span>
+                            <span class="drawer-exam-badge">คำนวณ & ปรนัย Focus</span>
+                        </div>
+                        <h3 class="drawer-h3" id="d2Title">หัวข้อรายละเอียด</h3>
+                        <div class="drawer-en-title" id="d2EnTitle">English Title</div>
+                    </div>
+                    <button class="drawer-close-btn" onclick="closeDrawer('drawerTrack2')">✕</button>
+                </div>
+                <div class="drawer-content" id="d2Content">
+                    <!-- Dynamic Body -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Fast Navigator -->
+    <div class="fast-nav">
+        <button class="fast-nav-btn" onclick="jumpToTrack('track1')">⬆ อ.บุษ</button>
+        <button class="fast-nav-btn" onclick="jumpToTrack('track2')">⬇ อ.เยลลี่</button>
+    </div>
+
+    <div id="vizTip" role="tooltip" aria-hidden="true"></div>
+
+    <script>
+        // Metadata for all 11 Steps (MBA KKU EX32 — VCD Visual Infographic v3)
+        const stepMeta = {
+            1: {
+                track: 1,
+                num: "STEP 01",
+                title: "ความหมายและ 5 มิติของคุณค่า",
+                en: "Principles & Dimensions of Value (Customer Perceived Value & SDGs)",
+                color: "#F59E0B",
+                examBadge: "Case Study Foundation",
+                takeaway: "💡 'Price is what you pay. Value is what you get.' — ลูกค้าไม่ได้ซื้อตัวสินค้า แต่ซื้อทางออกในการแก้ปัญหา (Solution) และความคุ้มค่าเทียบกับต้นทุนรวมที่จ่ายไป"
+            },
+            2: {
+                track: 1,
+                num: "STEP 02",
+                title: "ค้นหาโอกาสตลาดและพฤติกรรมผู้บริโภค",
+                en: "Market Needs & Consumer Behaviour (Unmet Needs, PMF Pyramid & Decision Journey)",
+                color: "#FB923C",
+                examBadge: "Case Study Step 1",
+                takeaway: "💡 โอกาสทางธุรกิจเกิดจากการมองเห็น 'ช่องว่างในตลาด (Market Gap)' จากปัญหาที่ยังไม่มีใครแก้ (Unmet) หรือแก้ได้ไม่ดีพอ (Underserved) และการขจัดจุดติดขัด (Friction Points)"
+            },
+            3: {
+                track: 1,
+                num: "STEP 03",
+                title: "การแบ่งส่วนตลาด เลือกกลุ่มเป้าหมาย และสร้าง Persona",
+                en: "Segmentation, Targeting & Customer Persona (STP, MASDA & TAM-SAM-SOM)",
+                color: "#F97316",
+                examBadge: "Case Study Step 2",
+                takeaway: "💡 'To try to be everything to everyone is to be nothing to anyone.' — แบ่งส่วนตลาดให้ชัด ประเมินด้วย MASDA & TAM-SAM-SOM แล้วถอดเป็น Persona 1 ตัวละคร"
+            },
+            4: {
+                track: 1,
+                num: "STEP 04",
+                title: "การออกแบบคุณค่าด้วย Value Proposition Canvas (VPC)",
+                en: "Value Proposition Design (Customer Jobs-Pains-Gains ⟷ Value Map Fit)",
+                color: "#EA580C",
+                examBadge: "Case Study Step 3 (Core)",
+                takeaway: "💡 หัวใจของ VPC คือการจับคู่แบบ 1-ต่อ-1 (1-to-1 Mapping) ระหว่างปัญหา/ความต้องการของลูกค้า (วงกลมขวา) กับทางแก้ของธุรกิจเรา (สี่เหลี่ยมซ้าย) จนเกิดความ Fit"
+            },
+            5: {
+                track: 1,
+                num: "STEP 05",
+                title: "แปลงคุณค่าสู่กลยุทธ์การตลาด 4Ps / 7Ps & Omnichannel",
+                en: "Translating VPD to Marketing Mix (Traceability, Value-Based Pricing & PLC)",
+                color: "#E11D48",
+                examBadge: "Case Study Step 4",
+                takeaway: "💡 หลัก Traceability — ทุกตัวแปรใน 4Ps / 7Ps ต้องสามารถสืบย้อนกลับไปตอบสนอง Jobs, Pains หรือ Gains ใน VPC ได้อย่างเป็นเหตุเป็นผล"
+            },
+            6: {
+                track: 1,
+                num: "STEP 06",
+                title: "การสื่อสารคุณค่า (IMC), BMC 9 ช่อง และการทดสอบตลาด",
+                en: "Communicating Value, Business Model Canvas & Market Validation (MVP)",
+                color: "#C026D3",
+                examBadge: "Case Study Step 5",
+                takeaway: "💡 สื่อสารคุณค่าผ่านกรวย AIDA & สื่อผสม POEM สรุปโมเดลธุรกิจครบ 9 ช่องใน BMC และทดสอบสมมติฐานด้วย Smoke Test / MVP ก่อนลงทุนขยายขนาดจริง"
+            },
+            7: {
+                track: 2,
+                num: "STEP 07",
+                title: "โซ่คุณค่า (Value Chain), การออกแบบกระบวนการ และสมดุล C-Q-T",
+                en: "Porter's Value Chain, Transformation Process, SIPOC & ASME Symbols",
+                color: "#0D9488",
+                examBadge: "ปรนัย & วิเคราะห์กระบวนการ",
+                takeaway: "💡 ฝ่ายปฏิบัติการเปลี่ยนสัญญาคุณค่าให้เป็นของจริงผ่านกิจกรรมหลัก 5 ด้าน + กิจกรรมสนับสนุน 4 ด้าน โดยรักษาสมดุลของ ต้นทุน (Cost), คุณภาพ (Quality), และ เวลา (Time)"
+            },
+            8: {
+                track: 2,
+                num: "STEP 08",
+                title: "การส่งมフオクคุณค่าและการคำนวณสต๊อก EOQ & ROP",
+                en: "Logistics, Economic Order Quantity (EOQ) & Reorder Point (ROP)",
+                color: "#0891B2",
+                examBadge: "คำนวณเน้นๆ 2 ข้อใหญ่!",
+                takeaway: "💡 ตอบ 2 คำถามหัวใจของคลังสินค้า: 1) สั่งครั้งละเท่าไหร่จึงประหยัดที่สุด (Q* = EOQ) และ 2) สต๊อกเหลือเท่าไหร่ต้องสั่งซื้อซ้ำทันที (ROP)"
+            },
+            9: {
+                track: 2,
+                num: "STEP 09",
+                title: "การวัดผลิตภาพ (Productivity Measurement) & การเติบโต",
+                en: "Single-Factor, Multi-Factor Productivity (MFP) & % Productivity Change",
+                color: "#0284C7",
+                examBadge: "คำนวณเน้นๆ 2 ข้อใหญ่!",
+                takeaway: "💡 ผลผลิต (Production) ไม่เท่ากับ ผลิตภาพ (Productivity)! การวัดผลิตภาพต้องเทียบ Output ต่อ Input เสมอ และ MFP สะท้อนประสิทธิภาพรวมได้แม่นยำกว่าปัจจัยเดี่ยว"
+            },
+            10: {
+                track: 2,
+                num: "STEP 10",
+                title: "การบริหารแบบลีน (Lean) และความสูญเปล่า 8 ประการ (DOWNTIME)",
+                en: "Lean Principles, 8 Wastes (DOWNTIME), VA/NNVA/NVA & Lean Tools",
+                color: "#2563EB",
+                examBadge: "ปรนัย & วิเคราะห์กิจกรรม",
+                takeaway: "💡 ลีนมุ่งเน้นการเพิ่มสัดส่วน VA กำจัดความสูญเปล่า NVA (8 Wastes) และลดขั้นตอน NNVA โดยมี Overproduction (ผลิตเกินต้องการ) เป็นความสูญเปล่าที่ร้ายแรงที่สุด"
+            },
+            11: {
+                track: 2,
+                num: "STEP 11",
+                title: "ความคล่องตัว (Agility), ภูมิคุ้มกัน (Resilience) และ BCM / ISO 22301",
+                en: "Organizational Agility, Business Impact Analysis (RTO/RPO) & ISO 22301 BCMS",
+                color: "#4F46E5",
+                examBadge: "ปรนัย 10 ข้อ Focus",
+                takeaway: "💡 ในโลกยุค VUCA องค์กรต้องมี Agility เพื่อรุกคว้าโอกาสใหม่ และมี Resilience + ระบบ BCM (ISO 22301) เพื่อกู้คืนธุรกิจภายในเวลา RTO และข้อมูลสูญหายไม่เกิน RPO"
+            }
+        };
+
+/* ================================================================
+   V3 — INFOGRAPHIC CONTENT : TRACK 1 (Step 1–6, อ.บุษกร) [FULL-WIDTH SPLIT-DUO]
+   ================================================================ */
+const vizDb = {};
+const tipDb = {};
+
+/* ---------------- STEP 1 : คุณค่า 5 มิติ ---------------- */
+vizDb[1] = `
+<div class="viz-grid">
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">1</span>ตาชั่งคุณค่า (Customer-Perceived Value)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="scale-top"><span class="scale-formula" data-tip="<b>CPV</b> คือคุณค่าที่ลูกค้า 'รับรู้' (Subjective) ไม่ใช่คุณภาพที่ติดตัวสินค้า หรือ Net Value = Total Benefits − Total Costs">CPV = Benefits ÷ Costs</span></div>
+        <div class="scale-beam"></div>
+        <div class="scale-fulcrum"></div>
+        <div class="scale-pans">
+          <div class="pan pan-good">
+            <div class="pan-title">➕ สิ่งที่ได้รับ</div>
+            <div class="chips col">
+              <span class="chip good" data-tip="<b>Product Benefit</b> ฟังก์ชัน ความทนทาน ประสิทธิภาพ">📦 Product</span>
+              <span class="chip good" data-tip="<b>Service Benefit</b> บริการหลังการขาย ส่งไว รับประกัน">🛎️ Service</span>
+              <span class="chip good" data-tip="<b>Personnel Benefit</b> ความเชี่ยวชาญ สุภาพ ปรึกษาได้">🧑‍💼 Personnel</span>
+              <span class="chip good" data-tip="<b>Image Benefit</b> ภาพลักษณ์แบรนด์ ความภาคภูมิใจ">🏅 Image</span>
+            </div>
+          </div>
+          <div class="pan pan-cost">
+            <div class="pan-title">➖ สิ่งที่ต้องจ่าย</div>
+            <div class="chips col">
+              <span class="chip bad" data-tip="<b>Monetary Cost</b> ราคาป้าย ค่าธรรมเนียม ค่าส่ง">💰 เงิน</span>
+              <span class="chip bad" data-tip="<b>Time Cost</b> เวลาเดินทาง ค้นหา รอคอย เรียนรู้">⏱️ เวลา</span>
+              <span class="chip bad" data-tip="<b>Energy Cost</b> ความเหนื่อยล้า ความยุ่งยาก">😓 แรงกาย</span>
+              <span class="chip bad" data-tip="<b>Psychological Cost</b> ความเครียด ความกังวลเสี่ยง">😟 กังวล</span>
+            </div>
+          </div>
+        </div>
+        <div class="scale-note" style="width:100%;margin-top:10px;">ฝั่งประโยชน์หนักกว่า ➔ ลูกค้ารู้สึก “คุ้ม” ➔ ตัดสินใจซื้อ</div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card acc" data-tip="<b>หลักการสร้างคุณค่า</b> ไม่ได้แข่งกันที่ราคาต่ำสุดอย่างเดียว แต่แข่งกันที่ส่วนต่างระหว่างประโยชน์กับต้นทุน">
+          <b>💎 หัวใจของการรับรู้คุณค่า (Subjective Value)</b>
+          คุณค่าไม่ได้อยู่ที่ตัวสินค้า แต่อยู่ที่ <em>'การรับรู้ในใจลูกค้า'</em> สินค้าต้นทุนเท่ากัน ลูกค้าอาจให้คุณค่าต่างกันขึ้นกับบริบทและปัญหาของเขา
+        </div>
+        <div class="info-card green">
+          <b>➕ Total Benefits (4 มิติแห่งผลประโยชน์)</b>
+          สร้างความได้เปรียบด้วย Product (คุณภาพ), Service (สะดวกรวดเร็ว), Personnel (พนักงานน่ารักให้คำปรึกษาเก่ง), และ Image (แบรนด์สร้างความภาคภูมิใจ)
+        </div>
+        <div class="info-card amber">
+          <b>➖ Total Costs (ต้นทุนรวมที่ไม่ใช่แค่เงิน)</b>
+          ลด <b>Time Cost</b> (ไม่ต้องรอคิว), ลด <b>Energy Cost</b> (ซื้อทางแอปใน 3 คลิก), และลด <b>Psychological Cost</b> (การันตีคืนเงินใน 30 วัน ช่วยลดความกลัว)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">2</span>วิวัฒนาการแนวคิดคุณค่า &amp; Price vs. Value</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="viz-scroll" style="width:100%;"><div class="tl" style="min-width:380px;">
+          <div class="tl-item" data-tip="<b>Drucker (1954)</b> ลูกค้าซื้อความพอใจ ไม่ใช่สินค้า"><div class="tl-dot">1</div><div class="tl-year">1950s</div><b>Drucker</b>ความพอใจ</div>
+          <div class="tl-item" data-tip="<b>Levitt (1960)</b> อยากได้รู 1/4 นิ้ว ไม่ใช่สว่าน"><div class="tl-dot">2</div><div class="tl-year">1960s</div><b>Levitt</b>อยากได้รู</div>
+          <div class="tl-item" data-tip="<b>Christensen</b> ลูกค้า 'จ้าง' สินค้าไปทำงานให้สำเร็จ"><div class="tl-dot">3</div><div class="tl-year">1990s+</div><b>Christensen</b>JTBD</div>
+          <div class="tl-item" data-tip="<b>Osterwalder</b> แปลงคุณค่าเป็นเครื่องมือ VPC / BMC"><div class="tl-dot">4</div><div class="tl-year">2010s+</div><b>Osterwalder</b>VPC/BMC</div>
+        </div></div>
+        <div class="vs" style="width:100%;margin-top:14px;">
+          <div class="vs-card red"><span class="ico">🏷️</span><b>Price</b>สิ่งที่ลูกค้าจ่าย</div>
+          <div class="vs-mid">VS</div>
+          <div class="vs-card green"><span class="ico">💎</span><b>Value</b>สิ่งที่ลูกค้าได้รับ</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card acc">
+          <b>💬 คำคม Warren Buffett</b>
+          <em>"Price is what you pay. Value is what you get."</em> ราคาเป็นเพียงตัวเลข แต่คุณค่าคือผลลัพธ์และความสุขที่ลูกค้าได้รับไปตลอดการใช้งาน
+        </div>
+        <div class="info-card">
+          <b>🎯 Theodore Levitt: ลูกค้าซื้อทางแก้ปัญหา</b>
+          คนซื้อสว่าน 1/4 นิ้วไม่ได้อยากได้ตัวสว่าน แต่เขาอยากได้ <b>"รู 1/4 นิ้วบนผนัง"</b> เพื่อแขวนรูปครอบครัว ➔ สื่อสารที่คุณค่าปลายทาง ไม่ใช่สเปกเครื่องจักร
+        </div>
+        <div class="info-card">
+          <b>⚡ Clayton Christensen: Jobs-to-be-Done (JTBD)</b>
+          ผู้บริโภคไม่ได้ซื้อสินค้า แต่เขากำลัง <b>"จ้าง (Hire)"</b> สินค้าชิ้นนั้นให้มาทำหน้าที่บางอย่างให้ชีวิตเขาง่ายขึ้นหรือดูดีขึ้น
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">3</span>Mind Map: คุณค่า 5 มิติในมุมมองลูกค้า (สำหรับเขียนตอบข้อสอบ Case Study)</div>
+    <div class="viz-scroll"><div class="mindmap">
+      <svg class="mm-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <line x1="50" y1="50" x2="50" y2="13"/><line x1="50" y1="50" x2="84" y2="38"/>
+        <line x1="50" y1="50" x2="72" y2="86"/><line x1="50" y1="50" x2="28" y2="86"/>
+        <line x1="50" y1="50" x2="16" y2="38"/>
+      </svg>
+      <div class="mm-hub" data-tip="คุณค่าในมุมผู้บริโภคมีหลายมิติ (Sheth, Newman & Gross, 1991) ➔ ใน Case ควรตอบให้ครบ 4–5 มิติ">VALUE<small>คุณค่า 5 มิติ</small></div>
+      <div class="mm-node" style="left:50%;top:13%;" data-tip="<b>คำถามในห้องสอบ:</b> สินค้าช่วยให้งานเสร็จเร็วขึ้น ดีขึ้น ประหยัดขึ้นอย่างไร?"><span class="ico">⚙️</span><b>1. Functional</b>ใช้งานได้ แก้ปัญหาตรงจุด ทนทาน</div>
+      <div class="mm-node" style="left:84%;top:38%;" data-tip="<b>คำถามในห้องสอบ:</b> ลูกค้ารู้สึกอย่างไรเมื่อใช้? ลดความกลัว / เพิ่มความมั่นใจไหม?"><span class="ico">❤️</span><b>2. Emotional</b>อุ่นใจ มั่นใจ มีความสุข สบายใจ</div>
+      <div class="mm-node" style="left:72%;top:86%;" data-tip="<b>คำถามในห้องสอบ:</b> ช่วยเสริมภาพลักษณ์ / สถานะในสายตาคนรอบข้างอย่างไร?"><span class="ico">👥</span><b>3. Social</b>ภาพลักษณ์ สถานะ สังคมยอมรับ</div>
+      <div class="mm-node" style="left:28%;top:86%;" data-tip="<b>คำถามในห้องสอบ:</b> ประหยัดเงินระยะยาวไหม? Total Cost of Ownership (TCO) ต่ำกว่าคู่แข่งหรือเปล่า?"><span class="ico">💰</span><b>4. Economic</b>คุ้มค่าเงิน TCO ต่ำ ประหยัดยาว</div>
+      <div class="mm-node" style="left:16%;top:38%;" data-tip="<b>คำถามในห้องสอบ:</b> สอดคล้อง SDG ข้อใด? เช่น SDG 3 สุขภาพ, SDG 12 บริโภคยั่งยืน / Triple Bottom Line: People-Planet-Profit"><span class="ico">🌱</span><b>5. Sustainable</b>ESG / SDGs / 3Ps ยั่งยืน</div>
+    </div></div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>จากความต้องการ สู่การแลกเปลี่ยนคุณค่า (Value Exchange Flow)</div>
+    <div class="viz-scroll"><div class="chev-flow minw">
+      <div class="bg-a4" data-tip="<b>Needs</b> สภาวะขาดแคลนตามธรรมชาติ (Maslow) นักการตลาดไม่ได้สร้าง Needs ขึ้นมา">Needs<small>ความจำเป็นพื้นฐานของมนุษย์</small></div>
+      <div class="bg-a3" data-tip="<b>Wants</b> Needs ที่ถูกหล่อหลอมด้วยวัฒนธรรม/สังคม เช่น หิว ➔ อยากกินชาบู">Wants<small>รูปแบบความต้องการตามวัฒนธรรม</small></div>
+      <div class="bg-a2" data-tip="<b>Demands</b> Wants ที่มีอำนาจซื้อและความเต็มใจจ่ายรองรับ (Willingness to Pay)">Demands<small>Wants + กำลังซื้อจริง</small></div>
+      <div class="bg-a1" data-tip="<b>Value Exchange</b> การซื้อเกิดเมื่อ คุณค่าที่รับรู้ > ราคา และ ราคา > ต้นทุนธุรกิจ (มี Margin กำไร)">Value Exchange<small>Value &gt; Price &gt; Cost</small></div>
+    </div></div>
+  </div>
+</div>`;
+tipDb[1] = `เริ่มตอบ Case จาก <b>ปัญหาของลูกค้า</b> ไม่ใช่ฟีเจอร์สินค้า แล้วเขียนคุณค่าให้ครบ 4–5 มิติ โดยใส่มิติ <b>Sustainable (SDGs/ESG)</b> ทุกครั้ง`;
+
+/* ---------------- STEP 2 : โอกาสตลาด ---------------- */
+vizDb[2] = `
+<div class="viz-grid">
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">1</span>ช่องว่างตลาด (Market Gaps) &amp; Painkiller vs Vitamin</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="tiles" style="width:100%;">
+          <div class="tile hl" data-tip="<b>Unmet Needs</b> ปัญหาที่ยังไม่มีใครแก้ได้เลย ➔ โอกาส Blue Ocean"><span class="ico">🌊</span><b>Unmet</b>ยังไม่มีใครแก้</div>
+          <div class="tile hl" data-tip="<b>Underserved Needs</b> มีสินค้าแล้วแต่ยังแพง ช้า ยุ่งยาก ➔ โอกาส Disruption"><span class="ico">🔧</span><b>Underserved</b>มีแล้วแต่ไม่ดีพอ</div>
+          <div class="tile" data-tip="<b>Over-served Needs</b> ฟังก์ชันซับซ้อนเกินจำเป็น ➔ ทำตัวง่ายกว่าถูกกว่าเข้ามาตีตลาด"><span class="ico">🎈</span><b>Over-served</b>ฟังก์ชันล้นเกิน</div>
+        </div>
+        <div class="vs" style="width:100%;margin-top:12px;">
+          <div class="vs-card green"><span class="ico">💊</span><b>Painkiller</b>ยาแก้ปวด (ต้องมี)</div>
+          <div class="vs-mid">VS</div>
+          <div class="vs-card amber"><span class="ico">🍊</span><b>Vitamin</b>วิตามิน (มีก็ดี)</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card acc">
+          <b>🎯 เกณฑ์ 4 ข้อ คัดกรองโอกาสทางธุรกิจ</b>
+          1. <b>ความถี่ & ความรุนแรง:</b> ลูกค้าเจอปัญหานี้บ่อยและเจ็บปวดแค่ไหน?<br>
+          2. <b>ขนาดตลาด:</b> มีคนเจอปัญหานี้มากพอให้ธุรกิจคุ้มทุนหรือไม่?<br>
+          3. <b>Willingness to Pay (WTP):</b> ลูกค้ายินดีจ่ายเงินเพื่อแก้ปัญหาหรือไม่?<br>
+          4. <b>Resource Fit:</b> ธุรกิจเรามีจุดแข็งทำได้เหนือกว่าคู่แข่งไหม?
+        </div>
+        <div class="info-card green">
+          <b>💊 ธุรกิจที่รอดต้องเป็น Painkiller</b>
+          แก้ปัญหาที่เร่งด่วน รุนแรง เกิดซ้ำบ่อย ลูกค้าจะตัดสินใจซื้อเร็วกว่าและยอมจ่ายราคาสูงกว่าวิตามิน (Nice-to-have)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">2</span>พีระมิด Product-Market Fit (Dan Olsen)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="pyramid" style="width:100%;">
+          <div class="pyr-cap">PRODUCT SPACE (สิ่งที่เราสร้าง)</div>
+          <div class="pyr-layer bg-a1" style="width:48%;" data-tip="<b>ชั้น 5 UX</b> ประสบการณ์ใช้งานที่ลื่นไหล ไร้รอยต่อ">⑤ UX<small>ประสบการณ์ใช้งาน</small></div>
+          <div class="pyr-layer bg-a2" style="width:62%;" data-tip="<b>ชั้น 4 Feature Set</b> ฟังก์ชันที่จำเป็น (เริ่มจาก MVP)">④ Feature Set<small>ฟังก์ชัน / MVP</small></div>
+          <div class="pyr-layer bg-a3" style="width:76%;" data-tip="<b>ชั้น 3 Value Proposition</b> ข้อเสนอคุณค่าที่แตกต่าง">③ Value Proposition<small>ข้อเสนอคุณค่า</small></div>
+          <div class="pyr-line"><span>━ PRODUCT-MARKET FIT ━</span></div>
+          <div class="pyr-layer" style="width:88%;background:#475569;" data-tip="<b>ชั้น 2 Underserved Needs</b> ความต้องการที่ยังตอบสนองได้ไม่ดีพอ">② Underserved Needs<small>ปัญหาที่ยังไม่ถูกตอบ</small></div>
+          <div class="pyr-layer" style="width:100%;background:#1E293B;" data-tip="<b>ชั้น 1 Target Customer</b> กลุ่มลูกค้าที่ชัดเจน (ฐานราก)">① Target Customer<small>กลุ่มลูกค้าเป้าหมาย</small></div>
+          <div class="pyr-cap">MARKET SPACE (ตลาดที่มีอยู่จริง)</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card acc">
+          <b>📐 ลำดับขั้นของ Dan Olsen</b>
+          ห้ามเริ่มจากสร้าง Product ก่อน! ต้องเริ่มจาก <b>Market Space (ฐานล่าง)</b> เสมอ: ระบุ Target Customer ให้ชัด หา Underserved Needs ให้เจอ แล้วจึงสร้าง Value Proposition มาประกบให้เกิด Fit
+        </div>
+        <div class="info-card">
+          <b>⚡ เส้นข้ามแดน Product-Market Fit Line</b>
+          จุดเชื่อมต่อระหว่าง 'ความต้องการที่แท้จริง' กับ 'สิ่งที่เรานำเสนอ' หากสองส่วนนี้ไม่ตรงกัน สินค้าจะล้มเหลวแม้จะมีเทคโนโลยีที่ยอดเยี่ยม
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">3</span>Flowchart กระบวนการตัดสินใจซื้อ 5 ขั้น &amp; จุดติดขัด (Friction Points)</div>
+    <div class="viz-scroll" style="padding-top:14px;">
+      <div class="flow minw">
+        <div class="flow-node fill" data-tip="<b>Need Recognition</b> สิ่งเร้าภายใน (หิว/ขาด) หรือสิ่งเร้าภายนอก (โฆษณา/เพื่อน)"><span class="ico">💡</span><b>1. ตระหนักปัญหา</b>Need Recognition</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="<b>Information Search</b> ค้นหาทางกูเกิล โซเชียล รีวิว ปรึกษาเพื่อน"><span class="ico">🔎</span><b>2. ค้นหาข้อมูล</b>Info Search</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="<b>Evaluation of Alternatives</b> เปรียบเทียบแบรนด์ใน Evoked Set ด้วยราคา ฟังก์ชัน ความน่าเชื่อถือ"><span class="pin">⚠️ Friction</span><span class="ico">⚖️</span><b>3. เปรียบเทียบ</b>Evaluate</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="<b>Purchase Decision</b> จุดเสี่ยงหลุด: จ่ายเงินยาก ค่าส่งแพง ระบบช้า ➔ ต้องลดแรงเสียดทานตรงนี้"><span class="pin">⚠️ Friction</span><span class="ico">🛒</span><b>4. ตัดสินใจซื้อ</b>Purchase</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="<b>Post-Purchase</b> ประเมินหลังซื้อ: ต่ำกว่าคาด = เสียใจ / เกินคาด = Customer Delight &amp; บอกต่อ"><span class="ico">⭐</span><b>5. หลังการซื้อ</b>Post-Purchase</div>
+      </div>
+      <div class="loop-back" style="min-width:620px;"><span>🔁 พอใจเกินคาด ➔ ซื้อซ้ำ &amp; บอกต่อ (Customer Loyalty &amp; Advocacy)</span></div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>กล่องดำผู้ซื้อ (CAB Model) &amp; ความเกี่ยวพันในการซื้อ (Involvement)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="chev-flow" style="width:100%;">
+          <div class="bg-a3" data-tip="<b>Cognitive</b> ข้อมูล ความรู้ ข้อเท็จจริง">🧠 Cognitive<small>รู้ / เชื่อ</small></div>
+          <div class="bg-a2" data-tip="<b>Affective</b> ความชอบ ทัศนคติ อารมณ์">❤️ Affective<small>ชอบ / รู้สึก</small></div>
+          <div class="bg-a1" data-tip="<b>Behavioral</b> ความตั้งใจซื้อ ทดลอง บอกต่อ">🛒 Behavioral<small>ตั้งใจซื้อ</small></div>
+        </div>
+        <div class="chips center" style="margin-top:12px;">
+          <span class="chip" data-tip="<b>Selective Attention</b> เลือกเปิดรับเฉพาะสารที่ตรงกับปัญหาตนเอง">👀 Selective Attention</span>
+          <span class="chip" data-tip="<b>Selective Distortion</b> ตีความข้อมูลให้เข้าข้างความเชื่อเดิม">🌀 Selective Distortion</span>
+          <span class="chip" data-tip="<b>Selective Retention</b> จดจำเฉพาะข้อมูลที่สอดคล้องกับค่านิยมตน">🧷 Selective Retention</span>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="vs">
+          <div class="vs-card blue" data-tip="ราคาสูง ความเสี่ยงสูง ซื้อไม่บ่อย เช่น บ้าน รถ ประกัน เรียน MBA ➔ ให้ข้อมูลละเอียด สร้างความเชื่อมั่น"><span class="ico">🏠</span><b>High Involvement</b>ข้อมูลเชิงลึก • ให้คำปรึกษา</div>
+          <div class="vs-mid">VS</div>
+          <div class="vs-card amber" data-tip="ราคาต่ำ ซื้อตามความคุ้นเคย เช่น ของใช้ FMCG ขนม น้ำอัดลม ➔ Brand Salience ซื้อง่าย โปรหน้าร้าน"><span class="ico">🥤</span><b>Low Involvement</b>จำชื่อได้ • หาซื้อง่าย</div>
+        </div>
+        <div class="info-card" style="margin-top:8px;">
+          <b>👥 อิทธิพลภายนอก:</b> กลุ่มอ้างอิง (Reference Groups), วัฏจักรชีวิตครอบครัว (Family Life Cycle) และวัฒนธรรมย่อย ส่งผลต่อพฤติกรรมซื้ออย่างมีนัยสำคัญ
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[2] = `ย่อหน้าแรกของ Case ต้องชี้ให้ชัดว่าเราแก้ <b>Unmet หรือ Underserved Need</b> ข้อไหน และลูกค้าติด <b>Friction Point</b> ที่ขั้นไหนของการตัดสินใจซื้อ`;
+
+/* ---------------- STEP 3 : STP & Persona ---------------- */
+vizDb[3] = `
+<div class="viz-grid">
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">1</span>Flow กระบวนการเลือกกลุ่มเป้าหมาย (STP Framework)</div>
+    <div class="viz-scroll"><div class="chev-flow minw">
+      <div class="bg-a4" data-tip="แบ่งตลาดด้วยเกณฑ์ 4 ด้าน (Geo / Demo / Psycho / Behavior)">① Segmentation<small>แบ่งส่วนตลาด 4 มิติ</small></div>
+      <div class="bg-a3" data-tip="ตรวจด้วย MASDA และประเมินขนาดด้วย TAM-SAM-SOM">② Evaluate<small>กรองด้วย MASDA &amp; วัดขนาด</small></div>
+      <div class="bg-a2" data-tip="เลือกกลยุทธ์ Mass / Differentiated / Niche / Micro">③ Targeting<small>เลือกกลุ่มที่ชนะได้จริง</small></div>
+      <div class="bg-a1" data-tip="สรุปเป็นตัวละคร 1 คน ส่งต่อไปออกแบบ VPC (Step 4)">④ Persona<small>ส่งต่อไปยัง Value Map</small></div>
+    </div></div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">2</span>เกณฑ์แบ่งส่วนตลาด 4 ด้าน (Segmentation Bases)</div>
+    <div class="tiles" style="grid-template-columns:1fr 1fr;">
+      <div class="tile" data-tip="ภูมิภาค เมือง/ชนบท คอนโด/บ้านเดี่ยว สภาพภูมิอากาศ"><span class="ico">🗺️</span><b>Geographic</b>อยู่ที่ไหน • สภาพแวดล้อม</div>
+      <div class="tile" data-tip="อายุ เพศ รายได้ อาชีพ การศึกษา วงจรครอบครัว — บอกได้ว่า 'ใคร' แต่ไม่บอก 'ทำไม'"><span class="ico">🪪</span><b>Demographic</b>อายุ เพศ รายได้ อาชีพ</div>
+      <div class="tile" data-tip="ค่านิยม บุคลิกภาพ ไลฟ์สไตล์ (AIO) เช่น สายรักสุขภาพ สายกรีน Early Adopter"><span class="ico">🧠</span><b>Psychographic</b>ค่านิยม ไลฟ์สไตล์ AIO</div>
+      <div class="tile hl" data-tip="Benefit Sought (ประโยชน์ที่มองหา), Usage Rate (Heavy/Light, กฎ 80/20), Loyalty"><span class="badge-corner">ทรงพลังสุด ★</span><span class="ico">🛒</span><b>Behavioral</b>ประโยชน์ที่หา • การซื้อ</div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">3</span>วัดขนาดตลาดแบบกรวย 3 ชั้น: TAM ⊃ SAM ⊃ SOM</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="rings">
+          <div class="ring r1 bg-l1" data-tip="<b>TAM</b> Total Addressable Market — ความต้องการทั้งอุตสาหกรรม เช่น 60,000 ล้านบาท">TAM<small>ตลาดรวมทั้งระบบ<br>เช่น 60,000 ลบ.</small></div>
+          <div class="ring r2 bg-l2" data-tip="<b>SAM</b> Serviceable Available Market — ตลาดที่เข้าถึงได้ด้วยโมเดลเรา เช่น 8,000 ล้านบาท">SAM<small>ส่วนที่เข้าถึงได้<br>8,000 ลบ.</small></div>
+          <div class="ring r3 bg-a1" data-tip="<b>SOM</b> Serviceable Obtainable Market — เป้าหมาย 1–3 ปีแรก เช่น 5% ของ SAM = 400 ล้านบาท">SOM<small>เป้าหมาย 1-3 ปี<br>400 ลบ.</small></div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>🌐 TAM (Total Addressable Market)</b>
+          มูลค่าตลาดรวม 100% ถ้าทุกคนที่ต้องการสินค้านี้ซื้อทั้งหมด (แสดงเพดานสูงสุดของอุตสาหกรรม)
+        </div>
+        <div class="info-card">
+          <b>🎯 SAM (Serviceable Available Market)</b>
+          ส่วนของตลาดที่เราเข้าถึงได้จริงด้วยช่องทางจัดจำหน่าย กฎหมาย และขอบเขตภูมิศาสตร์ปัจจุบัน
+        </div>
+        <div class="info-card acc">
+          <b>⭐ SOM (Serviceable Obtainable Market)</b>
+          เป้าหมายยอดขายจริงระยะ 1–3 ปีแรก ใช้คำนวณ Financial Feasibility และเป็นฐานในการของบประมาณ
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">4</span>เกณฑ์ประเมินกลุ่มตลาด: M-A-S-D-A</div>
+    <div class="tiles t5">
+      <div class="tile" data-tip="วัดขนาด กำลังซื้อ ข้อมูลประชากรได้ชัดเจน"><div class="big">M</div><b>Measurable</b>วัดได้</div>
+      <div class="tile" data-tip="สื่อสารและส่งสินค้าไปถึงได้อย่างคุ้มค่า"><div class="big">A</div><b>Accessible</b>เข้าถึงได้</div>
+      <div class="tile" data-tip="ใหญ่พอจะสร้างผลกำไรคุ้มค่าการลงทุน"><div class="big">S</div><b>Substantial</b>คุ้มกำไร</div>
+      <div class="tile" data-tip="ตอบสนองต่อกลยุทธ์การตลาดแตกต่างจากกลุ่มอื่น"><div class="big">D</div><b>Differentiable</b>ต่างชัดเจน</div>
+      <div class="tile" data-tip="องค์กรมีทรัพยากรจัดทำแผนตลาดได้จริง"><div class="big">A</div><b>Actionable</b>ทำได้จริง</div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">5</span>ตัวอย่าง Customer Persona 1 หน้า (สำหรับส่งต่อ VPC)</div>
+    <div class="persona">
+      <div class="persona-head bg-a1"><div class="avatar">👩‍💼</div><div><b>คุณมิ้นท์ 28 ปี • การตลาดบริษัทเอกชน</b><span>คอนโดย่านอโศก • รายได้ 45,000 บาท/เดือน</span></div></div>
+      <div class="persona-rows">
+        <div data-tip="เป้าหมายชีวิตและค่านิยม"><span>🎯 Goals / Values</span>ก้าวหน้าในสายงาน ดูแลสุขภาพให้ดูดี มีเวลาให้ตัวเอง</div>
+        <div data-tip="ปัญหาอุปสรรคที่ต้องเจอทุกวัน"><span>😣 Key Pain Points</span>เวลาน้อย อาหารคลีนทั่วไปรสชาติจืดชืด รู้สึกผิดเวลาใช้ขยะพลาสติก</div>
+        <div data-tip="พฤติกรรมสื่อและการตัดสินใจ"><span>📱 Media &amp; Purchasing</span>เสพคอนเทนต์ IG/TikTok เชื่อรีวิว Influencer สายสุขภาพที่จริงใจ</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">6</span>สเปกตรัมกลยุทธ์เลือกตลาดเป้าหมาย (Mass ➔ Niche ➔ Micro)</div>
+    <div class="spectrum-bar"></div>
+    <div class="spectrum-ends"><span>◀ ตลาดกว้าง (ต้นทุนต่ำ / Economies of Scale)</span><span>เฉพาะเจาะจงสูงสุด (Customization) ▶</span></div>
+    <div class="spectrum-cols">
+      <div class="tile" data-tip="Undifferentiated Marketing: สินค้าเดียวเจาะทุกคน เช่น น้ำตาล เกลือ Mixue"><span class="ico">📢</span><b>Mass</b>ตลาดรวม<br><small>Scale สูง แข่งราคา</small></div>
+      <div class="tile" data-tip="Differentiated Marketing: หลายกลุ่ม ออกแบบหลายสินค้า เช่น Toyota, Unilever"><span class="ico">🧩</span><b>Differentiated</b>หลายกลุ่ม<br><small>ยอดขายรวมสูง ต้นทุนสูง</small></div>
+      <div class="tile hl" data-tip="Concentrated Marketing: โฟกัสกลุ่มเล็กที่เชี่ยวชาญ เหมาะกับผู้เริ่มต้น/SME"><span class="badge-corner">เหมาะเริ่มธุรกิจ ★</span><span class="ico">🎯</span><b>Niche</b>ตลาดเฉพาะกลุ่ม<br><small>ภักดีสูง กำไรต่อหน่วยดี</small></div>
+      <div class="tile" data-tip="Micromarketing: 1-to-1 หรือ Local Marketing เช่น Nike By You"><span class="ico">🔬</span><b>Micro</b>ระดับบุคคล<br><small>ตรงใจสุด ต้องใช้ Data/AI</small></div>
+    </div>
+    <div class="chips center" style="margin-top:14px;">
+      <span class="chip good">✔ สูตร 3 เหตุผลเลือกกลุ่มนี้: 1) Unmet Need รุนแรง</span>
+      <span class="chip good">2) Willingness to Pay สูง</span>
+      <span class="chip good">3) Resource Fit กับความถนัดของธุรกิจเรา</span>
+    </div>
+  </div>
+</div>`;
+tipDb[3] = `ถ้าโจทย์ถาม <b>“ทำไมเลือกกลุ่มนี้?”</b> ตอบ 3 เหตุผล (Unmet Need, Willingness to Pay, Resource Fit) แล้วปิดด้วย <b>Persona 1 ตัวละคร</b>`;
+
+/* ---------------- STEP 4 : VPC ---------------- */
+vizDb[4] = `
+<div class="viz-grid">
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">1</span>Value Proposition Canvas (VPC)</div>
+    <div class="split-duo wide-left top">
+      <div class="duo-side">
+        <div class="viz-scroll" style="width:100%;"><div class="vpc-wrap">
+          <div class="vpc-labels"><div>⬛ VALUE MAP (ธุรกิจเรา)</div><div></div><div>⚪ CUSTOMER PROFILE (ลูกค้า)</div></div>
+          <div class="vpc">
+            <div class="vpc-square">
+              <div class="ps soft" data-tip="<b>Products & Services</b> รายการสินค้า บริการ แพลตฟอร์มที่ส่งมอบ"><span class="ico">🎁</span><b>Products &amp; Services</b>สินค้า / บริการ</div>
+              <div class="gc" data-tip="<b>Gain Creators</b> มอบผลลัพธ์ที่ลูกค้าอยากได้อย่างไร"><span class="ico">📈</span><b>Gain Creators</b>สร้างประโยชน์</div>
+              <div class="pr" data-tip="<b>Pain Relievers</b> บรรเทาหรือขจัดปัญหาของลูกค้าอย่างไร"><span class="ico">🩹</span><b>Pain Relievers</b>บรรเทาปัญหา</div>
+            </div>
+            <div class="vpc-fit"><span>Gain ⟷ Fit</span><span>⇄</span><span>Pain ⟷ Fit</span></div>
+            <div class="vpc-circle">
+              <div class="g" data-tip="<b>Gains</b> สิ่งที่ลูกค้าคาดหวังหรืออยากได้เกินคาด"><span class="ico">😊</span><b>Gains</b>สิ่งที่อยากได้</div>
+              <div class="p" data-tip="<b>Pains</b> อุปสรรค ความเสี่ยง ค่าใช้จ่ายที่ไม่พึงประสงค์"><span class="ico">😣</span><b>Pains</b>ปัญหา / ความเสี่ยง</div>
+              <div class="j soft" data-tip="<b>Customer Jobs</b> Functional (งานกายภาพ), Social (สถานะสังคม), Emotional (ความสบายใจ)"><span class="ico">🧰</span><b>Customer Jobs</b>งานที่ต้องทำ</div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card acc">
+          <b>🎯 กฎเหล็ก 1-to-1 Mapping</b>
+          Pain Reliever ทุกข้อ <b>ต้องชี้กลับไปแก้ Pain ของลูกค้าได้เสมอ</b> อย่าเขียนฟีเจอร์สินค้าลอยๆ โดยไม่มีปัญหาของลูกค้ารองรับ
+        </div>
+        <div class="info-card">
+          <b>🧰 Customer Jobs 3 มิติ</b>
+          1. <b>Functional:</b> งานรูปธรรม เช่น เดินทางไปทำงาน, รีดผ้า<br>
+          2. <b>Social:</b> ดูดีในสายตาผู้อื่น, มีสถานะทางสังคมที่ยอมรับ<br>
+          3. <b>Emotional:</b> ความรู้สึกอุ่นใจ มั่นใจ ไร้ความกังวล
+        </div>
+        <div class="info-card green">
+          <b>💎 ประโยคทอง USP ปิดท้ายคำตอบ</b>
+          <em>"ช่วยให้ <b>[Persona]</b> ทำ <b>[Job]</b> สำเร็จ โดยลด <b>[Key Pain]</b> และมอบ <b>[Key Gain]</b> ได้เหนือกว่าคู่แข่ง"</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">2</span>เคสเสื้อเชิ้ต GQ White: แปลง Pain ของคนทำงาน เป็นนวัตกรรมที่ขายดีถล่มทลาย</div>
+    <div class="map-head"><div>😣 Pain ของคนทำงาน</div><div></div><div>🛠️ GQ Solution (Pain Reliever / Gain Creator)</div></div>
+    <div class="map-row" data-tip="Severe Pain: เสียความมั่นใจกลางวัน"><div class="from"><b>☕ กาแฟหกใส่เสื้อกลางวัน</b>เลอะเทอะ ซักไม่ออก เสียความมั่นใจในที่ทำงาน</div><div class="arr">➔</div><div class="to"><b>GQ Guard</b>สารเคลือบสะท้อนน้ำ เทคโนโลยีนาโน กาแฟไหลผ่านไม่ซึม</div></div>
+    <div class="map-row" data-tip="ปัญหาสะสม ทำให้เสื้อดูเก่าเร็ว"><div class="from"><b>🟡 คอเสื้อเหลืองคราบไคล</b>ซักยาก ต้องขยี้จนปกเสียทรง</div><div class="arr">➔</div><div class="to"><b>GQ Collar</b>ปกเคลือบสารพิเศษ ล้างคราบเหงื่อออกง่ายเพียงลูบน้ำ</div></div>
+    <div class="map-row" data-tip="เสียเวลาตอนเช้า"><div class="from"><b>👔 ยับง่าย รีดนาน</b>เสียเวลาทุกเช้าก่อนออกจากบ้าน</div><div class="arr">➔</div><div class="to"><b>Wrinkle-Free</b>ผ้าคอตตอนทอพิเศษ สะบัดตาก แห้งแล้วแทบไม่ต้องรีด</div></div>
+    <div class="map-row" data-tip="Gain Creator: เกินความคาดหมาย"><div class="from"><b>😮‍💨 คอเสื้ออึดอัด</b>น้ำหนักขึ้นนิดเดียวติดกระดุมคอไม่ได้</div><div class="arr">➔</div><div class="to"><b>GQ Stretch Strap</b>กระดุมคอสายยืด ขยายได้อีก 1 ซม. ไม่อึดอัด</div></div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">3</span>บันได Gains 4 ขั้น &amp; 3 ระดับของความ Fit</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="stairs" style="width:100%;">
+          <div class="stair bg-l1" style="height:34%;" data-tip="ถ้าไม่มีคือใช้ไม่ได้ เช่น มือถือต้องโทรเข้าออกได้">Required<small>จำเป็นต้องมี</small></div>
+          <div class="stair bg-l2" style="height:54%;" data-tip="มาตรฐานทั่วไป เช่น โรงแรมต้องสะอาด มี Wi-Fi">Expected<small>คาดหวังทั่วไป</small></div>
+          <div class="stair bg-l3" style="height:76%;" data-tip="อยากได้แต่ไม่คาดหวัง เช่น ชาร์จแบตเตอรี่เร็วพิเศษ">Desired<small>อยากได้เสริม</small></div>
+          <div class="stair bg-a1" style="height:100%;color:#FFFFFF;" data-tip="สร้างความประทับใจเกินคาด ลอกเลียนแบบได้ยาก"><span>Unexpected</span><small style="color:#FFFFFF;">เกินคาดเดา ⭐</small></div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="chev-flow" style="width:100%;">
+          <div class="bg-a3" data-tip="บนกระดาษ: Relievers/Creators ตรงกับ Pain/Gain ที่สำคัญ">Problem-Solution<small>บนกระดาษ (Paper Fit)</small></div>
+          <div class="bg-a2" data-tip="ในตลาดจริง: ลูกค้าซื้อซ้ำ บอกต่อ LTV > CAC">Product-Market<small>ในตลาดจริง (Market Fit)</small></div>
+          <div class="bg-a1" data-tip="ทำกำไรและขยายขนาดได้จริง (Scalable & Profitable)">Business Model<small>ทำกำไรได้ (Scale Fit)</small></div>
+        </div>
+        <div class="ftile" style="margin-top:10px;">
+          <span class="lbl">สูตรประโยค USP 1 บรรทัด</span>
+          ช่วยให้ <b>[Persona]</b> ทำ <b>[Job]</b> สำเร็จ โดยขจัด <b>[Key Pain]</b> และมอบ <b>[Key Gain]</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[4] = `<b>กฎ 1-to-1 Mapping:</b> Pain Reliever ทุกข้อต้องชี้กลับไปแก้ Pain ที่ระบุไว้ อย่าเขียนฟีเจอร์ลอย ๆ แล้วปิดด้วยประโยค <b>USP</b> 1 บรรทัด`;
+
+/* ---------------- STEP 5 : Marketing Mix ---------------- */
+function plcChart() {
+  return `
+  <svg viewBox="0 0 640 250" role="img" aria-label="Product Life Cycle">
+    <rect x="40" y="20" width="130" height="180" fill="#F8FAFC" data-tip="<b>Introduction</b> สร้าง Awareness • สินค้ารุ่นพื้นฐาน/MVP • ราคา Skimming หรือ Penetration • ช่องทางคัดเลือก"/>
+    <rect x="170" y="20" width="150" height="180" fill="#F1F5F9" data-tip="<b>Growth</b> เพิ่มฟังก์ชัน/บริการเสริม • ขยายช่องทางให้ทั่วถึง • สร้างแบรนด์"/>
+    <rect x="320" y="20" width="150" height="180" fill="#F8FAFC" data-tip="<b>Maturity</b> ปรับปรุงสินค้า • หาตลาดใหม่ • แข่งโปรโมชัน • รักษาลูกค้าเดิม"/>
+    <rect x="470" y="20" width="140" height="180" fill="#F1F5F9" data-tip="<b>Decline</b> ลดค่าใช้จ่าย (Harvesting) หรือยุติสินค้าที่ไม่ทำกำไร"/>
+    <line x1="40" y1="200" x2="615" y2="200" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="200" stroke="#94A3B8" stroke-width="2"/>
+    <path d="M40,195 C100,193 140,185 170,173 C220,150 270,85 320,58 C360,38 420,30 470,48 C530,70 570,110 605,140" fill="none" style="stroke:var(--drawer-border,#E65100)" stroke-width="4" stroke-linecap="round"/>
+    <text x="105" y="38" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0F172A">Introduction</text>
+    <text x="245" y="38" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0F172A">Growth</text>
+    <text x="395" y="34" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0F172A">Maturity</text>
+    <text x="540" y="38" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0F172A">Decline</text>
+    <text x="105" y="222" text-anchor="middle" font-size="11" fill="#334155">สร้าง Awareness</text>
+    <text x="245" y="222" text-anchor="middle" font-size="11" fill="#334155">ขยายช่องทางกระจาย</text>
+    <text x="395" y="222" text-anchor="middle" font-size="11" fill="#334155">ปรับสินค้า/รักษาฐาน</text>
+    <text x="540" y="222" text-anchor="middle" font-size="11" fill="#334155">Harvest / ยุติสินค้า</text>
+    <text x="320" y="244" text-anchor="middle" font-size="11" font-weight="700" fill="#64748B">เวลา (Life Cycle) ➔ [เส้นโค้ง = ยอดขายรวม]</text>
+  </svg>`;
+}
+
+vizDb[5] = `
+<div class="viz-grid">
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">1</span>หลัก Traceability: ทุกตัวแปรใน 4Ps/7Ps ต้องสืบย้อนกลับไปที่ VPC ได้</div>
+    <div class="map-head"><div>🧩 จาก VPC (Step 4)</div><div></div><div>📊 สู่ Marketing Mix (Step 5)</div></div>
+    <div class="map-row"><div class="from soft" style="border-color:#FDBA74;color:#7C2D12;"><b>🧰 Customer Jobs</b>งานที่ลูกค้าต้องทำ</div><div class="arr">➔</div><div class="to" style="background:#EFF6FF;border-color:#93C5FD;color:#1E3A8A;" data-tip="ออกแบบ Core Benefit ให้ตอบ Job หลัก"><b>Product</b>Core Benefit / Features ตรงจุด</div></div>
+    <div class="map-row"><div class="from soft" style="border-color:#FDBA74;color:#7C2D12;"><b>😣 Pains</b>อุปสรรค ความยุ่งยาก</div><div class="arr">➔</div><div class="to" style="background:#EFF6FF;border-color:#93C5FD;color:#1E3A8A;" data-tip="ลดแรงเสียดทาน: ซื้อง่าย ส่งไว บริการรวดเร็ว"><b>Place + Process</b>ซื้อง่าย ไร้รอยต่อ ลดเวลารอคอย</div></div>
+    <div class="map-row"><div class="from soft" style="border-color:#FDBA74;color:#7C2D12;"><b>😊 Gains</b>สิ่งที่ลูกค้าอยากได้</div><div class="arr">➔</div><div class="to" style="background:#EFF6FF;border-color:#93C5FD;color:#1E3A8A;" data-tip="สื่อสาร Gain ผ่าน Storytelling และยืนยันด้วยหลักฐานเชิงประจักษ์"><b>Promotion + Physical Evidence</b>สื่อสารคุณค่า &amp; รีวิวยืนยัน</div></div>
+    <div class="map-row"><div class="from soft" style="border-color:#FDBA74;color:#7C2D12;"><b>💎 Perceived Value</b>คุณค่าที่ลูกค้ารับรู้</div><div class="arr">➔</div><div class="to" style="background:#EFF6FF;border-color:#93C5FD;color:#1E3A8A;" data-tip="Value-Based Pricing: ตั้งราคาตามคุณค่าที่ลูกค้ารับรู้"><b>Price</b>Value-Based Pricing (ไม่ใช้ Cost-Plus)</div></div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">2</span>ผลิตภัณฑ์ 3 ระดับ (Three Levels of Product — Philip Kotler)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="rings">
+          <div class="ring r1 bg-l1" data-tip="<b>Augmented Product</b> บริการส่วนเพิ่มที่คู่แข่งลอกยาก เช่น ส่งฟรี รับประกัน 24 ชม.">③ Augmented<small>รับประกัน ส่งฟรี ปรึกษา 24 ชม.</small></div>
+          <div class="ring r2 bg-l2" data-tip="<b>Actual Product</b> รูปลักษณ์สินค้า แบรนด์ คุณภาพ บรรจุภัณฑ์ ฟีเจอร์">② Actual<small>แบรนด์ ดีไซน์ สเปก แพ็กเกจ</small></div>
+          <div class="ring r3 bg-a1" data-tip="<b>Core Customer Value</b> ประโยชน์หลักที่ลูกค้าซื้อจริง เช่น พักผ่อน ปลอดภัย">① Core<small>ประโยชน์หลัก</small></div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>① Core Customer Value (แก่นคุณค่า)</b>
+          ประโยชน์แท้จริงที่ลูกค้าจ่ายเงินซื้อ เช่น ซื้อโรงแรม = การนอนหลับสนิทและปลอดภัย
+        </div>
+        <div class="info-card">
+          <b>② Actual Product (ตัวผลิตภัณฑ์จริง)</b>
+          ระดับคุณภาพ, ฟังก์ชันการใช้งาน, ดีไซน์, ชื่อแบรนด์ และบรรจุภัณฑ์ที่จับต้องได้
+        </div>
+        <div class="info-card acc">
+          <b>③ Augmented Product (ผลิตภัณฑ์ส่วนเพิ่ม)</b>
+          บริการเสริมที่สร้างความต่างและลอกเลียนแบบได้ยาก เช่น รับประกันตลอดชีพ, ส่งด่วนใน 1 ชม.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">3</span>กลยุทธ์ราคา: Value-Based vs. Skimming vs. Penetration</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="spectrum-cols c3" style="width:100%;">
+          <div class="tile" data-tip="ต้นทุน + Markup ➔ เสี่ยงตั้งต่ำไปหรือสูงไป"><span class="ico">🧮</span><b>Cost-Based</b>ต้นทุน+กำไร</div>
+          <div class="tile" data-tip="อิงตามคู่แข่งในตลาด ➔ นำไปสู่สงครามราคา"><span class="ico">🥊</span><b>Competitor</b>ตามคู่แข่ง</div>
+          <div class="tile hl" data-tip="ตั้งราคาจากคุณค่าที่ลูกค้ารับรู้ ➔ กลยุทธ์ที่แนะนำสำหรับ MBA"><span class="badge-corner">แนะนำ MBA ★</span><span class="ico">💎</span><b>Value-Based</b>ตามคุณค่า</div>
+        </div>
+        <div class="vs" style="width:100%;margin-top:12px;">
+          <div class="vs-card blue"><span class="ico">⬆️</span><b>Skimming</b>ราคาสูงกวาดกำไร</div>
+          <div class="vs-mid">VS</div>
+          <div class="vs-card amber"><span class="ico">⬇️</span><b>Penetration</b>ราคาต่ำเจาะตลาด</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card acc">
+          <b>💎 Value-Based Pricing คืออะไร?</b>
+          การตั้งราคาจาก <em>"มูลค่าที่สินค้าสร้างให้ลูกค้า"</em> เช่น ซอฟต์แวร์ช่วยโรงงานประหยัดเงินปีละ 10 ล้านบาท แม้ต้นทุนโค้ดจะต่ำ แต่สามารถตั้งราคาขาย 2 ล้านบาทได้อย่างสมเหตุสมผล
+        </div>
+        <div class="chips center" style="margin-top:4px;">
+          <span class="chip" data-tip="ลงท้ายด้วย 9 เช่น 199 บ.">9️⃣ Charm Pricing</span>
+          <span class="chip" data-tip="มัดรวมแพ็กเกจเพิ่ม Perceived Value">📦 Product Bundling</span>
+          <span class="chip" data-tip="ค่าสมาชิกรายเดือนสร้างกระแสเงินสดต่อเนื่อง">🔁 Subscription</span>
+          <span class="chip" data-tip="ใช้ฟรีเบื้องต้น คิดเงินฟังก์ชันโปร">🆓 Freemium</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>วงจรชีวิตผลิตภัณฑ์ (PLC) &amp; กลยุทธ์การปรับเปลี่ยนแต่ละช่วง</div>
+    <div class="chart viz-scroll"><div style="min-width:560px;">${plcChart()}</div></div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">5</span>7Ps (มุมธุรกิจ) ⟷ 7Cs (มุมลูกค้า) &amp; กลยุทธ์ช่องทาง Omnichannel</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(120px,1fr));width:100%;">
+          <div class="tile hl"><b>Product</b>➔ Solution</div>
+          <div class="tile hl"><b>Price</b>➔ Cost</div>
+          <div class="tile hl"><b>Place</b>➔ Convenience</div>
+          <div class="tile hl"><b>Promotion</b>➔ Communication</div>
+          <div class="tile"><b>People</b>➔ Caring</div>
+          <div class="tile"><b>Process</b>➔ Coordination</div>
+          <div class="tile"><b>Physical</b>➔ Confirmation</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="spectrum-cols c3" style="width:100%;">
+          <div class="tile" data-tip="วางขายทุกช่องทางที่เป็นไปได้ เหมาะกับ FMCG"><span class="ico">🏪</span><b>Intensive</b>กระจายทั่วถึง</div>
+          <div class="tile" data-tip="คัดเลือกตัวแทนจำหน่ายที่ได้มาตรฐาน"><span class="ico">🏬</span><b>Selective</b>คัดเลือกตัวแทน</div>
+          <div class="tile" data-tip="ตัวแทนรายเดียวในพื้นที่ รักษาภาพลักษณ์หรู"><span class="ico">💠</span><b>Exclusive</b>สิทธิ์เฉพาะราย</div>
+        </div>
+        <div class="info-card green" style="margin-top:6px;">
+          <b>🔄 Omnichannel vs. Multi-channel:</b> Multi-channel ต่างคนต่างขาย ข้อมูลไม่เชื่อมโยงกัน แต่ <b>Omnichannel</b> เชื่อมประสบการณ์ออฟไลน์-ออนไลน์อย่างไร้รอยต่อ เช่น ค้นหาออนไลน์ ➔ ลองที่ร้าน ➔ สั่งในแอป ➔ คืนสินค้าได้ทุกสาขา
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[5] = `สินค้าจับต้องได้เขียน <b>4Ps</b> • ธุรกิจบริการ/แพลตฟอร์มต้องเขียน <b>7Ps</b> และทุก P ต้องอธิบายได้ว่าโยงกลับไปที่ Job / Pain / Gain ข้อไหน`;
+
+/* ---------------- STEP 6 : Communicate, BMC, Test ---------------- */
+vizDb[6] = `
+<div class="viz-grid">
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">1</span>กระบวนการสื่อสารคุณค่า (Communication Process &amp; Noise)</div>
+    <div class="viz-scroll" style="padding-top:14px;">
+      <div class="flow minw">
+        <div class="flow-node fill" data-tip="แบรนด์ หรือ ธุรกิจผู้สร้างคุณค่า"><span class="ico">🏢</span><b>Sender</b>แบรนด์</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="แปลงคุณค่าให้เป็น Storytelling ภาพ วิดีโอ สโลแกน"><span class="ico">✍️</span><b>Encoding</b>เข้ารหัสคุณค่า</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="Noise = ข้อมูลคู่แข่ง สื่อล้นทะลัก ทำให้สารถูกบิดเบือนหรือมองไม่เห็น"><span class="pin">⚡ Noise</span><span class="ico">📺</span><b>Channel / Media</b>สารและสื่อ</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="ลูกค้าตีความสารผ่านประสบการณ์ ความเชื่อเดิมของตนเอง"><span class="ico">🔓</span><b>Decoding</b>ลูกค้าถอดรหัส</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="กลุ่มเป้าหมาย (Customer Persona)"><span class="ico">🎯</span><b>Receiver</b>ผู้รับสาร</div>
+      </div>
+      <div class="loop-back" style="min-width:620px;"><span>🔁 Feedback &amp; Response (วัดผล Awareness, Conversion, และการซื้อซ้ำ)</span></div>
+    </div>
+    <div class="viz-cap" style="margin-top:14px;">“The problem is NOT what the brand says, BUT how customers interpret it.”</div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">2</span>กรวย AIDA (Response Hierarchy Model)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="funnel" style="width:100%;">
+          <div class="fn bg-a4" style="width:100%;" data-tip="Cognitive: ดึงความสนใจ สร้างการรับรู้">Attention<small>รู้จัก (Cognitive)</small></div>
+          <div class="fn bg-a3" style="width:84%;" data-tip="Affective: สร้างความสนใจ ค้นหาต่อ">Interest<small>สนใจ (Affective)</small></div>
+          <div class="fn bg-a2" style="width:68%;" data-tip="Affective: สร้างความอยากได้ เกิดอารมณ์ร่วม">Desire<small>อยากได้ (Affective)</small></div>
+          <div class="fn bg-a1" style="width:52%;" data-tip="Behavioral: ตัดสินใจซื้อ ปิดการขาย">Action<small>ซื้อ (Behavioral)</small></div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>🧠 1. Cognitive (Attention):</b> ยิงโฆษณาด้วยภาพสะดุดตา สื่อสาร Pain ใน 3 วินาทีแรกให้ลูกค้ารู้ว่ามีทางออก
+        </div>
+        <div class="info-card">
+          <b>❤️ 2. Affective (Interest &amp; Desire):</b> เล่าเรื่องคุณค่า (Value Storytelling) รีวิวเปรียบเทียบ สาธิตการใช้งานจริงสร้างความอยากครอบครอง
+        </div>
+        <div class="info-card acc">
+          <b>🛒 3. Behavioral (Action):</b> กระตุ้นการตัดสินใจด้วย Call-to-Action ชัดเจน ข้อเสนอจำกัดเวลา และขั้นตอนชำระเงินที่ง่ายที่สุด
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">3</span>สื่อผสม POEM (Paid, Owned, Earned Media)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="venn">
+          <div class="c c1" data-tip="<b>Paid</b> ยิงแอด Facebook, TikTok, Google, Influencer จ้าง ➔ สร้างการรับรู้เร็ว">💸 Paid<small>ยิงแอด/โฆษณา</small></div>
+          <div class="c c2" data-tip="<b>Owned</b> เว็บไซต์ เพจ หน้าร้าน แอป ➔ คุมสารได้ 100% ปิดการขาย">🏠 Owned<small>เว็บ/เพจ/ร้าน</small></div>
+          <div class="c c3" data-tip="<b>Earned</b> รีวิว ปากต่อปาก ไวรัล PR ➔ น่าเชื่อถือสูงสุด">🗣️ Earned<small>รีวิว/บอกต่อ</small></div>
+          <div class="vcenter">IMC</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>💸 Paid Media (ซื้อสื่อ):</b> เหมาะกับการสร้าง Awareness ช่วงเปิดตัว เข้าถึงคนจำนวนมากในเวลาอันรวดเร็ว แต่หยุดจ่ายเมื่อไหร่การเข้าถึงก็หยุดลง
+        </div>
+        <div class="info-card">
+          <b>🏠 Owned Media (สื่อตัวเอง):</b> ช่องทางที่ธุรกิจเป็นเจ้าของ 100% ใช้สร้างความผูกพัน ให้ข้อมูลลึก และเป็นจุดปิดการขายที่มั่นคง
+        </div>
+        <div class="info-card green">
+          <b>🗣️ Earned Media (สื่อที่ได้มา):</b> ได้จากความพึงพอใจของลูกค้าจนเกิดการบอกต่อ รีวิวในโซเชียล เป็นสื่อที่น่าเชื่อถือสูงสุดและประหยัดงบที่สุด!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>Business Model Canvas (ผืนผ้าใบโมเดลธุรกิจ 9 ช่อง)</div>
+    <div class="viz-scroll"><div class="bmc-wrap">
+      <div class="bmc-strip"><div style="background:#F0FDFA;color:#0F766E;">◀ หลังบ้าน: Value Creation &amp; Infrastructure (Supply-Side)</div><div style="background:#FFF7ED;color:#9A3412;">หน้าบ้าน: Value Delivery &amp; Customer Interface (Demand-Side) ▶</div></div>
+      <div class="bmc">
+        <div class="kp" data-tip="พันธมิตรที่ช่วยลดต้นทุน ลดความเสี่ยง เสริมความเชี่ยวชาญ"><b><span class="num">8</span>Key Partners</b>ซัพพลายเออร์ วัตถุดิบ พันธมิตรเทคโนโลยี ระบบโลจิสติกส์</div>
+        <div class="ka" data-tip="กิจกรรมที่จำเป็นต้องทำเพื่อให้ Value Proposition เกิดขึ้นจริง"><b><span class="num">7</span>Key Activities</b>R&amp;D วิจัยและพัฒนา การผลิตและ QC การตลาดและการขาย</div>
+        <div class="kr" data-tip="ทรัพยากรที่ขาดไม่ได้ในการดำเนินธุรกิจ"><b><span class="num">6</span>Key Resources</b>ทรัพย์สินทางปัญญา ทีมผู้เชี่ยวชาญ แพลตฟอร์ม เงินทุน</div>
+        <div class="vp" data-tip="หัวใจของ BMC ดึงมาจาก VPC (Step 4)"><b><span class="num">2</span>Value Propositions</b>แก้ปัญหาอะไร • คุณค่า 5 มิติ • แตกต่างจากคู่แข่งอย่างไร</div>
+        <div class="cr" data-tip="Personal Assistance / Automated / Community / CRM"><b><span class="num">4</span>Customer Relationships</b>ระบบสะสมแต้ม ชุมชนผู้ใช้ บริการหลังการขายแบบใส่ใจ</div>
+        <div class="ch" data-tip="ช่องทางสื่อสาร ขาย ส่งมอบสินค้าและบริการ"><b><span class="num">3</span>Channels</b>Omnichannel (หน้าร้าน + เว็บไซต์ + โซเชียล + มาร์เก็ตเพลส)</div>
+        <div class="cs" data-tip="ดึงมาจาก Persona (Step 3)"><b><span class="num">1</span>Customer Segments</b>กลุ่มเป้าหมายหลัก Persona ที่เจาะจง (Niche / Mass)</div>
+        <div class="cost" data-tip="Fixed Costs vs Variable Costs"><b><span class="num">9</span>Cost Structure</b>Fixed Cost: ค่าเช่า เงินเดือน R&amp;D • Variable Cost: วัตถุดิบ ค่าขนส่ง ค่าคอมมิชชัน</div>
+        <div class="rev" data-tip="ขายขาด / ค่าสมาชิก / ค่าบริการ"><b><span class="num">5</span>Revenue Streams</b>ขายสินค้าขาด • ค่าสมาชิกรายเดือน (Subscription) • ค่าบริการส่วนเพิ่ม</div>
+      </div>
+    </div></div>
+    <div class="viz-cap">ลำดับการเขียนตอบ Case ที่แนะนำ: ① CS ➔ ② VP ➔ ③ CH ➔ ④ CR ➔ ⑤ Rev ➔ ⑥ KR ➔ ⑦ KA ➔ ⑧ KP ➔ ⑨ Cost</div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">5</span>การทดสอบตลาดก่อนลงทุนใหญ่ (Market Validation &amp; Metrics)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="tiles" style="width:100%;">
+          <div class="tile" data-tip="Landing Page / Smoke Test วัดว่ามีคนอยากได้จริงไหม"><span class="ico">💖</span><b>Desirability</b>ลูกค้าอยากได้จริงไหม?</div>
+          <div class="tile" data-tip="ทดสอบตั้งราคา ยอมจ่ายเงินจองจริงหรือไม่"><span class="ico">💰</span><b>Viability</b>คุ้มค่าทำกำไรไหม?</div>
+          <div class="tile" data-tip="สร้าง MVP ทดสอบว่าผลิตได้จริงตามสัญญาหรือไม่"><span class="ico">⚙️</span><b>Feasibility</b>ผลิตได้จริงหรือไม่?</div>
+        </div>
+        <div class="chev-flow" style="width:100%;margin-top:10px;">
+          <div class="bg-a3" data-tip="สร้างหน้าเว็บปุ่ม Pre-order วัดยอดคลิก">Smoke Test<small>วัดความสนใจ</small></div>
+          <div class="bg-a2" data-tip="สินค้าเวอร์ชันแรกที่มีเฉพาะฟังก์ชันหลัก">MVP<small>ทดลองใช้จริง</small></div>
+          <div class="bg-a1" data-tip="ขยายขนาดเมื่อ LTV > CAC เกิน 3 เท่า">Scale<small>ขยายธุรกิจ</small></div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="tiles" style="grid-template-columns:1fr 1fr;width:100%;">
+          <div class="tile" data-tip="Customer Acquisition Cost = ต้นทุนการได้ลูกค้าใหม่ 1 ราย"><div class="big">CAC</div>ต้นทุนหาลูกค้าใหม่</div>
+          <div class="tile" data-tip="Customer Lifetime Value = มูลค่ารวมที่ลูกค้า 1 คนสร้างให้ธุรกิจตลอดอายุ"><div class="big">LTV</div>มูลค่าตลอดอายุลูกค้า</div>
+          <div class="tile hl" data-tip="เกณฑ์วัดสุขภาพโมเดลธุรกิจที่ดี: LTV ควรมากกว่า CAC อย่างน้อย 3 เท่า"><div class="big">≥ 3×</div>อัตราส่วน LTV : CAC</div>
+          <div class="tile" data-tip="Net Promoter Score ความเต็มใจแนะนำแบรนด์ให้คนอื่น"><div class="big">NPS</div>การบอกต่อและภักดี</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[6] = `ปิด Case ด้วย <b>BMC ครบ 9 ช่อง</b> ที่ดึงข้อมูลจาก Step 1–5 ให้สอดคล้องกัน + เสนอแคมเปญ IMC 1 แคมเปญ และวิธีทดสอบตลาด (MVP) 1 วิธี`;
+
+
+/* ================================================================
+   V3 — INFOGRAPHIC CONTENT : TRACK 2 (Step 7–11, รศ.ดร.ปณัทพร) [FULL-WIDTH SPLIT-DUO]
+   ================================================================ */
+
+/* ---------------- STEP 7 : Value Chain, Process Design & C-Q-T ---------------- */
+vizDb[7] = `
+<div class="viz-grid">
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">1</span>โซ่คุณค่าของ Michael E. Porter (Value Chain Model)</div>
+    <div class="viz-scroll">
+      <div class="vchain">
+        <div class="vc-body">
+          <div class="vc-cap">▲ SUPPORT ACTIVITIES (กิจกรรมสนับสนุน 4 ด้าน)</div>
+          <div class="vc-support" data-tip="<b>Firm Infrastructure</b> โครงสร้างพื้นฐานองค์กร การบริหารทั่วไป กฎหมาย บัญชี การเงิน การวางแผนกลยุทธ์">
+            <b>🏢 Firm Infrastructure</b><span>บริหารทั่วไป • บัญชี/การเงิน • กฎหมาย • แผนกลยุทธ์</span>
+          </div>
+          <div class="vc-support" data-tip="<b>Human Resource Management</b> การสรรหา คัดเลือก ฝึกอบรม พัฒนาทักษะ และระบบแรงจูงใจพนักงาน">
+            <b>👥 Human Resource Mgmt (HRM)</b><span>สรรหา • ฝึกอบรม • พัฒนาคน • ค่าตอบแทน</span>
+          </div>
+          <div class="vc-support" data-tip="<b>Technology Development</b> การวิจัยและพัฒนา (R&D) ออกแบบผลิตภัณฑ์ ระบบ IT และระบบอัตโนมัติในสายการผลิต">
+            <b>🔬 Technology Development</b><span>R&D • ออกแบบสินค้า • ระบบ IT / Automation</span>
+          </div>
+          <div class="vc-support" data-tip="<b>Procurement</b> การจัดซื้อจัดหาวัตถุดิบ เครื่องจักร อุปกรณ์ และบริการจากซัพพลายเออร์ให้ได้ต้นทุนและคุณภาพเหมาะสม">
+            <b>🛒 Procurement</b><span>จัดซื้อวัตถุดิบ • คัดเลือกซัพพลายเออร์ • เจรจาต่อรอง</span>
+          </div>
+          <div class="vc-cap" style="margin-top:4px;">▼ PRIMARY ACTIVITIES (กิจกรรมหลัก 5 ด้าน — ไหลจากซ้ายไปขวา)</div>
+          <div class="vc-primary">
+            <div class="bg-a4" data-tip="<b>1. Inbound Logistics</b> การรับมอบ จัดเก็บ ควบคุมสต๊อกวัตถุดิบ และการกระจายวัตถุดิบเข้าสู่สายการผลิต">
+              <span class="ico">📥</span><b>1. Inbound Logistics</b>รับวัตถุดิบ • คลังขาเข้า
+            </div>
+            <div class="bg-a3" data-tip="<b>2. Operations</b> กระบวนการแปรรูปวัตถุดิบให้เป็นสินค้าหรือบริการสำเร็จรูป (Machining, Packaging, Assembly, Testing)">
+              <span class="ico">⚙️</span><b>2. Operations</b>แปรรูป • ผลิต • ประกอบ
+            </div>
+            <div class="bg-a2" data-tip="<b>3. Outbound Logistics</b> คลังสินค้าสำเร็จรูป การจัดการคำสั่งซื้อ การจัดส่งและกระจายสินค้าไปสู่มือลูกค้า">
+              <span class="ico">🚚</span><b>3. Outbound Logistics</b>คลังสินค้า • ขนส่งขาออก
+            </div>
+            <div class="bg-a1" data-tip="<b>4. Marketing & Sales</b> การตั้งราคา โฆษณา โปรโมชัน การบริหารช่องทางจำหน่ายและทีมขายเพื่อให้ลูกค้าตัดสินใจซื้อ">
+              <span class="ico">📣</span><b>4. Marketing & Sales</b>การตลาด • ส่งเสริมการขาย
+            </div>
+            <div class="bg-a2" data-tip="<b>5. Service</b> บริการหลังการขาย การติดตั้ง ซ่อมบำรุง เคลมประกัน และฝึกอบรมการใช้งาน เพื่อรักษาคุณค่าสินค้า">
+              <span class="ico">🛠️</span><b>5. Service</b>บริการหลังการขาย • ซ่อมบำรุง
+            </div>
+          </div>
+        </div>
+        <div class="vc-margin" data-tip="<b>Margin (ส่วนต่างคุณค่า/กำไร)</b> = มูลค่ารวมที่ลูกค้ายินดีจ่าย − ต้นทุนรวมในการทำกิจกรรมทั้งหมดใน Value Chain">MARGIN ★</div>
+      </div>
+    </div>
+    <div class="viz-cap">ทุกกิจกรรมในโซ่คุณค่าต้องช่วย “เพิ่มคุณค่า” หรือ “ลดต้นทุน” เพื่อให้เกิด <b>Margin</b> ที่ปลายลูกศร</div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">2</span>ระบบการผลิต (Transformation Process) &amp; สินค้า vs บริการ</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="viz-scroll" style="width:100%;padding-top:6px;">
+          <div class="flow" style="min-width:320px;">
+            <div class="flow-node fill" data-tip="<b>Inputs</b> 5M1I: Man, Machine, Material, Method, Money, Information">
+              <span class="ico">🧱</span><b>Inputs</b>ปัจจัยนำเข้า
+            </div>
+            <div class="flow-arrow">➔</div>
+            <div class="flow-node dark" data-tip="<b>Transformation</b> การแปรรูปเพิ่มคุณค่า (Value-Adding)">
+              <span class="ico">⚡</span><b>Transformation</b>แปรรูปเพิ่มคุณค่า
+            </div>
+            <div class="flow-arrow">➔</div>
+            <div class="flow-node fill" data-tip="<b>Outputs</b> Goods & Services ส่งมอบให้ลูกค้า">
+              <span class="ico">🎁</span><b>Outputs</b>สินค้า / บริการ
+            </div>
+          </div>
+          <div class="loop-back" style="min-width:320px;"><span>🔁 Feedback &amp; Control (วัดผล C-Q-T)</span></div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="vs">
+          <div class="vs-card blue" data-tip="<b>Goods (สินค้า)</b> จับต้องได้ • ผลิตก่อนใช้ • เก็บสต๊อกได้ • คุณภาพวัดง่ายด้วยเครื่องมือ">
+            <span class="ico">📦</span><b>Goods (สินค้า)</b>จับต้องได้ • เก็บสต๊อกได้
+          </div>
+          <div class="vs-mid">VS</div>
+          <div class="vs-card amber" data-tip="<b>Services (บริการ)</b> จับต้องไม่ได้ • ผลิตและบริโภคพร้อมกัน • เก็บสต๊อกไม่ได้ • ลูกค้ามีส่วนร่วมในกระบวนการ">
+            <span class="ico">🛎️</span><b>Services (บริการ)</b>ผลิตพร้อมใช้ • เก็บไม่ได้
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">3</span>สามเหลี่ยมสมดุลปฏิบัติการ (C-Q-T Triangle)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="tri">
+          <svg viewBox="0 0 300 270">
+            <polygon points="150,36 46,216 254,216" fill="color-mix(in srgb, var(--drawer-border, #0D9488) 10%, #FFFFFF)" stroke="var(--drawer-border, #0D9488)" stroke-width="3" stroke-dasharray="6 4"/>
+            <circle cx="150" cy="158" r="34" fill="#FFFFFF" stroke="#0F172A" stroke-width="2"/>
+          </svg>
+          <div class="tri-node bg-a1" style="left:50%;top:16%;" data-tip="<b>Cost (ต้นทุน)</b> ต้นทุนต่อหน่วยต่ำ บริหารทรัพยากรคุ้มค่า ➔ สนับสนุน Economic Value">
+            <b>💰 Cost</b>ต้นทุนต่ำ
+          </div>
+          <div class="tri-node bg-a2" style="left:18%;top:82%;" data-tip="<b>Quality (คุณภาพ)</b> ตรงตามสเปก สม่ำเสมอ ของเสียเป็นศูนย์ (Zero Defects)">
+            <b>🏆 Quality</b>ตรงสเปก • ทนทาน
+          </div>
+          <div class="tri-node bg-a3" style="left:82%;top:82%;" data-tip="<b>Time (เวลา)</b> ส่งมอบรวดเร็ว (Speed) และตรงเวลา (On-Time Delivery)">
+            <b>⏱️ Time</b>ส่งไว • ตรงเวลา
+          </div>
+          <div class="tri-center" data-tip="หัวใจของการออกแบบกระบวนการ: สร้างสมดุลทั้ง 3 มิติพร้อมกันให้สอดคล้องกับกลยุทธ์ธุรกิจ"><b>VALUE</b>สมดุล C-Q-T</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>💰 1. Cost (ต้นทุน):</b> ลดต้นทุนต่อหน่วยผ่านการประหยัดต่อขนาด (Economies of Scale) และกำจัดความสูญเปล่า
+        </div>
+        <div class="info-card">
+          <b>🏆 2. Quality (คุณภาพ):</b> สอดคล้องตามมาตรฐาน (Conformance) และความสม่ำเสมอ ลดความผันแปรในกระบวนการ
+        </div>
+        <div class="info-card acc">
+          <b>⏱️ 3. Time (เวลา):</b> รอบการผลิตสั้น (Cycle Time) ตอบสนองตลาดได้รวดเร็ว และมีอัตราส่งมอบตรงเวลา (On-Time Delivery) สูง
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>5 สัญลักษณ์มาตรฐานแผนภูมิกระบวนการ (ASME Process Chart Symbols)</div>
+    <div class="tiles t5">
+      <div class="tile hl" data-tip="<b>Operation (วงกลม ○)</b> การปฏิบัติงาน การแปรรูป ประกอบ ให้บริการที่เปลี่ยนแปลงรูปร่าง/คุณสมบัติ ➔ สร้าง VA โดยตรง!">
+        <span class="badge-corner">VA หลัก ★</span>
+        <div class="sym"><div class="sym-circle"></div></div>
+        <b>Operation</b>การปฏิบัติงาน / แปรรูป<br><small class="acc"><b>(สร้างคุณค่า VA)</b></small>
+      </div>
+      <div class="tile" data-tip="<b>Transportation (ลูกศร ➔)</b> การเคลื่อนย้ายวัตถุดิบ ชิ้นงาน เอกสารข้ามแผนก ➔ มักเป็น NVA/NNVA ที่ควรลดระยะทาง">
+        <div class="sym"><div class="sym-arrow">➔</div></div>
+        <b>Transportation</b>การขนย้าย / เคลื่อนที่<br><small>(ควรลดระยะทาง)</small>
+      </div>
+      <div class="tile" data-tip="<b>Inspection (สี่เหลี่ยม □)</b> การตรวจสอบคุณภาพหรือนับจำนวนเทียบกับสเปก ➔ มักเป็น NNVA">
+        <div class="sym"><div class="sym-square"></div></div>
+        <b>Inspection</b>การตรวจสอบคุณภาพ<br><small>(ควบคุมมาตรฐาน)</small>
+      </div>
+      <div class="tile danger" data-tip="<b>Delay (ตัว D)</b> การรอคอย งานค้างคิว รอเครื่องจักรว่าง รอเซ็นอนุมัติ ➔ ความสูญเปล่า NVA ต้องกำจัด!">
+        <span class="badge-corner red">NVA ตัดทิ้ง!</span>
+        <div class="sym"><div class="sym-d"></div></div>
+        <b>Delay</b>การรอคอย / งานค้างคิว<br><small style="color:#B91C1C;"><b>(ความสูญเปล่า)</b></small>
+      </div>
+      <div class="tile" data-tip="<b>Storage (สามเหลี่ยมหัวกลับ ▽)</b> การเก็บรักษาวัตถุดิบหรือสินค้าคงคลังในคลังสินค้า ➔ ก่อให้เกิด Holding Cost">
+        <div class="sym"><div class="sym-tri"></div></div>
+        <b>Storage</b>การเก็บเข้าคลังสินค้า<br><small>(เกิดต้นทุนเก็บรักษา)</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">5</span>แผนภาพกระบวนการมุมสูง SIPOC Model (เชื่อมต่อจาก Suppliers สู่ Customers)</div>
+    <div class="viz-scroll">
+      <div class="chev-flow minw">
+        <div class="bg-a4" data-tip="<b>Suppliers</b> ผู้ส่งมอบวัตถุดิบ ชิ้นส่วน หรือข้อมูลเข้าสู่กระบวนการ">S — Suppliers<small>ผู้ส่งมอบปัจจัย</small></div>
+        <div class="bg-a3" data-tip="<b>Inputs</b> วัตถุดิบ ข้อมูล พลังงาน ทรัพยากรที่ใช้ในกระบวนการ">I — Inputs<small>ปัจจัยนำเข้า</small></div>
+        <div class="bg-a2" data-tip="<b>Process</b> ขั้นตอนการแปรรูปหลัก (เขียนเป็นผังงาน 4–7 ขั้นตอนสำคัญ)">P — Process<small>ขั้นตอนแปรรูปหลัก</small></div>
+        <div class="bg-a1" data-tip="<b>Outputs</b> สินค้า บริการ หรือผลลัพธ์ที่ได้จากกระบวนการ">O — Outputs<small>ผลผลิต / บริการ</small></div>
+        <div class="bg-a3" data-tip="<b>Customers</b> ผู้รับมอบผลลัพธ์ + ข้อกำหนดที่ลูกค้าต้องการ (CTQ)">C — Customers<small>ผู้รับมอบคุณค่า</small></div>
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[7] = `ออกสอบปรนัยบ่อย: แยกให้แม่นว่า <b>Primary Activities 5 ตัว</b> มีอะไรบ้าง (Inbound, Operations, Outbound, Marketing & Sales, Service) ส่วน <b>Procurement / HRM / Tech / Infrastructure</b> เป็น <b>Support Activities</b>!`;
+
+/* ---------------- STEP 8 : Value Delivery, EOQ & ROP ---------------- */
+function eoqCurveSvg() {
+  return `
+  <svg viewBox="0 0 540 260" role="img" aria-label="EOQ Cost Trade-off Curve">
+    <defs>
+      <marker id="arr8" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 1 L 9 5 L 0 9 z" fill="#64748B"/>
+      </marker>
+    </defs>
+    <line x1="56" y1="216" x2="510" y2="216" stroke="#475569" stroke-width="2" marker-end="url(#arr8)"/>
+    <line x1="56" y1="216" x2="56" y2="22" stroke="#475569" stroke-width="2" marker-end="url(#arr8)"/>
+    <text x="505" y="238" text-anchor="end" font-size="11.5" font-weight="700" fill="#334155">ปริมาณสั่งซื้อต่อครั้ง (Q) ➔</text>
+    <text x="64" y="30" font-size="11.5" font-weight="700" fill="#334155">ต้นทุนต่อปี (บาท)</text>
+    <line x1="56" y1="216" x2="475" y2="54" stroke="#0284C7" stroke-width="3" data-tip="<b>Holding Cost = (Q/2) × H</b> ยิ่งสั่งต่อครั้งมาก สต๊อกเฉลี่ยยิ่งสูง ต้นทุนเก็บรักษายิ่งเพิ่มเป็นเส้นตรง"/>
+    <text x="468" y="47" text-anchor="end" font-size="11.5" font-weight="800" fill="#0284C7">Holding Cost = (Q/2)H</text>
+    <path d="M 82,42 Q 140,145 236,152 T 480,200" fill="none" stroke="#F97316" stroke-width="3" data-tip="<b>Ordering Cost = (D/Q) × S</b> ยิ่งสั่งต่อครั้งมาก จำนวนครั้งที่สั่งยิ่งน้อยลง ต้นทุนสั่งซื้อรวมจึงลดลง"/>
+    <text x="480" y="190" text-anchor="end" font-size="11.5" font-weight="800" fill="#EA580C">Ordering Cost = (D/Q)S</text>
+    <path d="M 85,36 C 130,96 185,92 236,92 C 295,92 380,108 475,40" fill="none" stroke="#0F172A" stroke-width="3.5" data-tip="<b>Total Cost (TC)</b> = ต้นทุนสั่งซื้อ + ต้นทุนเก็บรักษา ต่ำที่สุดที่จุด Q*"/>
+    <text x="380" y="56" font-size="12" font-weight="900" fill="#0F172A">Total Cost (TC ต่ำสุดที่ Q*)</text>
+    <line x1="236" y1="92" x2="236" y2="216" stroke="#E11D48" stroke-width="2" stroke-dasharray="5 4"/>
+    <circle cx="236" cy="152" r="6" fill="#E11D48" stroke="#FFFFFF" stroke-width="2" data-tip="<b>จุดตัดสมดุล:</b> ที่ Q* ต้นทุนสั่งซื้อ = ต้นทุนเก็บรักษา พอดี!"/>
+    <circle cx="236" cy="92" r="6" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="180" y="222" width="112" height="24" rx="6" fill="#E11D48"/>
+    <text x="236" y="238" text-anchor="middle" font-size="12" font-weight="800" fill="#FFFFFF">Q* (EOQ) = √(2DS/H)</text>
+    <text x="246" y="148" font-size="11" font-weight="800" fill="#BE123C">◀ จุดตัด Holding = Ordering</text>
+  </svg>`;
+}
+
+function ropSawtoothSvg() {
+  return `
+  <svg viewBox="0 0 540 260" role="img" aria-label="ROP Sawtooth Inventory Chart">
+    <rect x="56" y="180" width="444" height="36" fill="#FEE2E2" opacity="0.65" data-tip="<b>Safety Stock (SS)</b> สต๊อกกันชนเผื่อของมาช้าหรือขายดีเกินคาด"/>
+    <line x1="56" y1="180" x2="500" y2="180" stroke="#EF4444" stroke-width="1.8" stroke-dasharray="4 3"/>
+    <text x="494" y="200" text-anchor="end" font-size="11" font-weight="800" fill="#B91C1C">Safety Stock (SS)</text>
+    <line x1="56" y1="130" x2="500" y2="130" stroke="#F59E0B" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="494" y="124" text-anchor="end" font-size="11.5" font-weight="800" fill="#B45309">จุดสั่งซื้อซ้ำ ROP = (d × L) + SS</text>
+    <line x1="56" y1="216" x2="510" y2="216" stroke="#475569" stroke-width="2"/>
+    <line x1="56" y1="216" x2="56" y2="22" stroke="#475569" stroke-width="2"/>
+    <text x="64" y="32" font-size="11.5" font-weight="700" fill="#334155">ระดับสต๊อก (หน่วย)</text>
+    <text x="506" y="238" text-anchor="end" font-size="11.5" font-weight="700" fill="#334155">เวลา (วัน) ➔</text>
+    <polyline points="56,52 216,180 216,52 376,180 376,52 486,136" fill="none" stroke="#0891B2" stroke-width="3.5" stroke-linejoin="round"/>
+    <text x="50" y="56" text-anchor="end" font-size="10.5" font-weight="800" fill="#0F172A">Q*+SS</text>
+    <text x="50" y="134" text-anchor="end" font-size="10.5" font-weight="800" fill="#B45309">ROP</text>
+    <text x="50" y="184" text-anchor="end" font-size="10.5" font-weight="800" fill="#B91C1C">SS</text>
+    <circle cx="156" cy="130" r="6.5" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="156" y1="130" x2="156" y2="216" stroke="#F59E0B" stroke-width="1.8" stroke-dasharray="3 3"/>
+    <line x1="216" y1="180" x2="216" y2="216" stroke="#0891B2" stroke-width="1.8" stroke-dasharray="3 3"/>
+    <line x1="156" y1="206" x2="216" y2="206" stroke="#0F172A" stroke-width="2.5"/>
+    <rect x="150" y="222" width="74" height="20" rx="5" fill="#0F172A"/>
+    <text x="187" y="236" text-anchor="middle" font-size="10.5" font-weight="800" fill="#FDBA74">Lead Time (L)</text>
+    <text x="148" y="116" text-anchor="end" font-size="11" font-weight="800" fill="#B45309">🔔 สั่งซื้อที่จุด ROP</text>
+  </svg>`;
+}
+
+vizDb[8] = `
+<div class="viz-grid">
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">1</span>Flow การส่งมอบคุณค่า &amp; บทบาทของคลังสินค้า</div>
+    <div class="viz-scroll" style="padding-top:12px;">
+      <div class="flow minw">
+        <div class="flow-node fill" data-tip="ซัพพลายเออร์ส่งมอบวัตถุดิบและชิ้นส่วน"><span class="ico">🏭</span><b>Suppliers</b>ผู้ผลิตวัตถุดิบ</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="<b>Inbound Logistics</b> รับ ตรวจสอบ จัดเก็บวัตถุดิบเข้าคลัง"><span class="ico">📥</span><b>Inbound</b>โลจิสติกส์ขาเข้า</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node dark" data-tip="<b>Inventory Buffer</b> คลังสินค้าเป็นกันชนเชื่อมการผลิตกับความต้องการลูกค้า"><span class="pin">⚖️ Trade-off</span><span class="ico">📦</span><b>Inventory (EOQ/ROP)</b>บริหารสต๊อกให้สมดุล</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="<b>Outbound Logistics</b> ส่งมอบตรงเวลา (On-Time) ครบถ้วน (In-Full)"><span class="ico">🚚</span><b>Outbound</b>โลจิสติกส์ขาออก</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="ระวัง <b>Bullwhip Effect</b>: ความผันผวนคำสั่งซื้อปลายน้ำขยายตัวใหญ่ขึ้นเรื่อยๆ เมื่อย้อนกลับสู่ต้นน้ำ"><span class="pin">🌊 Bullwhip</span><span class="ico">😊</span><b>Customers</b>ได้รับของตรงเวลา</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">2</span>กราฟสมดุลต้นทุน EOQ: สั่งซื้อครั้งละเท่าไหร่จึงประหยัดที่สุด?</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="chart viz-scroll" style="width:100%;"><div style="min-width:320px;">${eoqCurveSvg()}</div></div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>📦 1. Holding Cost [(Q/2) × H]:</b> ต้นทุนเก็บรักษา ยิ่งสั่งล็อตใหญ่ (Q สูง) สต๊อกเฉลี่ยยิ่งสูง ค่าไฟ ค่าโกดัง ประกันภัย ยิ่งสูงเป็นเส้นตรง
+        </div>
+        <div class="info-card">
+          <b>📑 2. Ordering Cost [(D/Q) × S]:</b> ต้นทุนการสั่งซื้อ สั่งล็อตใหญ่ทำให้ความถี่ในการสั่ง (D/Q) ลดลง ต้นทุนออกเอกสารและขนส่งรวมต่อปีลดลง
+        </div>
+        <div class="info-card acc">
+          <b>🎯 3. จุดตัดสมดุล Q*:</b> ที่จุด EOQ ค่า Holding Cost เท่ากับ Ordering Cost พอดี และส่งผลให้ <b>Total Cost รวมต่ำที่สุด!</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">3</span>กราฟฟันเลื่อย &amp; จุดสั่งซื้อซ้ำ ROP: สต๊อกเหลือเท่าไหร่ต้องสั่ง?</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="chart viz-scroll" style="width:100%;"><div style="min-width:320px;">${ropSawtoothSvg()}</div></div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>⏱️ 1. Lead Time (L):</b> ระยะเวลารอคอยสินค้า ตั้งแต่ออกใบสั่งซื้อจนถึงสินค้าส่งถึงโกดังพร้อมใช้
+        </div>
+        <div class="info-card green">
+          <b>🛡️ 2. Safety Stock (SS):</b> สต๊อกปลอดภัยที่สำรองไว้เป็นกันชน ป้องกันสินค้าขาดมือ (Stockout) ในช่วง Lead Time
+        </div>
+        <div class="info-card acc">
+          <b>🔔 3. สูตร ROP = (d × L) + SS:</b> เมื่อสต๊อกลดลงมาแตะเส้นนี้ ต้องออกใบสั่งซื้อทันทีจำนวน Q* ชิ้น เพื่อให้ของมาส่งก่อนกินเนื้อ SS
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>คลังสูตรคำนวณ EOQ &amp; ROP (ออกสอบคำนวณแน่นอน!)</div>
+    <div class="ftiles">
+      <div class="ftile" data-tip="D = ความต้องการทั้งปี, S = ต้นทุนการสั่งซื้อต่อครั้ง, H = ต้นทุนเก็บรักษาต่อหน่วยต่อปี">
+        <span class="lbl">1. ปริมาณสั่งซื้อประหยัดที่สุด (EOQ)</span>
+        <b>Q* = √( (2 × D × S) ÷ H )</b>
+        <span class="note">หน่วย: ชิ้น/ครั้ง (จำ: 2DS อยู่ในรูททั้งหมด)</span>
+      </div>
+      <div class="ftile" data-tip="เอาความต้องการทั้งปี (D) หารด้วยปริมาณการสั่งต่อครั้ง (Q*)">
+        <span class="lbl">2. จำนวนครั้งที่สั่งต่อปี &amp; ระยะห่างการสั่ง</span>
+        <b>N = D ÷ Q*</b> &nbsp;|&nbsp; <b>TBO = วันทำงาน ÷ N</b>
+        <span class="note">N = ครั้ง/ปี • TBO = วัน/ครั้ง</span>
+      </div>
+      <div class="ftile" data-tip="ที่จุด EOQ ค่า (D/Q*)S จะเท่ากับ (Q*/2)H เสมอ! ถ้ามี Safety Stock ให้บวก (SS × H) เพิ่ม">
+        <span class="lbl">3. ต้นทุนรวมในการบริหารสต๊อกต่อปี (TC)</span>
+        <b>TC = (D ÷ Q*)S + (Q* ÷ 2)H</b>
+        <span class="note">ทิปเช็กคำตอบ: ที่ Q* พจน์หน้า = พจน์หลัง เสมอ!</span>
+      </div>
+      <div class="ftile" data-tip="d = ความต้องการต่อวัน (D ÷ วันทำงานต่อปี), L = ระยะเวลารอคอยสินค้า (วัน), SS = สต๊อกปลอดภัย">
+        <span class="lbl">4. จุดสั่งซื้อซ้ำ (Reorder Point: ROP)</span>
+        <b>ROP = (d × L) + SS</b>
+        <span class="note">เมื่อสต๊อกเหลือเท่านี้ ต้องออกใบสั่งซื้อทันที</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">5</span>ตัวอย่างโจทย์คำนวณทีละขั้น (Step-by-Step Worked Flow)</div>
+    <div class="viz-scroll">
+      <div class="flow minw">
+        <div class="flow-node" data-tip="โจทย์กำหนดตัวแปรครบ"><span class="ico">📋</span><b>โจทย์กำหนด</b>D = 120,000 ชิ้น/ปี<br>S = 1,500 บ./ครั้ง<br>H = 40 บ./ชิ้น/ปี</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="√(2 × 120,000 × 1,500 / 40) = √(360,000,000 / 40) = √9,000,000 = 3,000"><span class="ico">🧮</span><b>ขั้น 1: หา Q*</b>√(2×120,000×1,500 ÷ 40)<br>= <b>3,000 ชิ้น/ครั้ง</b></div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="N = 120,000 ÷ 3,000 = 40 ครั้ง/ปี (ถ้าทำงาน 300 วัน ➔ สั่งทุกๆ 7.5 วัน)"><span class="ico">🔄</span><b>ขั้น 2: หา N</b>120,000 ÷ 3,000<br>= <b>40 ครั้ง/ปี</b></div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node fill" data-tip="Ordering = 40×1,500 = 60,000 บ. | Holding = (3,000/2)×40 = 60,000 บ. (เท่ากันเป๊ะ!)"><span class="ico">💰</span><b>ขั้น 3: หา TC</b>60,000 + 60,000<br>= <b>120,000 บาท/ปี</b></div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node dark" data-tip="สมมติทำงาน 300 วัน ➔ d = 120,000/300 = 400 ชิ้น/วัน, L = 5 วัน, SS = 500 ชิ้น ➔ ROP = (400×5)+500 = 2,500"><span class="ico">🔔</span><b>ขั้น 4: หา ROP</b>(400 × 5) + 500<br>= <b style="color:#FDBA74;">2,500 ชิ้น</b></div>
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[8] = `<b>จุดเช็กคำตอบในห้องสอบ:</b> ถ้าโจทย์ให้ H เป็น <b>% ของราคาสินค้า (C)</b> ต้องคำนวณ <b>H = i × C</b> ก่อนเสมอ และที่จุด Q* ค่า <b>Ordering Cost ต้องเท่ากับ Holding Cost เป๊ะ!</b>`;
+
+/* ---------------- STEP 9 : Productivity Measurement ---------------- */
+vizDb[9] = `
+<div class="viz-grid">
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">1</span>Production vs. Productivity &amp; 5 วิธีเพิ่มผลิตภาพ</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="vs" style="width:100%;">
+          <div class="vs-card amber" data-tip="<b>Production</b> ดูเฉพาะปริมาณ Output รวม โดยไม่ได้เทียบว่าใช้ทรัพยากรไปเท่าไหร่">
+            <span class="ico">📦</span><b>Production (ผลผลิต)</b>ดูเฉพาะปริมาณ <b>Output รวม</b><br><small>ผลผลิตเพิ่ม ≠ ผลิตภาพเพิ่มเสมอไป!</small>
+          </div>
+          <div class="vs-mid">VS</div>
+          <div class="vs-card green" data-tip="<b>Productivity</b> ประสิทธิภาพการใช้ทรัพยากร = Output ÷ Input">
+            <span class="ico">📈</span><b>Productivity (ผลิตภาพ)</b>อัตราส่วน <b>Output ÷ Input</b><br><small>ใช้ทรัพยากรคุ้มค่าแค่ไหน</small>
+          </div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="tiles t5">
+          <div class="tile" data-tip="ผลผลิตเพิ่ม ใช้ทรัพยากรเท่าเดิม"><b>Out ↑</b>In ━</div>
+          <div class="tile" data-tip="ผลผลิตเท่าเดิม ใช้ทรัพยากรลดลง"><b>Out ━</b>In ↓</div>
+          <div class="tile" data-tip="ผลผลิตโตเร็วกว่าทรัพยากร"><b>Out ↑↑</b>In ↑</div>
+          <div class="tile" data-tip="ผลผลิตลดน้อยกว่าการลดทรัพยากร"><b>Out ↓</b>In ↓↓</div>
+          <div class="tile hl" data-tip="ดีที่สุด: ผลผลิตเพิ่ม พร้อมลดทรัพยากร"><span class="badge-corner">ดีที่สุด ★</span><b>Out ↑</b>In ↓</div>
+        </div>
+        <div class="info-card acc" style="margin-top:4px;">
+          <b>⭐ หัวใจของ Lean:</b> มุ่งสู่แนวทางที่ 5 คือ <b>Output เพิ่มขึ้น พร้อมกับ Input ลดลง</b> ผ่านการกำจัดความสูญเปล่า NVA ออกจากกระบวนการ
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">2</span>คลังสูตรคำนวณ Productivity</div>
+    <div class="ftiles" style="grid-template-columns:1fr;">
+      <div class="ftile" data-tip="ใช้วัดปัจจัยเดียว เช่น แรงงาน (ชั่วโมงคน), เครื่องจักร (ชั่วโมงเครื่อง)">
+        <span class="lbl">1. ผลิตภาพปัจจัยเดี่ยว (Single-Factor / Labor Productivity)</span>
+        <b>Labor Prod. = Output ÷ (จำนวนคน × ชั่วโมงทำงาน)</b>
+        <span class="note">หน่วย: ชิ้น ต่อ ชั่วโมงแรงงาน (Units / Labor-Hour)</span>
+      </div>
+      <div class="ftile" data-tip="ตัวหารต้องแปลงทุกปัจจัยให้อยู่ในหน่วยเงินเดียวกัน (บาท หรือ $) ก่อนนำมาบวกกัน!">
+        <span class="lbl">2. ผลิตภาพพหุปัจจัย (Multi-Factor Productivity: MFP)</span>
+        <b>MFP = Output ÷ (Labor + Material + Energy + Capital + Misc.)</b>
+        <span class="note">หน่วย: ชิ้น ต่อ บาท (หรือ บาท ต่อ บาท)</span>
+      </div>
+      <div class="ftile" data-tip="ต้องเอาค่าเก่า (Old / Base Period) เป็นตัวหารเสมอ!">
+        <span class="lbl">3. อัตราการเปลี่ยนแปลงของผลิตภาพ (% Change)</span>
+        <b>% Δ = [ (Prod.ใหม่ − Prod.เก่า) ÷ Prod.เก่า ] × 100</b>
+        <span class="note">⚠️ ระวัง: ตัวหารคือ <b>ค่าเก่า (Old)</b> เสมอ!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">3</span>เคสคำนวณในสไลด์: Lisa Company (เปรียบเทียบระบบเก่า vs ระบบคอมพิวเตอร์ใหม่)</div>
+    <div class="viz-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;">
+      <div class="tile" style="text-align:left;padding:14px;" data-tip="พนักงาน 4 คน × 8 ชม. = 32 ชม./วัน เท่ากันทั้งระบบเก่าและใหม่ แต่ผลผลิตเพิ่มจาก 8 เป็น 14 ฉบับ/วัน">
+        <b>👷 A. Labor Productivity (ฉบับ / ชม.แรงงาน)</b>
+        <div style="font-size:0.74rem;color:#475569;margin-bottom:8px;">แรงงาน: 4 คน × 8 ชม. = <b>32 ชม./วัน</b> (Output: 8 ➔ 14 ฉบับ)</div>
+        <div class="bar-row">
+          <span>ระบบเก่า</span>
+          <div class="bar-track"><div class="bar-fill old" style="width:57%;">8 ÷ 32 = 0.2500</div></div>
+        </div>
+        <div class="bar-row">
+          <span>ระบบใหม่</span>
+          <div class="bar-track"><div class="bar-fill new" style="width:100%;">14 ÷ 32 = 0.4375</div></div>
+        </div>
+        <div style="margin-top:8px;font-size:0.8rem;font-weight:700;color:#0F172A;">
+          การเปลี่ยนแปลง: (0.4375 − 0.25) ÷ 0.25 <span class="delta">▲ +75.0%</span>
+        </div>
+      </div>
+
+      <div class="tile" style="text-align:left;padding:14px;" data-tip="ค่าแรง $640/วัน เท่าเดิม แต่ค่าโสหุ้ย (Overhead) เพิ่มจาก $400 เป็น $800/วัน รวม Input เก่า = $1,040 vs ใหม่ = $1,440">
+        <b>💰 B. Multi-Factor Productivity (ฉบับ / ดอลลาร์)</b>
+        <div style="font-size:0.74rem;color:#475569;margin-bottom:8px;">Input รวม: เก่า ($640+$400 = <b>$1,040</b>) ➔ ใหม่ ($640+$800 = <b>$1,440</b>)</div>
+        <div class="bar-row">
+          <span>ระบบเก่า</span>
+          <div class="bar-track"><div class="bar-fill old" style="width:79%;">8 ÷ 1,040 = 0.00769</div></div>
+        </div>
+        <div class="bar-row">
+          <span>ระบบใหม่</span>
+          <div class="bar-track"><div class="bar-fill new" style="width:100%;">14 ÷ 1,440 = 0.00972</div></div>
+        </div>
+        <div style="margin-top:8px;font-size:0.8rem;font-weight:700;color:#0F172A;">
+          การเปลี่ยนแปลง: (0.00972 − 0.00769) ÷ 0.00769 <span class="delta">▲ +26.4%</span>
+        </div>
+      </div>
+    </div>
+    <div class="viz-cap">ข้อสังเกตสำคัญ: ดูเฉพาะ Labor Productivity เหมือนโตขึ้น +75% แต่พอคิดต้นทุนเครื่องจักรเพิ่มใน <b>MFP</b> โตจริง <b>+26.4%</b> (สะท้อนภาพรวมแม่นยำกว่า!)</div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>3 ปัจจัยหลักที่ขับเคลื่อนการเติบโตของ Productivity (Heizer &amp; Render)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="donut" style="background: conic-gradient(#0284C7 0% 52%, #0D9488 52% 90%, #F59E0B 90% 100%);" data-tip="สัดส่วนอิทธิพลต่อการเพิ่มผลิตภาพ: การบริหารจัดการมีผลมากที่สุดถึงครึ่งหนึ่ง!">
+          <div class="donut-c"><b>100%</b>Productivity<br>Drivers</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card blue">
+          <b>💼 1. Management (การบริหารจัดการ) — ~52% (มีอิทธิพลสูงสุด!)</b>
+          การวางผังกระบวนการ, การใช้เทคโนโลยี, การจัดการความรู้ และภาวะผู้นำ มีผลต่อผลิตภาพมากกว่าครึ่งหนึ่ง
+        </div>
+        <div class="info-card green">
+          <b>🏭 2. Capital (เงินทุนและเทคโนโลยี) — ~38%</b>
+          การลงทุนในเครื่องจักรอัตโนมัติ, อุปกรณ์ที่แม่นยำ และระบบ IT ที่ช่วยลดความผิดพลาดและเพิ่มความเร็ว
+        </div>
+        <div class="info-card amber">
+          <b>👷 3. Labor (คุณภาพแรงงาน) — ~10%</b>
+          การฝึกอบรมทักษะ การศึกษา สุขอนามัย และระบบสร้างแรงจูงใจในการทำงาน
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[9] = `<b>จุดพลาดบ่อยในห้องสอบ:</b> 1) ลืมคูณ <b>จำนวนคน × ชั่วโมงต่อวัน</b> ตอนหา Labor-Hours • 2) ตอนคิด <b>% การเปลี่ยนแปลง</b> ต้องหารด้วย <b>ค่าเก่า (Old)</b> เสมอ!`;
+
+/* ---------------- STEP 10 : Lean Management & 8 Wastes ---------------- */
+vizDb[10] = `
+<div class="viz-grid">
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">1</span>หลักการลีน 5 ขั้นตอน (5 Lean Principles — Womack &amp; Jones)</div>
+    <div class="viz-scroll">
+      <div class="chev-flow minw">
+        <div class="bg-a4" data-tip="<b>1. Specify Value</b> นิยามคุณค่าจากมุมมองของลูกค้าเท่านั้น">1. Value<small>นิยามคุณค่าในมุมลูกค้า</small></div>
+        <div class="bg-a3" data-tip="<b>2. Map Value Stream</b> เขียนแผนผังสายธารคุณค่า (VSM) แยก VA, NNVA, NVA">2. Value Stream<small>ทำแผนผัง VSM หา Waste</small></div>
+        <div class="bg-a2" data-tip="<b>3. Create Flow</b> จัดการให้ขั้นตอนสร้างคุณค่าไหลลื่นต่อเนื่อง ไม่ติดคอขวด">3. Flow<small>ทำให้ไหลลื่นไร้คอขวด</small></div>
+        <div class="bg-a1" data-tip="<b>4. Establish Pull</b> ผลิตเมื่อลูกค้าดึง (Just-In-Time / Kanban) ไม่ผลิตสะสม">4. Pull<small>ระบบดึงตามคำสั่งจริง</small></div>
+        <div class="bg-a2" data-tip="<b>5. Pursue Perfection</b> ปรับปรุงอย่างต่อเนื่อง (Kaizen) จน Waste เข้าใกล้ศูนย์">5. Perfection<small>พัฒนาต่อเนื่องไร้ที่สิ้นสุด</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">2</span>ความสูญเปล่า 8 ประการ (8 Wastes = D-O-W-N-T-I-M-E)</div>
+    <div class="tiles t4">
+      <div class="tile" data-tip="<b>Defects (ของเสีย/งานแก้)</b> ผลิตผิดสเปก บันทึกข้อมูลผิด ต้องซ่อม/ทำใหม่ (Rework)">
+        <div class="big">D</div><b>Defects</b>ของเสีย • งานซ่อมแก้ (Rework)
+      </div>
+      <div class="tile danger" data-tip="<b>Overproduction (ผลิตเกินต้องการ)</b> ร้ายแรงที่สุดเพราะก่อให้เกิด Waste ตัวอื่นทั้งหมดตามมา!">
+        <span class="badge-corner red">ร้ายแรงที่สุด! ★</span>
+        <div class="big" style="color:#DC2626;">O</div><b>Overproduction</b>ผลิตมากเกินต้องการ<br><small style="color:#B91C1C;"><b>(ตัวแม่ของ Waste ทั้งปวง)</b></small>
+      </div>
+      <div class="tile" data-tip="<b>Waiting (การรอคอย)</b> คนรอเครื่องจักร งานค้างคิว รอเซ็นอนุมัติ ระบบคอมพิวเตอร์ช้า">
+        <div class="big">W</div><b>Waiting</b>การรอคอย • งานค้างคิว
+      </div>
+      <div class="tile" data-tip="<b>Non-utilized Talent (ใช้ศักยภาพคนไม่คุ้ม)</b> ไม่รับฟังไอเดียพนักงานหน้างาน">
+        <div class="big">N</div><b>Non-utilized Talent</b>ไม่ใช้ศักยภาพ/ไอเดียพนักงาน
+      </div>
+      <div class="tile" data-tip="<b>Transportation (การขนย้ายสิ่งของ)</b> ย้ายวัตถุดิบ ชิ้นงาน แฟ้มเอกสารข้ามแผนกไกลๆ">
+        <div class="big">T</div><b>Transportation</b>ขนย้าย <b>“สิ่งของ”</b> ไกล/ซ้ำซ้อน
+      </div>
+      <div class="tile" data-tip="<b>Inventory (สต๊อกเกินจำเป็น)</b> วัตถุดิบ งานระหว่างทำ (WIP) และสินค้าสำเร็จรูปคั่งค้าง เงินจม">
+        <div class="big">I</div><b>Inventory</b>สต๊อกและ WIP ล้นเกินจำเป็น
+      </div>
+      <div class="tile" data-tip="<b>Motion (การเคลื่อนไหวของคน)</b> พนักงานต้องเดินอ้อม ก้ม เงย เอื้อมหยิบเครื่องมือ เพราะผังงานไม่ดี">
+        <div class="big">M</div><b>Motion</b><b>“คน”</b> ก้ม/เงย/เดินหาของ
+      </div>
+      <div class="tile" data-tip="<b>Extra-processing (ขั้นตอนเกินจำเป็น)</b> ทำงานละเอียดเกินสเปก เซ็นอนุมัติซ้ำซ้อน">
+        <div class="big">E</div><b>Extra-processing</b>ขั้นตอนซ้ำซ้อน • เกินจำเป็น
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">3</span>ผังตัดสินใจจำแนกกิจกรรม: VA vs. NNVA vs. NVA</div>
+    <div class="viz-scroll">
+      <div class="dtree">
+        <div class="dt-start">🔍 พิจารณากิจกรรมในกระบวนการทำงาน 1 ขั้นตอน</div>
+        <div class="dt-v"></div>
+        <div class="dt-q" data-tip="เกณฑ์ตัดสิน VA: 1) ลูกค้ายินดีจ่ายเงิน 2) เปลี่ยนแปลงรูปร่าง/สถานะ 3) ทำถูกตั้งแต่ครั้งแรก">Q1: กิจกรรมนี้แปรรูป/สร้างผลลัพธ์ที่ <b>“ลูกค้าเห็นคุณค่าและยินดีจ่ายเงิน”</b> หรือไม่?</div>
+        <div class="dt-v"></div>
+        <div class="dt-split">
+          <div class="dt-branch">
+            <span class="dt-label yes">✔ ใช่ (ลูกค้ายอมจ่าย)</span>
+            <div class="dt-v"></div>
+            <div class="dt-leaf leaf-va" data-tip="ตัวอย่าง: หมอผ่าตัดรักษาคนไข้, เชฟปรุงอาหาร, ประกอบชิ้นส่วน">
+              <b>🟢 VA (Value-Added)</b>
+              กิจกรรมเพิ่มคุณค่าตัวจริง<br>
+              <b>กลยุทธ์ ➔ Optimize</b> (ทำให้เร็วและดีขึ้น)
+            </div>
+          </div>
+          <div class="dt-branch">
+            <span class="dt-label no">✖ ไม่ใช่ (ลูกค้าไม่ได้อยากจ่าย)</span>
+            <div class="dt-v"></div>
+            <div class="dt-q" style="max-width:300px;font-size:0.78rem;">Q2: จำเป็นต้องทำตาม <b>กฎหมาย ความปลอดภัย หรือมาตรฐาน</b> หรือไม่?</div>
+            <div class="dt-v"></div>
+            <div class="dt-split">
+              <div class="dt-branch">
+                <span class="dt-label yes">✔ จำเป็น</span>
+                <div class="dt-v"></div>
+                <div class="dt-leaf leaf-nnva" style="min-width:155px;" data-tip="ตัวอย่าง: คนไข้เซ็นใบยินยอมผ่าตัด, ยื่นภาษี, ตรวจความปลอดภัยตามกฎหมาย">
+                  <b>🟡 NNVA</b>
+                  Necessary Non-VA<br>
+                  <b>กลยุทธ์ ➔ Minimize</b><br>(ลดเวลา/ใช้ระบบอัตโนมัติ)
+                </div>
+              </div>
+              <div class="dt-branch">
+                <span class="dt-label no">✖ ไม่จำเป็น</span>
+                <div class="dt-v"></div>
+                <div class="dt-leaf leaf-nva" style="min-width:155px;" data-tip="ตัวอย่าง: คนไข้นั่งรอหมอ 2 ชม., เดินหาแฟ้มเอกสาร, แก้ไขงานที่พิมพ์ผิด">
+                  <b>🔴 NVA (Muda)</b>
+                  ความสูญเปล่าบริสุทธิ์<br>
+                  <b>กลยุทธ์ ➔ Eliminate!</b><br>(ตัดทิ้งทันที)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>4 เครื่องมือหลักในการทำ Lean (Lean Toolbox)</div>
+    <div class="tiles t4">
+      <div class="tile" data-tip="<b>5ส</b> สะสาง, สะดวก, สะอาด, สุขลักษณะ, สร้างนิสัย ➔ ลด Motion & Waiting">
+        <span class="ico">🧹</span><b>5S (ระบบ 5ส)</b>สะสาง • สะดวก • สะอาด<br>สุขลักษณะ • สร้างนิสัย
+      </div>
+      <div class="tile" data-tip="<b>Kaizen</b> การปรับปรุงงานอย่างต่อเนื่องทีละเล็กทีละน้อยโดยทุกคนมีส่วนร่วม">
+        <span class="ico">🔄</span><b>Kaizen (ไคเซ็น)</b>ปรับปรุงต่อเนื่องทุกวัน<br>โดยพนักงานทุกคน
+      </div>
+      <div class="tile hl" data-tip="<b>Poka-Yoke</b> ระบบป้องกันไม่ให้คนทำงานผิดพลาดตั้งแต่แรก เช่น ปลั๊กเสียบกลับด้านไม่ได้">
+        <span class="badge-corner">ออกสอบบ่อย! ★</span>
+        <span class="ico">🛡️</span><b>Poka-Yoke</b>ระบบป้องกันความผิดพลาด<br>(Mistake-Proofing)
+      </div>
+      <div class="tile" data-tip="<b>Kanban & VSM</b> บัตรส่งสัญญาณดึงงานตามระบบ Pull และแผนผังสายธารคุณค่า">
+        <span class="ico">📋</span><b>Kanban &amp; VSM</b>สัญญาณดึงงาน (Pull) &amp;<br>แผนผังสายธารคุณค่า
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[10] = `<b>ระวังข้อสอบหลอกคู่แฝด:</b> <b>Transportation</b> = การเคลื่อนย้าย <b>“สิ่งของ/ชิ้นงาน”</b> vs. <b>Motion</b> = การเคลื่อนไหวของ <b>“คน”</b> (ก้ม เงย เอื้อม เดิน) และความสูญเปล่าที่เลวร้ายที่สุดคือ <b>Overproduction</b>!`;
+
+/* ---------------- STEP 11 : Agility, Resilience & BCM / ISO 22301 ---------------- */
+vizDb[11] = `
+<div class="viz-grid">
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">1</span>Agility vs. Resilience (เกราะคู่ยุค VUCA)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="vs" style="width:100%;">
+          <div class="vs-card blue" data-tip="<b>Agility</b> รับรู้การเปลี่ยนแปลงและปรับตัวคว้าโอกาสใหม่ได้อย่างรวดเร็ว">
+            <span class="ico">⚡</span><b>Agility (ความคล่องตัว)</b><b>เชิงรุก (Proactive)</b>
+            <ul>
+              <li>เน้น Speed &amp; Flexibility</li>
+              <li>ปรับกระบวนการรวดเร็ว</li>
+              <li>คว้าโอกาสใหม่ในตลาด</li>
+            </ul>
+          </div>
+          <div class="vs-mid">&amp;</div>
+          <div class="vs-card green" data-tip="<b>Resilience</b> ดูดซับแรงกระแทก ประคองธุรกิจไม่ให้ล้ม และฟื้นตัวหลังวิกฤต">
+            <span class="ico">🛡️</span><b>Resilience (การฟื้นตัว)</b><b>เชิงรับและฟื้นฟู (Recovery)</b>
+            <ul>
+              <li>เน้น Continuity &amp; Robustness</li>
+              <li>ทนทานต่อวิกฤต/ภัยพิบัติ</li>
+              <li>กู้คืนระบบกลับมาทำงานต่อ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="chips center" style="margin-bottom:8px;">
+          <span class="chip acc" data-tip="ส่งมอบคุณค่าทีละรอบสั้นๆ">🔄 Iterative / Sprint</span>
+          <span class="chip acc" data-tip="ทีมข้ามสายงานตัดสินใจไว">🤝 Cross-Functional</span>
+          <span class="chip acc" data-tip="มีซัพพลายเออร์สำรอง">🔗 Multi-Sourcing</span>
+        </div>
+        <div class="info-card">
+          <b>VUCA World ต้องมีทั้งสองอย่าง:</b> ขาด Agility ➔ ปรับตัวช้า ตกรุ่น / ขาด Resilience ➔ เจอมรสุมหรือไซเบอร์โจมตีครั้งเดียวอาจถึงขั้นล้มละลาย
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">2</span>เมทริกซ์ประเมินความเสี่ยง (Risk Matrix: โอกาสเกิด × ผลกระทบ)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="risk">
+          <div class="ax y">โอกาสเกิด (Likelihood) ▲</div>
+          <div class="cell r-y" data-tip="โอกาสสูง ผลกระทบต่ำ ➔ เฝ้าระวัง">ปานกลาง</div>
+          <div class="cell r-o" data-tip="โอกาสสูง ผลกระทบปานกลาง ➔ คุมเข้ม">สูง</div>
+          <div class="cell r-r" data-tip="วิกฤต! โอกาสสูง ผลกระทบรุนแรง ➔ ต้องมี BCP/DRP ทันที!">วิกฤต 🚨</div>
+          <div class="cell r-g" data-tip="ความเสี่ยงต่ำ">ต่ำ</div>
+          <div class="cell r-y" data-tip="ความเสี่ยงปานกลาง">ปานกลาง</div>
+          <div class="cell r-o" data-tip="โอกาสปานกลาง แต่กระทบหนัก ➔ ต้องมีแผนสำรอง">สูง</div>
+          <div class="cell r-g" data-tip="ยอมรับได้ (Accept)">ต่ำมาก</div>
+          <div class="cell r-g" data-tip="ความเสี่ยงต่ำ">ต่ำ</div>
+          <div class="cell r-y" data-tip="โอกาสเกิดน้อยแต่กระทบมหาศาล (Black Swan)">ปานกลาง</div>
+          <div class="ax x">ผลกระทบ (Impact) ➔</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>🛡️ 4 กลยุทธ์จัดการความเสี่ยง</b>
+          • <b>Avoid (หลีกเลี่ยง):</b> หยุดกิจกรรมที่เสี่ยงรุนแรงเกินรับไหว<br>
+          • <b>Mitigate (ลดผลกระทบ):</b> ติดตั้งระบบป้องกัน/เตือนภัย<br>
+          • <b>Transfer (โอนย้าย):</b> ทำประกันภัย / จ้าง Outsource<br>
+          • <b>Accept (ยอมรับ):</b> ความเสี่ยงต่ำ คอยมอนิเตอร์ตามรอบ
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">3</span>มาตรฐาน ISO 22301 (วงจร PDCA ของ BCMS)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="pdca">
+          <div class="q1" data-tip="<b>Plan</b> กำหนดนโยบาย BCM, ทำ RA & BIA หา RTO/RPO">
+            <b>P — Plan</b>ทำ RA &amp; BIA<br>กำหนด RTO/RPO
+          </div>
+          <div class="q2" data-tip="<b>Do</b> จัดทำแผน IRP, BCP, DRP">
+            <b>D — Do</b>จัดทำแผน<br>IRP/BCP/DRP
+          </div>
+          <div class="q3" data-tip="<b>Act</b> แก้ไขจุดบกพร่องจากการซ้อมแผน">
+            <b>A — Act</b>แก้ไขจุดอ่อน<br>พัฒนาต่อเนื่อง
+          </div>
+          <div class="q4" data-tip="<b>Check</b> ซ้อมแผนจำลองภาวะวิกฤต (Drill), ตรวจประเมินภายใน">
+            <b>C — Check</b>ซ้อมแผน (Drill)<br>&amp; ตรวจติดตาม
+          </div>
+          <div class="pdca-center" data-tip="ISO 22301 = ระบบบริหารความต่อเนื่องทางธุรกิจ (BCMS)"><b>ISO 22301</b>BCMS<br>Standard</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="pyramid" style="width:100%;">
+          <div class="pyr-layer bg-a1" style="width:60%;" data-tip="<b>IRP</b> แผนเผชิญเหตุฉุกเฉินระยะแรก ดูแลความปลอดภัยชีวิต">① IRP (เผชิญเหตุฉุกเฉิน)<small>ความปลอดภัยชีวิต &amp; ระงับเหตุ</small></div>
+          <div class="pyr-layer bg-a2" style="width:80%;" data-tip="<b>DRP</b> แผนกู้คืนระบบ IT & ฐานข้อมูล">② DRP (กู้ระบบ IT &amp; ข้อมูล)<small>กู้เซิร์ฟเวอร์ตาม RPO / RTO</small></div>
+          <div class="pyr-layer bg-a3" style="width:100%;" data-tip="<b>BCP</b> แผนแม่บทความต่อเนื่องทางธุรกิจ">③ BCP (แผนความต่อเนื่องธุรกิจ)<small>ประคองกระบวนการหลักให้เดินต่อได้</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>ไทม์ไลน์วิเคราะห์ผลกระทบทางธุรกิจ (BIA): แยกความต่าง RPO vs. RTO</div>
+    <div class="viz-scroll">
+      <div class="rto">
+        <div class="pt" data-tip="จุดที่สำรองข้อมูล (Backup) ครั้งล่าสุดก่อนเกิดเหตุ">
+          <div class="dot" style="border-color:#0284C7;">💾</div>
+          <b>Last Backup</b>สำรองข้อมูลล่าสุด
+        </div>
+        <div class="seg rpo" data-tip="<b>RPO (Recovery Point Objective)</b> ย้อนไปทางซ้าย: ข้อมูลสูญหายได้สูงสุดไม่เกินกี่ ชม./นาที ➔ กำหนดความถี่ในการ Backup">
+          <span class="up">◀ <b>RPO (ข้อมูลสูญหายได้สูงสุด)</b> ▶</span>
+          <span class="down">วัดย้อนหลัง = กำหนดความถี่ Backup</span>
+        </div>
+        <div class="pt" data-tip="เหตุการณ์วิกฤต เช่น เซิร์ฟเวอร์ล่ม ไฟไหม้ น้ำท่วม โดน Ransomware">
+          <div class="dot" style="border-color:#DC2626;background:#FEF2F2;">⚡</div>
+          <b style="color:#DC2626;">Incident!</b>เกิดเหตุระบบล่ม
+        </div>
+        <div class="seg rtoz" data-tip="<b>RTO (Recovery Time Objective)</b> มองไปข้างหน้า: ระบบหยุดทำงานได้นานสุดกี่ ชม. ก่อนธุรกิจเสียหายหนัก">
+          <span class="up">◀ <b>RTO (เวลาที่ระบบหยุดได้สูงสุด)</b> ▶</span>
+          <span class="down">วัดไปข้างหน้า = เวลาเป้าหมายในการกู้คืนระบบ</span>
+        </div>
+        <div class="pt" data-tip="กู้คืนระบบสำคัญกลับมาทำงานได้ในระดับขั้นต่ำที่ยอมรับได้ (Minimum Business Continuity Objective: MBCO)">
+          <div class="dot" style="border-color:#16A34A;background:#F0FDF4;">🛠️</div>
+          <b style="color:#15803D;">Recovered</b>กู้คืนระบบสำเร็จ
+        </div>
+        <div class="flow-arrow">➔</div>
+        <div class="pt" data-tip="กลับสู่การดำเนินธุรกิจตามปกติ 100%">
+          <div class="dot" style="border-color:#0D9488;">🏢</div>
+          <b>Normal Ops</b>กลับสู่สภาวะปกติ
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[11] = `<b>เก็งปรนัยเน้นๆ:</b> <b>ISO 22301</b> = มาตรฐานระบบบริหารความต่อเนื่องทางธุรกิจ (BCMS) • <b>RPO</b> = ยอมให้ <b>“ข้อมูล”</b> หายย้อนหลังได้เท่าไหร่ • <b>RTO</b> = ยอมให้ระบบ <b>“หยุดทำงาน”</b> ได้นานสุดเท่าไหร่`;
+
+
+        let currentSelectedStep = null;
+
+        function positionDrawerPointer(stepNum) {
+            const data = stepMeta[stepNum];
+            if (!data) return;
+            const drawerId = data.track === 1 ? 'drawerTrack1' : 'drawerTrack2';
+            const pointerId = data.track === 1 ? 'pointerTrack1' : 'pointerTrack2';
+            const drawer = document.getElementById(drawerId);
+            const pointer = document.getElementById(pointerId);
+            const cardEl = document.getElementById(`card-${stepNum}`);
+            if (drawer && pointer && cardEl && drawer.style.display === 'block') {
+                const cardRect = cardEl.getBoundingClientRect();
+                const drawerRect = drawer.getBoundingClientRect();
+                const centerOffset = (cardRect.left + cardRect.width / 2) - drawerRect.left;
+                pointer.style.left = `${Math.max(32, Math.min(centerOffset, drawerRect.width - 32))}px`;
+            }
+        }
+
+        function selectStep(stepNum, element) {
+            const data = stepMeta[stepNum];
+            if (!data) return;
+
+            // Remove active classes in both tracks
+            document.querySelectorAll('.chevron-item').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.step-mini-card').forEach(el => el.classList.remove('active'));
+
+            // Set active class on chevron and card
+            const chevEl = document.getElementById(`chev-${stepNum}`);
+            const cardEl = document.getElementById(`card-${stepNum}`);
+            if (chevEl) chevEl.classList.add('active');
+            if (cardEl) cardEl.classList.add('active');
+
+            currentSelectedStep = stepNum;
+
+            // Decide which drawer to open based on track
+            const drawerId = data.track === 1 ? 'drawerTrack1' : 'drawerTrack2';
+            const otherDrawerId = data.track === 1 ? 'drawerTrack2' : 'drawerTrack1';
+
+            // Close the other drawer if open
+            closeDrawer(otherDrawerId);
+
+            const drawer = document.getElementById(drawerId);
+            drawer.style.setProperty('--drawer-border', data.color);
+
+            const prevDisabled = stepNum <= 1 ? 'disabled' : '';
+            const nextDisabled = stepNum >= 11 ? 'disabled' : '';
+            const prevLabel = stepNum > 1 ? `◀ Step ${stepNum - 1}` : '◀ Step แรก';
+            const nextLabel = stepNum < 11 ? `Step ${stepNum + 1} ▶` : 'Step สุดท้าย ▶';
+
+            const innerHtml = `
+                <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+                    <div class="drawer-takeaway ${data.track === 2 ? 'teal' : ''}" style="border-left-color:${data.color};flex:1;min-width:280px;">
+                        ${data.takeaway}
+                    </div>
+                    <div class="viz-hint">💡 ชี้หรือแตะที่กล่องใดก็ได้ในแผนภาพเพื่อดูคำอธิบายเชิงลึก</div>
+                </div>
+                ${vizDb[stepNum]}
+                <div class="tip-strip">
+                    <span class="ti">🎯</span>
+                    <div><b>MBA Exam Tip (${data.track === 1 ? 'อ.บุษ' : 'อ.เยลลี่'}):</b> ${tipDb[stepNum]}</div>
+                </div>
+                <div class="drawer-nav-footer">
+                    <button class="step-nav-btn" ${prevDisabled} onclick="selectStep(${stepNum - 1})">${prevLabel}</button>
+                    <span style="font-size:0.78rem;color:#64748B;font-weight:700;">กำลังดู ${data.num} จาก 11 ขั้นตอน</span>
+                    <button class="step-nav-btn" ${nextDisabled} onclick="selectStep(${stepNum + 1})">${nextLabel}</button>
+                </div>
+            `;
+
+            if (data.track === 1) {
+                document.getElementById('d1StepBadge').innerText = data.num;
+                document.getElementById('d1StepBadge').style.backgroundColor = data.color;
+                document.querySelector('#drawerTrack1 .drawer-exam-badge').innerText = data.examBadge;
+                document.getElementById('d1Title').innerText = data.title;
+                document.getElementById('d1EnTitle').innerText = data.en;
+                document.getElementById('d1Content').innerHTML = innerHtml;
+            } else {
+                document.getElementById('d2StepBadge').innerText = data.num;
+                document.getElementById('d2StepBadge').style.backgroundColor = data.color;
+                document.querySelector('#drawerTrack2 .drawer-exam-badge').innerText = data.examBadge;
+                document.getElementById('d2Title').innerText = data.title;
+                document.getElementById('d2EnTitle').innerText = data.en;
+                document.getElementById('d2Content').innerHTML = innerHtml;
+            }
+
+            // Open drawer
+            drawer.style.display = 'block';
+            positionDrawerPointer(stepNum);
+
+            // Smooth scroll so the drawer is comfortably in view
+            setTimeout(() => {
+                drawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 80);
+        }
+
+        function closeDrawer(drawerId) {
+            const drawer = document.getElementById(drawerId);
+            if (drawer) drawer.style.display = 'none';
+
+            if (drawerId === 'drawerTrack1') {
+                for (let i = 1; i <= 6; i++) {
+                    const c = document.getElementById(`chev-${i}`);
+                    const crd = document.getElementById(`card-${i}`);
+                    if (c) c.classList.remove('active');
+                    if (crd) crd.classList.remove('active');
+                }
+            } else {
+                for (let i = 7; i <= 11; i++) {
+                    const c = document.getElementById(`chev-${i}`);
+                    const crd = document.getElementById(`card-${i}`);
+                    if (c) c.classList.remove('active');
+                    if (crd) crd.classList.remove('active');
+                }
+            }
+        }
+
+        function jumpToTrack(trackId) {
+            const el = document.getElementById(trackId);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Interactive Tooltip Engine (#vizTip) — supports Hover & Mobile Tap
+        const tipEl = document.getElementById('vizTip');
+        let activeTipTarget = null;
+
+        function placeTip(x, y) {
+            const pad = 14;
+            const rect = tipEl.getBoundingClientRect();
+            let left = x + 14;
+            let top = y + 16;
+            if (left + rect.width + pad > window.innerWidth) {
+                left = Math.max(pad, x - rect.width - 14);
+            }
+            if (top + rect.height + pad > window.innerHeight) {
+                top = Math.max(pad, y - rect.height - 14);
+            }
+            tipEl.style.left = `${left}px`;
+            tipEl.style.top = `${top}px`;
+        }
+
+        document.addEventListener('mouseover', (e) => {
+            const target = e.target.closest('[data-tip]');
+            if (!target) return;
+            activeTipTarget = target;
+            tipEl.innerHTML = target.getAttribute('data-tip');
+            tipEl.classList.add('show');
+            placeTip(e.clientX, e.clientY);
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!activeTipTarget) return;
+            placeTip(e.clientX, e.clientY);
+        });
+
+        document.addEventListener('mouseout', (e) => {
+            const target = e.target.closest('[data-tip]');
+            if (!target) return;
+            const related = e.relatedTarget ? e.relatedTarget.closest('[data-tip]') : null;
+            if (related !== target) {
+                activeTipTarget = null;
+                tipEl.classList.remove('show');
+                target.classList.remove('tip-on');
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            const target = e.target.closest('[data-tip]');
+            document.querySelectorAll('.tip-on').forEach(el => {
+                if (el !== target) el.classList.remove('tip-on');
+            });
+            if (target) {
+                activeTipTarget = target;
+                target.classList.add('tip-on');
+                tipEl.innerHTML = target.getAttribute('data-tip');
+                tipEl.classList.add('show');
+                const r = target.getBoundingClientRect();
+                placeTip(r.left + r.width / 2, r.top);
+            } else {
+                activeTipTarget = null;
+                tipEl.classList.remove('show');
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (currentSelectedStep) positionDrawerPointer(currentSelectedStep);
+        });
+        document.querySelectorAll('.timeline-scroll-wrap').forEach(wrap => {
+            wrap.addEventListener('scroll', () => {
+                if (currentSelectedStep) positionDrawerPointer(currentSelectedStep);
+            });
+        });
+
+        // Open Step 1 by default on load
+        window.addEventListener('DOMContentLoaded', () => {
+            selectStep(1, document.getElementById('chev-1'));
+        });
+    </script>
+</body>
+</html>
