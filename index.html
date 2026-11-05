@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBA KKU EX32 — VCD Visual Infographic v3 (Full-Width All-Infographic Edition)</title>
+    <title>MBA KKU EX32 — VCD Visual Infographic v3 (12-Step Complete Edition)</title>
     <style>
         :root {
             --kku-orange: #E65100;
@@ -1379,6 +1379,17 @@
 }
 
 
+        /* Step 12 Color Styling (Symmetrical 6+6 Track 2) */
+        .chevron-item.color-12 { background-color: #7C3AED; }
+        .step-mini-card.color-12 {
+            background-color: #F5F3FF;
+            border-color: #DDD6FE;
+            --bar-color: #7C3AED;
+            --title-color: #4C1D95;
+            --icon-border-color: #7C3AED;
+            --active-color: #7C3AED;
+        }
+
         /* Fluid Full-Width Layout Overrides */
         .header-wrap {
             max-width: 96% !important;
@@ -1607,16 +1618,17 @@
             <div class="timeline-scroll-wrap">
                 <div class="timeline-container">
                     
-                    <!-- 1. Chevron Interlocking Arrows Bar -->
+                    <!-- 1. Chevron Interlocking Arrows Bar (6 Steps: 7–12) -->
                     <div class="chevron-bar" id="t2ChevronBar">
                         <div class="chevron-item color-7" onclick="selectStep(7, this)" id="chev-7">Step 7</div>
                         <div class="chevron-item color-8" onclick="selectStep(8, this)" id="chev-8">Step 8</div>
                         <div class="chevron-item color-9" onclick="selectStep(9, this)" id="chev-9">Step 9</div>
                         <div class="chevron-item color-10" onclick="selectStep(10, this)" id="chev-10">Step 10</div>
                         <div class="chevron-item color-11" onclick="selectStep(11, this)" id="chev-11">Step 11</div>
+                        <div class="chevron-item color-12" onclick="selectStep(12, this)" id="chev-12">Step 12</div>
                     </div>
 
-                    <!-- 2. Compact Cards Below Chevrons -->
+                    <!-- 2. Compact Cards Below Chevrons (6 Cards: 7–12) -->
                     <div class="cards-bar" id="t2CardsBar">
                         
                         <!-- Card 7 -->
@@ -1632,13 +1644,22 @@
                         <div class="step-mini-card color-8" onclick="selectStep(8, document.getElementById('chev-8'))" id="card-8">
                             <div class="card-header-bar"></div>
                             <div class="card-icon-circle">📦</div>
-                            <div class="mini-title">คำนวณ EOQ & ROP</div>
-                            <div class="mini-desc">สูตรสั่งซื้อประหยัดสุด, Safety Stock & ต้นทุนรวม TC</div>
+                            <div class="mini-title">ซัพพลายเชน & EOQ/ROP</div>
+                            <div class="mini-desc">โลจิสติกส์ 4 ด้าน, ABC, FIFO & โจทย์สไลด์ EOQ/ROP</div>
                             <div class="mini-click-tag">คลิกดู Infographic ▼</div>
                         </div>
 
                         <!-- Card 9 -->
                         <div class="step-mini-card color-9" onclick="selectStep(9, document.getElementById('chev-9'))" id="card-9">
+                            <div class="card-header-bar"></div>
+                            <div class="card-icon-circle">🛡️</div>
+                            <div class="mini-title">BCM & ISO 22301</div>
+                            <div class="mini-desc">เป้าหมาย 3S, BIA 3 สี, 5 ทรัพยากร & Kodak vs Fuji</div>
+                            <div class="mini-click-tag">คลิกดู Infographic ▼</div>
+                        </div>
+
+                        <!-- Card 10 -->
+                        <div class="step-mini-card color-10" onclick="selectStep(10, document.getElementById('chev-10'))" id="card-10">
                             <div class="card-header-bar"></div>
                             <div class="card-icon-circle">📈</div>
                             <div class="mini-title">วัด Productivity</div>
@@ -1646,8 +1667,8 @@
                             <div class="mini-click-tag">คลิกดู Infographic ▼</div>
                         </div>
 
-                        <!-- Card 10 -->
-                        <div class="step-mini-card color-10" onclick="selectStep(10, document.getElementById('chev-10'))" id="card-10">
+                        <!-- Card 11 -->
+                        <div class="step-mini-card color-11" onclick="selectStep(11, document.getElementById('chev-11'))" id="card-11">
                             <div class="card-header-bar"></div>
                             <div class="card-icon-circle">⚡</div>
                             <div class="mini-title">ลีน & 8 Wastes</div>
@@ -1655,12 +1676,12 @@
                             <div class="mini-click-tag">คลิกดู Infographic ▼</div>
                         </div>
 
-                        <!-- Card 11 -->
-                        <div class="step-mini-card color-11" onclick="selectStep(11, document.getElementById('chev-11'))" id="card-11">
+                        <!-- Card 12 -->
+                        <div class="step-mini-card color-12" onclick="selectStep(12, document.getElementById('chev-12'))" id="card-12">
                             <div class="card-header-bar"></div>
-                            <div class="card-icon-circle">🛡️</div>
-                            <div class="mini-title">Agility & BCM</div>
-                            <div class="mini-desc">Agility vs Resilience, BIA (RTO/RPO) & ISO 22301</div>
+                            <div class="card-icon-circle">🚀</div>
+                            <div class="mini-title">Agility & Resilience</div>
+                            <div class="mini-desc">12 Agile Principles, Rodin 5 ข้อ, สัญญา SLA & TCO</div>
                             <div class="mini-click-tag">คลิกดู Infographic ▼</div>
                         </div>
 
@@ -1700,11 +1721,11 @@
     <div id="vizTip" role="tooltip" aria-hidden="true"></div>
 
     <script>
-        // Metadata for all 11 Steps (MBA KKU EX32 — VCD Visual Infographic v3)
+        // Metadata for all 12 Steps (MBA KKU EX32 — VCD Visual Infographic v3: 6 + 6 Symmetrical)
         const stepMeta = {
             1: {
                 track: 1,
-                num: "STEP 01",
+                num: "STEP 01 (สไลด์ 1)",
                 title: "ความหมายและ 5 มิติของคุณค่า",
                 en: "Principles & Dimensions of Value (Customer Perceived Value & SDGs)",
                 color: "#F59E0B",
@@ -1713,7 +1734,7 @@
             },
             2: {
                 track: 1,
-                num: "STEP 02",
+                num: "STEP 02 (สไลด์ 2)",
                 title: "ค้นหาโอกาสตลาดและพฤติกรรมผู้บริโภค",
                 en: "Market Needs & Consumer Behaviour (Unmet Needs, PMF Pyramid & Decision Journey)",
                 color: "#FB923C",
@@ -1722,7 +1743,7 @@
             },
             3: {
                 track: 1,
-                num: "STEP 03",
+                num: "STEP 03 (สไลด์ 3)",
                 title: "การแบ่งส่วนตลาด เลือกกลุ่มเป้าหมาย และสร้าง Persona",
                 en: "Segmentation, Targeting & Customer Persona (STP, MASDA & TAM-SAM-SOM)",
                 color: "#F97316",
@@ -1731,7 +1752,7 @@
             },
             4: {
                 track: 1,
-                num: "STEP 04",
+                num: "STEP 04 (สไลด์ 4)",
                 title: "การออกแบบคุณค่าด้วย Value Proposition Canvas (VPC)",
                 en: "Value Proposition Design (Customer Jobs-Pains-Gains ⟷ Value Map Fit)",
                 color: "#EA580C",
@@ -1740,7 +1761,7 @@
             },
             5: {
                 track: 1,
-                num: "STEP 05",
+                num: "STEP 05 (สไลด์ 5)",
                 title: "แปลงคุณค่าสู่กลยุทธ์การตลาด 4Ps / 7Ps & Omnichannel",
                 en: "Translating VPD to Marketing Mix (Traceability, Value-Based Pricing & PLC)",
                 color: "#E11D48",
@@ -1749,7 +1770,7 @@
             },
             6: {
                 track: 1,
-                num: "STEP 06",
+                num: "STEP 06 (สไลด์ 6)",
                 title: "การสื่อสารคุณค่า (IMC), BMC 9 ช่อง และการทดสอบตลาด",
                 en: "Communicating Value, Business Model Canvas & Market Validation (MVP)",
                 color: "#C026D3",
@@ -1758,48 +1779,57 @@
             },
             7: {
                 track: 2,
-                num: "STEP 07",
+                num: "STEP 07 (สไลด์ 7)",
                 title: "โซ่คุณค่า (Value Chain), การออกแบบกระบวนการ และสมดุล C-Q-T",
                 en: "Porter's Value Chain, Transformation Process, SIPOC & ASME Symbols",
                 color: "#0D9488",
-                examBadge: "ปรนัย & วิเคราะห์กระบวนการ",
+                examBadge: "สไลด์ที่ 7 • ปรนัย & วิเคราะห์กระบวนการ",
                 takeaway: "💡 ฝ่ายปฏิบัติการเปลี่ยนสัญญาคุณค่าให้เป็นของจริงผ่านกิจกรรมหลัก 5 ด้าน + กิจกรรมสนับสนุน 4 ด้าน โดยรักษาสมดุลของ ต้นทุน (Cost), คุณภาพ (Quality), และ เวลา (Time)"
             },
             8: {
                 track: 2,
-                num: "STEP 08",
-                title: "การส่งมフオクคุณค่าและการคำนวณสต๊อก EOQ & ROP",
-                en: "Logistics, Economic Order Quantity (EOQ) & Reorder Point (ROP)",
+                num: "STEP 08 (สไลด์ 8)",
+                title: "ซัพพลายเชน โลจิสติกส์ 4 ด้าน ABC, FIFO & คำนวณ EOQ / ROP",
+                en: "Supply Chain & Logistics Management: Order Mgmt, ABC Analysis, FIFO, EOQ, ROP, WMS & SC Risks",
                 color: "#0891B2",
-                examBadge: "คำนวณเน้นๆ 2 ข้อใหญ่!",
-                takeaway: "💡 ตอบ 2 คำถามหัวใจของคลังสินค้า: 1) สั่งครั้งละเท่าไหร่จึงประหยัดที่สุด (Q* = EOQ) และ 2) สต๊อกเหลือเท่าไหร่ต้องสั่งซื้อซ้ำทันที (ROP)"
+                examBadge: "สไลด์ที่ 8 • คำนวณ EOQ/ROP & ปรนัย!",
+                takeaway: "💡 บริหารสินค้าคงคลังให้สมดุลระหว่าง Inventory Investment กับ Customer Service ด้วย 4 เทคนิค: ABC (กฎ 80/20), FIFO (เข้าก่อนออกก่อน), EOQ (สั่งเท่าไร Q*), และ ROP (สั่งเมื่อไร d×L)"
             },
             9: {
                 track: 2,
-                num: "STEP 09",
-                title: "การวัดผลิตภาพ (Productivity Measurement) & การเติบโต",
-                en: "Single-Factor, Multi-Factor Productivity (MFP) & % Productivity Change",
+                num: "STEP 09 (สไลด์ 9)",
+                title: "การบริหารความต่อเนื่องทางธุรกิจ (BCM), BIA, Risk Matrix & ISO 22301",
+                en: "Business Continuity Management: 3S Objectives, BIA Urgency, 5 Pillars, 4-Phase KPIs, ISO 31000 & ISO 22301",
                 color: "#0284C7",
-                examBadge: "คำนวณเน้นๆ 2 ข้อใหญ่!",
-                takeaway: "💡 ผลผลิต (Production) ไม่เท่ากับ ผลิตภาพ (Productivity)! การวัดผลิตภาพต้องเทียบ Output ต่อ Input เสมอ และ MFP สะท้อนประสิทธิภาพรวมได้แม่นยำกว่าปัจจัยเดี่ยว"
+                examBadge: "สไลด์ที่ 9 • ปรนัยเน้นๆ!",
+                takeaway: "💡 เป้าหมายหลักของ BCM คือ 3S: Survive (อยู่รอดผลกระทบน้อยสุด), Serve (บริการลูกค้าต่อเนื่อง), และ Sustain (ปกป้องกระแสเงินสดและกำไร) ผ่านมาตรฐานสากล ISO 22301 (10 Clauses)"
             },
             10: {
                 track: 2,
-                num: "STEP 10",
-                title: "การบริหารแบบลีน (Lean) และความสูญเปล่า 8 ประการ (DOWNTIME)",
-                en: "Lean Principles, 8 Wastes (DOWNTIME), VA/NNVA/NVA & Lean Tools",
+                num: "STEP 10 (สไลด์ 10)",
+                title: "การวัดผลิตภาพ (Productivity Measurement) & การเติบโต",
+                en: "Single-Factor (Labor), Multi-Factor Productivity (MFP) & % Productivity Change (Lisa Case)",
                 color: "#2563EB",
-                examBadge: "ปรนัย & วิเคราะห์กิจกรรม",
-                takeaway: "💡 ลีนมุ่งเน้นการเพิ่มสัดส่วน VA กำจัดความสูญเปล่า NVA (8 Wastes) และลดขั้นตอน NNVA โดยมี Overproduction (ผลิตเกินต้องการ) เป็นความสูญเปล่าที่ร้ายแรงที่สุด"
+                examBadge: "สไลด์ที่ 10 • คำนวณเน้นๆ!",
+                takeaway: "💡 ผลผลิต (Production) ไม่เท่ากับ ผลิตภาพ (Productivity)! การวัดผลิตภาพต้องเทียบ Output ต่อ Input เสมอ และ MFP สะท้อนประสิทธิภาพรวมได้แม่นยำกว่าปัจจัยเดี่ยว"
             },
             11: {
                 track: 2,
-                num: "STEP 11",
-                title: "ความคล่องตัว (Agility), ภูมิคุ้มกัน (Resilience) และ BCM / ISO 22301",
-                en: "Organizational Agility, Business Impact Analysis (RTO/RPO) & ISO 22301 BCMS",
+                num: "STEP 11 (สไลด์ 11)",
+                title: "การบริหารแบบลีน (Lean) และความสูญเปล่า 8 ประการ (DOWNTIME)",
+                en: "Lean Principles, 8 Wastes (DOWNTIME), VA/NNVA/NVA & Lean Tools (5S, Kaizen, Poka-Yoke, VSM)",
                 color: "#4F46E5",
-                examBadge: "ปรนัย 10 ข้อ Focus",
-                takeaway: "💡 ในโลกยุค VUCA องค์กรต้องมี Agility เพื่อรุกคว้าโอกาสใหม่ และมี Resilience + ระบบ BCM (ISO 22301) เพื่อกู้คืนธุรกิจภายในเวลา RTO และข้อมูลสูญหายไม่เกิน RPO"
+                examBadge: "สไลด์ที่ 11 • ปรนัย & วิเคราะห์กิจกรรม",
+                takeaway: "💡 ลีนมุ่งเน้นการเพิ่มสัดส่วน VA กำจัดความสูญเปล่า NVA (8 Wastes) และลดขั้นตอน NNVA โดยมี Overproduction (ผลิตเกินต้องการ) เป็นความสูญเปล่าที่ร้ายแรงที่สุด"
+            },
+            12: {
+                track: 2,
+                num: "STEP 12 (สไลด์ 12)",
+                title: "การปรับปรุงกระบวนการด้วยความคล่องตัว (Agility) และความยืดหยุ่น (Resilience)",
+                en: "Business Process Improvement with Agility & Resilience (12 Agile Principles, Rodin 5 Pillars, SLA & TCO)",
+                color: "#7C3AED",
+                examBadge: "สไลด์ที่ 12 • ปรนัย & ประยุกต์ใช้",
+                takeaway: "💡 กระบวนการยุคใหม่ต้องมีทั้ง Agility (ตอบสนองและปรับตัวได้อย่างรวดเร็วเชิงรุก) และ Resilience (ดูดซับแรงกดดันและฟื้นคืนฟังก์ชันหลักจากวิกฤต พร้อมกระจายซัพพลายเชนด้วย SLA & TCO)"
             }
         };
 
@@ -2447,14 +2477,15 @@ tipDb[6] = `ปิด Case ด้วย <b>BMC ครบ 9 ช่อง</b> ท�
 
 
 /* ================================================================
-   V3 — INFOGRAPHIC CONTENT : TRACK 2 (Step 7–11, รศ.ดร.ปณัทพร) [FULL-WIDTH SPLIT-DUO]
+   V3 — INFOGRAPHIC CONTENT : TRACK 2 (Step 7–12, รศ.ดร.ปณัทพร) [FULL-WIDTH SPLIT-DUO]
+   Matches exact slides 7, 8, 9, 10, 11, 12
    ================================================================ */
 
-/* ---------------- STEP 7 : Value Chain, Process Design & C-Q-T ---------------- */
+/* ---------------- STEP 7 : Value Chain, Process Design & C-Q-T (สไลด์ 7) ---------------- */
 vizDb[7] = `
 <div class="viz-grid">
   <div class="viz-panel wide">
-    <div class="viz-h"><span class="n">1</span>โซ่คุณค่าของ Michael E. Porter (Value Chain Model)</div>
+    <div class="viz-h"><span class="n">1</span>โซ่คุณค่าของ Michael E. Porter (Value Chain Model — สไลด์ 7)</div>
     <div class="viz-scroll">
       <div class="vchain">
         <div class="vc-body">
@@ -2493,7 +2524,7 @@ vizDb[7] = `
         <div class="vc-margin" data-tip="<b>Margin (ส่วนต่างคุณค่า/กำไร)</b> = มูลค่ารวมที่ลูกค้ายินดีจ่าย − ต้นทุนรวมในการทำกิจกรรมทั้งหมดใน Value Chain">MARGIN ★</div>
       </div>
     </div>
-    <div class="viz-cap">ทุกกิจกรรมในโซ่คุณค่าต้องช่วย “เพิ่มคุณค่า” หรือ “ลดต้นทุน” เพื่อให้เกิด <b>Margin</b> ที่ปลายลูกศร</div>
+    <div class="viz-cap">Value Creation (Inbound + Operations) ➔ Value Delivery (Outbound + Marketing &amp; Sales + Service) ➔ Value Capture (<b>Margin</b>)</div>
   </div>
 
   <div class="viz-panel">
@@ -2609,7 +2640,7 @@ vizDb[7] = `
 </div>`;
 tipDb[7] = `ออกสอบปรนัยบ่อย: แยกให้แม่นว่า <b>Primary Activities 5 ตัว</b> มีอะไรบ้าง (Inbound, Operations, Outbound, Marketing & Sales, Service) ส่วน <b>Procurement / HRM / Tech / Infrastructure</b> เป็น <b>Support Activities</b>!`;
 
-/* ---------------- STEP 8 : Value Delivery, EOQ & ROP ---------------- */
+/* ---------------- STEP 8 : Supply Chain, Logistics, ABC, FIFO, EOQ & ROP (สไลด์ 8) ---------------- */
 function eoqCurveSvg() {
   return `
   <svg viewBox="0 0 540 260" role="img" aria-label="EOQ Cost Trade-off Curve">
@@ -2621,36 +2652,36 @@ function eoqCurveSvg() {
     <line x1="56" y1="216" x2="510" y2="216" stroke="#475569" stroke-width="2" marker-end="url(#arr8)"/>
     <line x1="56" y1="216" x2="56" y2="22" stroke="#475569" stroke-width="2" marker-end="url(#arr8)"/>
     <text x="505" y="238" text-anchor="end" font-size="11.5" font-weight="700" fill="#334155">ปริมาณสั่งซื้อต่อครั้ง (Q) ➔</text>
-    <text x="64" y="30" font-size="11.5" font-weight="700" fill="#334155">ต้นทุนต่อปี (บาท)</text>
-    <line x1="56" y1="216" x2="475" y2="54" stroke="#0284C7" stroke-width="3" data-tip="<b>Holding Cost = (Q/2) × H</b> ยิ่งสั่งต่อครั้งมาก สต๊อกเฉลี่ยยิ่งสูง ต้นทุนเก็บรักษายิ่งเพิ่มเป็นเส้นตรง"/>
+    <text x="64" y="30" font-size="11.5" font-weight="700" fill="#334155">ต้นทุนต่อปี ($)</text>
+    <line x1="56" y1="216" x2="475" y2="54" stroke="#0284C7" stroke-width="3" data-tip="<b>Annual Holding Cost = (Q/2) × H</b> ยิ่งสั่งต่อครั้งมาก สต๊อกเฉลี่ยยิ่งสูง ต้นทุนเก็บรักษายิ่งเพิ่มเป็นเส้นตรง"/>
     <text x="468" y="47" text-anchor="end" font-size="11.5" font-weight="800" fill="#0284C7">Holding Cost = (Q/2)H</text>
-    <path d="M 82,42 Q 140,145 236,152 T 480,200" fill="none" stroke="#F97316" stroke-width="3" data-tip="<b>Ordering Cost = (D/Q) × S</b> ยิ่งสั่งต่อครั้งมาก จำนวนครั้งที่สั่งยิ่งน้อยลง ต้นทุนสั่งซื้อรวมจึงลดลง"/>
-    <text x="480" y="190" text-anchor="end" font-size="11.5" font-weight="800" fill="#EA580C">Ordering Cost = (D/Q)S</text>
-    <path d="M 85,36 C 130,96 185,92 236,92 C 295,92 380,108 475,40" fill="none" stroke="#0F172A" stroke-width="3.5" data-tip="<b>Total Cost (TC)</b> = ต้นทุนสั่งซื้อ + ต้นทุนเก็บรักษา ต่ำที่สุดที่จุด Q*"/>
+    <path d="M 82,42 Q 140,145 236,152 T 480,200" fill="none" stroke="#F97316" stroke-width="3" data-tip="<b>Annual Setup/Ordering Cost = (D/Q) × S</b> ยิ่งสั่งต่อครั้งมาก จำนวนครั้งที่สั่งยิ่งน้อยลง ต้นทุนสั่งซื้อรวมจึงลดลง"/>
+    <text x="480" y="190" text-anchor="end" font-size="11.5" font-weight="800" fill="#EA580C">Setup/Ordering Cost = (D/Q)S</text>
+    <path d="M 85,36 C 130,96 185,92 236,92 C 295,92 380,108 475,40" fill="none" stroke="#0F172A" stroke-width="3.5" data-tip="<b>Total Annual Cost (TC)</b> = ต้นทุนสั่งซื้อ + ต้นทุนเก็บรักษา ต่ำที่สุดที่จุด Q*"/>
     <text x="380" y="56" font-size="12" font-weight="900" fill="#0F172A">Total Cost (TC ต่ำสุดที่ Q*)</text>
     <line x1="236" y1="92" x2="236" y2="216" stroke="#E11D48" stroke-width="2" stroke-dasharray="5 4"/>
-    <circle cx="236" cy="152" r="6" fill="#E11D48" stroke="#FFFFFF" stroke-width="2" data-tip="<b>จุดตัดสมดุล:</b> ที่ Q* ต้นทุนสั่งซื้อ = ต้นทุนเก็บรักษา พอดี!"/>
+    <circle cx="236" cy="152" r="6" fill="#E11D48" stroke="#FFFFFF" stroke-width="2" data-tip="<b>จุดตัดสมดุล:</b> ที่ Q* ต้นทุนสั่งซื้อ (D/Q)S = ต้นทุนเก็บรักษา (Q/2)H พอดี!"/>
     <circle cx="236" cy="92" r="6" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
     <rect x="180" y="222" width="112" height="24" rx="6" fill="#E11D48"/>
     <text x="236" y="238" text-anchor="middle" font-size="12" font-weight="800" fill="#FFFFFF">Q* (EOQ) = √(2DS/H)</text>
-    <text x="246" y="148" font-size="11" font-weight="800" fill="#BE123C">◀ จุดตัด Holding = Ordering</text>
+    <text x="246" y="148" font-size="11" font-weight="800" fill="#BE123C">◀ จุดตัด Holding = Setup</text>
   </svg>`;
 }
 
 function ropSawtoothSvg() {
   return `
   <svg viewBox="0 0 540 260" role="img" aria-label="ROP Sawtooth Inventory Chart">
-    <rect x="56" y="180" width="444" height="36" fill="#FEE2E2" opacity="0.65" data-tip="<b>Safety Stock (SS)</b> สต๊อกกันชนเผื่อของมาช้าหรือขายดีเกินคาด"/>
+    <rect x="56" y="180" width="444" height="36" fill="#FEE2E2" opacity="0.65" data-tip="<b>Safety Stock (SS)</b> สต๊อกกันชนเผื่อของมาช้าหรือขายดีเกินคาด (เช่น วิกฤตทะเลแดงต้องเพิ่ม SS +20-30%)"/>
     <line x1="56" y1="180" x2="500" y2="180" stroke="#EF4444" stroke-width="1.8" stroke-dasharray="4 3"/>
     <text x="494" y="200" text-anchor="end" font-size="11" font-weight="800" fill="#B91C1C">Safety Stock (SS)</text>
     <line x1="56" y1="130" x2="500" y2="130" stroke="#F59E0B" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="494" y="124" text-anchor="end" font-size="11.5" font-weight="800" fill="#B45309">จุดสั่งซื้อซ้ำ ROP = (d × L) + SS</text>
+    <text x="494" y="124" text-anchor="end" font-size="11.5" font-weight="800" fill="#B45309">จุดสั่งซื้อซ้ำ ROP = d × L (+ SS)</text>
     <line x1="56" y1="216" x2="510" y2="216" stroke="#475569" stroke-width="2"/>
     <line x1="56" y1="216" x2="56" y2="22" stroke="#475569" stroke-width="2"/>
-    <text x="64" y="32" font-size="11.5" font-weight="700" fill="#334155">ระดับสต๊อก (หน่วย)</text>
-    <text x="506" y="238" text-anchor="end" font-size="11.5" font-weight="700" fill="#334155">เวลา (วัน) ➔</text>
+    <text x="64" y="32" font-size="11.5" font-weight="700" fill="#334155">Inventory Level (units)</text>
+    <text x="506" y="238" text-anchor="end" font-size="11.5" font-weight="700" fill="#334155">Time (days) ➔</text>
     <polyline points="56,52 216,180 216,52 376,180 376,52 486,136" fill="none" stroke="#0891B2" stroke-width="3.5" stroke-linejoin="round"/>
-    <text x="50" y="56" text-anchor="end" font-size="10.5" font-weight="800" fill="#0F172A">Q*+SS</text>
+    <text x="50" y="56" text-anchor="end" font-size="10.5" font-weight="800" fill="#0F172A">Q*</text>
     <text x="50" y="134" text-anchor="end" font-size="10.5" font-weight="800" fill="#B45309">ROP</text>
     <text x="50" y="184" text-anchor="end" font-size="10.5" font-weight="800" fill="#B91C1C">SS</text>
     <circle cx="156" cy="130" r="6.5" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2"/>
@@ -2659,119 +2690,397 @@ function ropSawtoothSvg() {
     <line x1="156" y1="206" x2="216" y2="206" stroke="#0F172A" stroke-width="2.5"/>
     <rect x="150" y="222" width="74" height="20" rx="5" fill="#0F172A"/>
     <text x="187" y="236" text-anchor="middle" font-size="10.5" font-weight="800" fill="#FDBA74">Lead Time (L)</text>
-    <text x="148" y="116" text-anchor="end" font-size="11" font-weight="800" fill="#B45309">🔔 สั่งซื้อที่จุด ROP</text>
+    <text x="148" y="116" text-anchor="end" font-size="11" font-weight="800" fill="#B45309">🔔 Place order at ROP</text>
   </svg>`;
 }
 
 vizDb[8] = `
 <div class="viz-grid">
   <div class="viz-panel wide">
-    <div class="viz-h"><span class="n">1</span>Flow การส่งมอบคุณค่า &amp; บทบาทของคลังสินค้า</div>
-    <div class="viz-scroll" style="padding-top:12px;">
-      <div class="flow minw">
-        <div class="flow-node fill" data-tip="ซัพพลายเออร์ส่งมอบวัตถุดิบและชิ้นส่วน"><span class="ico">🏭</span><b>Suppliers</b>ผู้ผลิตวัตถุดิบ</div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node fill" data-tip="<b>Inbound Logistics</b> รับ ตรวจสอบ จัดเก็บวัตถุดิบเข้าคลัง"><span class="ico">📥</span><b>Inbound</b>โลจิสติกส์ขาเข้า</div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node dark" data-tip="<b>Inventory Buffer</b> คลังสินค้าเป็นกันชนเชื่อมการผลิตกับความต้องการลูกค้า"><span class="pin">⚖️ Trade-off</span><span class="ico">📦</span><b>Inventory (EOQ/ROP)</b>บริหารสต๊อกให้สมดุล</div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node fill" data-tip="<b>Outbound Logistics</b> ส่งมอบตรงเวลา (On-Time) ครบถ้วน (In-Full)"><span class="ico">🚚</span><b>Outbound</b>โลจิสติกส์ขาออก</div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node fill" data-tip="ระวัง <b>Bullwhip Effect</b>: ความผันผวนคำสั่งซื้อปลายน้ำขยายตัวใหญ่ขึ้นเรื่อยๆ เมื่อย้อนกลับสู่ต้นน้ำ"><span class="pin">🌊 Bullwhip</span><span class="ico">😊</span><b>Customers</b>ได้รับของตรงเวลา</div>
+    <div class="viz-h"><span class="n">1</span>4 กระบวนการหลักของการจัดการโลจิสติกส์ (Nehra, 2023) &amp; Order Management 8 ขั้นตอน (สไลด์ 9–12)</div>
+    <div class="tiles t4" style="margin-bottom:12px;">
+      <div class="tile hl" data-tip="<b>1. Order Management</b> กระบวนการรับ ตรวจสอบ ชำระเงิน ยืนยัน จัดส่ง และดูแลการคืนสินค้า ครบ 8 ขั้นตอน">
+        <span class="badge-corner">Process 1</span>
+        <span class="ico">🧾</span><b>1. Order Management</b>การจัดการคำสั่งซื้อ (8 ขั้นตอน)
+      </div>
+      <div class="tile hl" data-tip="<b>2. Inventory Management</b> สร้างสมดุลระหว่าง Inventory Investment กับ Customer Service ด้วย ABC, FIFO, EOQ, ROP">
+        <span class="badge-corner">Process 2 ★</span>
+        <span class="ico">📦</span><b>2. Inventory Management</b>สต๊อก 4 ประเภท: Raw, WIP, MRO, FG
+      </div>
+      <div class="tile" data-tip="<b>3. Warehouse Management (WMS)</b> 9 ฟังก์ชัน: Receive ➔ Putaway ➔ Track ➔ Pick ➔ Pack ➔ WIP ➔ Ship ➔ Returns ➔ Reports">
+        <span class="badge-corner">Process 3</span>
+        <span class="ico">🏭</span><b>3. Warehouse Mgmt (WMS)</b>คลังสินค้า 9 ขั้นตอน (SAP, BlueYonder, Rubix)
+      </div>
+      <div class="tile" data-tip="<b>4. Transportation Management</b> กฎสไลด์หน้า 49: ขนส่งเร็ว = แพง & ล็อตเล็ก | ขนส่งช้า = ถูก & ล็อตใหญ่มาก">
+        <span class="badge-corner">Process 4</span>
+        <span class="ico">🚚</span><b>4. Transportation Mgmt</b>เร็ว = แพง/ล็อตเล็ก • ช้า = ถูก/ล็อตใหญ่
+      </div>
+    </div>
+    <div class="viz-scroll">
+      <div class="chev-flow minw">
+        <div class="bg-a4" data-tip="<b>ขั้นที่ 1: Order Receipt</b> รับคำสั่งซื้อจากลูกค้าผ่านช่องทางต่างๆ">1. Order Receipt<small>รับคำสั่งซื้อ</small></div>
+        <div class="bg-a3" data-tip="<b>ขั้นที่ 2: Inventory Check</b> ตรวจสอบยอดสต๊อกว่ามีสินค้าพร้อมส่งหรือไม่">2. Inventory Check<small>เช็กสต๊อกคงเหลือ</small></div>
+        <div class="bg-a2" data-tip="<b>ขั้นที่ 3: Payment Processing</b> ตรวจสอบและอนุมัติการชำระเงิน">3. Payment<small>ชำระเงิน</small></div>
+        <div class="bg-a1" data-tip="<b>ขั้นที่ 4: Order Confirmation</b> ยืนยันคำสั่งซื้อและส่งใบยืนยันให้ลูกค้า">4. Confirmation<small>ยืนยันออร์เดอร์</small></div>
+        <div class="bg-a2" data-tip="<b>ขั้นที่ 5: Fulfillment</b> หยิบสินค้า (Pick) แพ็กของ (Pack) เตรียมส่งมอบ">5. Fulfillment<small>หยิบ/แพ็กสินค้า</small></div>
+        <div class="bg-a3" data-tip="<b>ขั้นที่ 6: Delivery Tracking</b> จัดส่งและติดตามสถานะพัสดุแบบเรียลไทม์">6. Tracking<small>ติดตามการจัดส่ง</small></div>
+        <div class="bg-a4" data-tip="<b>ขั้นที่ 7: Returns & Exchanges</b> จัดการการคืนและเปลี่ยนสินค้า (Reverse Logistics)">7. Returns<small>คืน/เปลี่ยนสินค้า</small></div>
+        <div class="bg-a3" data-tip="<b>ขั้นที่ 8: Data Management</b> บันทึกและวิเคราะห์ข้อมูลคำสั่งซื้อเพื่อพัฒนาบริการ">8. Data Mgmt<small>จัดการข้อมูล</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">2</span>เทคนิคบริหารสต๊อกที่ 1 &amp; 2: ABC Analysis (กฎ 80/20) &amp; ระบบ FIFO (สไลด์ 16–26)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div style="width:100%;">
+          <div style="font-size:0.8rem;font-weight:800;color:#0F172A;margin-bottom:8px;">📊 สัดส่วน ABC Analysis (จำแนกตาม Annual Dollar Volume = ปริมาณต่อปี × ต้นทุนต่อหน่วย)</div>
+          <div class="bar-row">
+            <span><b style="color:#DC2626;">Class A</b> (15% รายการ)</span>
+            <div class="bar-track"><div class="bar-fill" style="width:80%;background:linear-gradient(90deg,#DC2626,#EF4444);">70% – 80% ของมูลค่าต่อปี (คุมเข้มสูงสุด!)</div></div>
+          </div>
+          <div class="bar-row" style="margin-top:8px;">
+            <span><b style="color:#D97706;">Class B</b> (30% รายการ)</span>
+            <div class="bar-track"><div class="bar-fill" style="width:25%;background:linear-gradient(90deg,#D97706,#F59E0B);">15–25% มูลค่า</div></div>
+          </div>
+          <div class="bar-row" style="margin-top:8px;">
+            <span><b style="color:#0284C7;">Class C</b> (55% รายการ)</span>
+            <div class="bar-track"><div class="bar-fill" style="width:12%;background:linear-gradient(90deg,#0284C7,#38BDF8);">~5%</div></div>
+          </div>
+          <div class="info-card" style="margin-top:10px;font-size:0.76rem;">
+            <b>📋 ตัวอย่างสไลด์หน้า 22 (Silicon Chips 10 รายการ มูลค่ารวม $232,057):</b><br>
+            • <b>Class A (2 รายการ = 20%):</b> #10286 ($90,000) &amp; #11526 ($77,000) ➔ รวม <b>72% ของมูลค่า</b><br>
+            • <b>Class B (3 รายการ = 30%):</b> รวม <b>23% ของมูลค่า</b> &nbsp;|&nbsp; • <b>Class C (5 รายการ = 50%):</b> รวม <b>5% ของมูลค่า</b>
+          </div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card acc">
+          <b>🔒 นโยบายบริหาร Class A (สไลด์ 20–21):</b>
+          ควบคุมทางกายภาพเข้มงวดสูงสุด จัดเก็บในพื้นที่ปลอดภัย ตรวจสอบยอดบ่อยครั้ง พยากรณ์แม่นยำ และพัฒนาความร่วมมือเชิงลึกกับซัพพลายเออร์
+        </div>
+        <div class="info-card green">
+          <b>🔄 เทคนิคที่ 2: FIFO (First-In, First-Out — สไลด์ 25–26):</b>
+          สินค้าล็อตที่เข้าคลังก่อน (Oldest lot) ต้องถูกเบิกหรือขายออกไปก่อนเสมอ ป้องกันของหมดอายุ/เสื่อมสภาพ ใช้ในอุตสาหกรรมอาหาร ยา และค้าปลีก เช่น <b>7-Eleven (CP All)</b>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="viz-panel">
-    <div class="viz-h"><span class="n">2</span>กราฟสมดุลต้นทุน EOQ: สั่งซื้อครั้งละเท่าไหร่จึงประหยัดที่สุด?</div>
+    <div class="viz-h"><span class="n">3</span>เทคนิคที่ 3 — กราฟสมดุลต้นทุน EOQ: สั่งซื้อครั้งละเท่าไร? ("How Much")</div>
     <div class="split-duo top">
       <div class="duo-side">
         <div class="chart viz-scroll" style="width:100%;"><div style="min-width:320px;">${eoqCurveSvg()}</div></div>
       </div>
       <div class="duo-info">
         <div class="info-card">
-          <b>📦 1. Holding Cost [(Q/2) × H]:</b> ต้นทุนเก็บรักษา ยิ่งสั่งล็อตใหญ่ (Q สูง) สต๊อกเฉลี่ยยิ่งสูง ค่าไฟ ค่าโกดัง ประกันภัย ยิ่งสูงเป็นเส้นตรง
+          <b>📦 1. Annual Holding Cost = (Q/2) × H:</b> ต้นทุนเก็บรักษาต่อปี (สต๊อกเฉลี่ย Q/2 คูณ H)
         </div>
         <div class="info-card">
-          <b>📑 2. Ordering Cost [(D/Q) × S]:</b> ต้นทุนการสั่งซื้อ สั่งล็อตใหญ่ทำให้ความถี่ในการสั่ง (D/Q) ลดลง ต้นทุนออกเอกสารและขนส่งรวมต่อปีลดลง
+          <b>📑 2. Annual Setup/Ordering Cost = (D/Q) × S:</b> ต้นทุนการสั่งซื้อรวมต่อปี (จำนวนครั้งที่สั่ง D/Q คูณ S)
         </div>
         <div class="info-card acc">
-          <b>🎯 3. จุดตัดสมดุล Q*:</b> ที่จุด EOQ ค่า Holding Cost เท่ากับ Ordering Cost พอดี และส่งผลให้ <b>Total Cost รวมต่ำที่สุด!</b>
+          <b>🎯 3. จุดประหยัดที่สุด Q* = √(2DS/H):</b> เกิดเมื่อ <b>(D/Q)S = (Q/2)H</b> ทำให้ <b>TC = (D/Q)S + (Q/2)H ต่ำที่สุด!</b>
         </div>
       </div>
     </div>
   </div>
 
   <div class="viz-panel">
-    <div class="viz-h"><span class="n">3</span>กราฟฟันเลื่อย &amp; จุดสั่งซื้อซ้ำ ROP: สต๊อกเหลือเท่าไหร่ต้องสั่ง?</div>
+    <div class="viz-h"><span class="n">4</span>เทคนิคที่ 4 — กราฟฟันเลื่อย &amp; จุดสั่งซื้อซ้ำ ROP: สั่งเมื่อไร? ("When")</div>
     <div class="split-duo top">
       <div class="duo-side">
         <div class="chart viz-scroll" style="width:100%;"><div style="min-width:320px;">${ropSawtoothSvg()}</div></div>
       </div>
       <div class="duo-info">
         <div class="info-card">
-          <b>⏱️ 1. Lead Time (L):</b> ระยะเวลารอคอยสินค้า ตั้งแต่ออกใบสั่งซื้อจนถึงสินค้าส่งถึงโกดังพร้อมใช้
+          <b>📅 1. Demand per day (d):</b> คำนวณจาก <b>d = D ÷ (จำนวนวันทำงานต่อปี)</b>
         </div>
         <div class="info-card green">
-          <b>🛡️ 2. Safety Stock (SS):</b> สต๊อกปลอดภัยที่สำรองไว้เป็นกันชน ป้องกันสินค้าขาดมือ (Stockout) ในช่วง Lead Time
+          <b>⏱️ 2. Lead Time (L):</b> ระยะเวลารอคอยสินค้าตั้งแต่ออกใบสั่งซื้อจนได้รับของ (หน่วย: วันทำการ)
         </div>
         <div class="info-card acc">
-          <b>🔔 3. สูตร ROP = (d × L) + SS:</b> เมื่อสต๊อกลดลงมาแตะเส้นนี้ ต้องออกใบสั่งซื้อทันทีจำนวน Q* ชิ้น เพื่อให้ของมาส่งก่อนกินเนื้อ SS
+          <b>🔔 3. สูตร ROP = d × L (+ Safety Stock):</b> เมื่อสต๊อกลดลงมาถึงระดับ ROP ต้องสั่งซื้อล็อตใหม่ขนาด Q* ทันที!
         </div>
       </div>
     </div>
   </div>
 
   <div class="viz-panel wide">
-    <div class="viz-h"><span class="n">4</span>คลังสูตรคำนวณ EOQ &amp; ROP (ออกสอบคำนวณแน่นอน!)</div>
-    <div class="ftiles">
-      <div class="ftile" data-tip="D = ความต้องการทั้งปี, S = ต้นทุนการสั่งซื้อต่อครั้ง, H = ต้นทุนเก็บรักษาต่อหน่วยต่อปี">
-        <span class="lbl">1. ปริมาณสั่งซื้อประหยัดที่สุด (EOQ)</span>
-        <b>Q* = √( (2 × D × S) ÷ H )</b>
-        <span class="note">หน่วย: ชิ้น/ครั้ง (จำ: 2DS อยู่ในรูททั้งหมด)</span>
+    <div class="viz-h"><span class="n">5</span>รวม 3 โจทย์คำนวณจริงจากสไลด์ที่ 8 ของ รศ.ดร.ปณัทพร (จำตัวเลขเข้าห้องสอบได้เลย!)</div>
+    <div class="tiles t3">
+      <div class="tile hl" style="text-align:left;padding:14px;" data-tip="โจทย์ตัวอย่างในสไลด์หน้า 33–36: เข็มฉีดยาปลอดเชื้อ (Hypodermic Needles)">
+        <span class="badge-corner">สไลด์หน้า 33–36 ★</span>
+        <b>💉 โจทย์ที่ 1: เข็มฉีดยา (Hypodermic Needles)</b>
+        <div style="font-size:0.78rem;color:#334155;margin-top:6px;line-height:1.55;">
+          • <b>โจทย์กำหนด:</b> D = <b>1,000</b> ชิ้น/ปี, S = <b>$10</b>/ครั้ง, H = <b>$0.50</b>/ชิ้น/ปี, วันทำงาน = <b>250 วัน/ปี</b><br>
+          • <b>1) หา Q*:</b> √[2(1,000)(10) ÷ 0.50] = √40,000 = <b style="color:#0D9488;">200 units</b><br>
+          • <b>2) หา N:</b> 1,000 ÷ 200 = <b style="color:#0D9488;">5 orders/year</b><br>
+          • <b>3) หา T:</b> 250 วัน ÷ 5 ครั้ง = <b style="color:#0D9488;">50 days between orders</b><br>
+          • <b>4) หา TC:</b> (1,000/200)($10) + (200/2)($0.50) = $50 + $50 = <b style="color:#E11D48;">$100/ปี</b>
+        </div>
       </div>
-      <div class="ftile" data-tip="เอาความต้องการทั้งปี (D) หารด้วยปริมาณการสั่งต่อครั้ง (Q*)">
-        <span class="lbl">2. จำนวนครั้งที่สั่งต่อปี &amp; ระยะห่างการสั่ง</span>
-        <b>N = D ÷ Q*</b> &nbsp;|&nbsp; <b>TBO = วันทำงาน ÷ N</b>
-        <span class="note">N = ครั้ง/ปี • TBO = วัน/ครั้ง</span>
+
+      <div class="tile hl" style="text-align:left;padding:14px;" data-tip="โจทย์การบ้านท้ายบทในสไลด์หน้า 37: บริษัท ABC ตัวแทนจำหน่ายผลิตภัณฑ์ยา">
+        <span class="badge-corner">Assignment หน้า 37 ★</span>
+        <b>💊 โจทย์ที่ 2: บริษัท ABC ตัวแทนขายยา</b>
+        <div style="font-size:0.78rem;color:#334155;margin-top:6px;line-height:1.55;">
+          • <b>โจทย์กำหนด:</b> D = <b>2,500</b> ชิ้น/ปี, S = <b>$18.75</b>/ครั้ง, H = <b>$1.50</b>/ชิ้น/ปี, วันทำงาน = <b>250 วัน/ปี</b><br>
+          • <b>1) หา Q*:</b> √[2(2,500)(18.75) ÷ 1.50] = √62,500 = <b style="color:#0D9488;">250 units</b><br>
+          • <b>2) หา N:</b> 2,500 ÷ 250 = <b style="color:#0D9488;">10 orders/year</b><br>
+          • <b>3) หา T:</b> 250 วัน ÷ 10 ครั้ง = <b style="color:#0D9488;">25 days between orders</b><br>
+          • <b>4) หา TC:</b> (10 × $18.75) + (125 × $1.50) = $187.50 + $187.50 = <b style="color:#E11D48;">$375/ปี</b>
+        </div>
       </div>
-      <div class="ftile" data-tip="ที่จุด EOQ ค่า (D/Q*)S จะเท่ากับ (Q*/2)H เสมอ! ถ้ามี Safety Stock ให้บวก (SS × H) เพิ่ม">
-        <span class="lbl">3. ต้นทุนรวมในการบริหารสต๊อกต่อปี (TC)</span>
-        <b>TC = (D ÷ Q*)S + (Q* ÷ 2)H</b>
-        <span class="note">ทิปเช็กคำตอบ: ที่ Q* พจน์หน้า = พจน์หลัง เสมอ!</span>
-      </div>
-      <div class="ftile" data-tip="d = ความต้องการต่อวัน (D ÷ วันทำงานต่อปี), L = ระยะเวลารอคอยสินค้า (วัน), SS = สต๊อกปลอดภัย">
-        <span class="lbl">4. จุดสั่งซื้อซ้ำ (Reorder Point: ROP)</span>
-        <b>ROP = (d × L) + SS</b>
-        <span class="note">เมื่อสต๊อกเหลือเท่านี้ ต้องออกใบสั่งซื้อทันที</span>
+
+      <div class="tile hl" style="text-align:left;padding:14px;" data-tip="โจทย์คำนวณ Reorder Point (ROP) ในสไลด์หน้า 40">
+        <span class="badge-corner">สไลด์หน้า 40 ★</span>
+        <b>🔔 โจทย์ที่ 3: การคำนวณจุดสั่งซื้อใหม่ (ROP)</b>
+        <div style="font-size:0.78rem;color:#334155;margin-top:6px;line-height:1.55;">
+          • <b>โจทย์กำหนด:</b> ความต้องการทั้งปี D = <b>8,000</b> ชิ้น/ปี, วันทำงาน = <b>250 วัน/ปี</b><br>
+          • <b>1) หาความต้องการต่อวัน (d):</b><br>
+            d = 8,000 ÷ 250 = <b style="color:#0D9488;">32 units per day</b><br>
+          • <b>2) กรณี Lead Time (L) = 3 วันทำการ:</b><br>
+            ROP = 32 × 3 = <b style="color:#E11D48;">96 units</b><br>
+          • <b>3) กรณี Lead Time (L) = 4 วันทำการ:</b><br>
+            ROP = 32 × 4 = <b style="color:#E11D48;">128 units</b>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="viz-panel wide">
-    <div class="viz-h"><span class="n">5</span>ตัวอย่างโจทย์คำนวณทีละขั้น (Step-by-Step Worked Flow)</div>
-    <div class="viz-scroll">
-      <div class="flow minw">
-        <div class="flow-node" data-tip="โจทย์กำหนดตัวแปรครบ"><span class="ico">📋</span><b>โจทย์กำหนด</b>D = 120,000 ชิ้น/ปี<br>S = 1,500 บ./ครั้ง<br>H = 40 บ./ชิ้น/ปี</div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node fill" data-tip="√(2 × 120,000 × 1,500 / 40) = √(360,000,000 / 40) = √9,000,000 = 3,000"><span class="ico">🧮</span><b>ขั้น 1: หา Q*</b>√(2×120,000×1,500 ÷ 40)<br>= <b>3,000 ชิ้น/ครั้ง</b></div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node fill" data-tip="N = 120,000 ÷ 3,000 = 40 ครั้ง/ปี (ถ้าทำงาน 300 วัน ➔ สั่งทุกๆ 7.5 วัน)"><span class="ico">🔄</span><b>ขั้น 2: หา N</b>120,000 ÷ 3,000<br>= <b>40 ครั้ง/ปี</b></div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node fill" data-tip="Ordering = 40×1,500 = 60,000 บ. | Holding = (3,000/2)×40 = 60,000 บ. (เท่ากันเป๊ะ!)"><span class="ico">💰</span><b>ขั้น 3: หา TC</b>60,000 + 60,000<br>= <b>120,000 บาท/ปี</b></div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node dark" data-tip="สมมติทำงาน 300 วัน ➔ d = 120,000/300 = 400 ชิ้น/วัน, L = 5 วัน, SS = 500 ชิ้น ➔ ROP = (400×5)+500 = 2,500"><span class="ico">🔔</span><b>ขั้น 4: หา ROP</b>(400 × 5) + 500<br>= <b style="color:#FDBA74;">2,500 ชิ้น</b></div>
+    <div class="viz-h"><span class="n">6</span>การบริหารความเสี่ยงซัพพลายเชน (External 4 vs Internal 3) &amp; กรณีศึกษา Unilever / McDonald's (สไลด์ 50–64)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="vs" style="width:100%;">
+          <div class="vs-card amber" data-tip="ความเสี่ยงภายนอกองค์กร 4 ประเภท ตาม Heizer et al. (2017) สไลด์หน้า 54">
+            <span class="ico">🌍</span><b>External Risks (ภายนอก 4 ข้อ)</b>
+            <ul>
+              <li><b>1. Demand risk:</b> ของล้นหรือของขาด</li>
+              <li><b>2. Material risks:</b> วัตถุดิบส่งล่าช้า</li>
+              <li><b>3. Supplier risk:</b> โครงสร้างคู่ค้าเปลี่ยน</li>
+              <li><b>4. Environmental:</b> การเมือง/อากาศ/ค่าเงิน</li>
+            </ul>
+          </div>
+          <div class="vs-mid">VS</div>
+          <div class="vs-card blue" data-tip="ความเสี่ยงภายในองค์กร 3 ประเภท ตาม Heizer et al. (2017) สไลด์หน้า 55">
+            <span class="ico">🏢</span><b>Internal Risks (ภายใน 3 ข้อ)</b>
+            <ul>
+              <li><b>1. Manufacturing risks:</b> ผลิตหลุดตารางเวลา</li>
+              <li><b>2. Business risk:</b> ปัญหาคน/การรายงาน/บริหาร</li>
+              <li><b>3. Planning &amp; control:</b> พยากรณ์แผนผลิตผิด</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>🚢 เทรนด์ความเสี่ยงปี 2026–2030 (วิกฤตทะเลแดง):</b> ขนส่งเรือช้าลง +8–12 วัน ประกันพุ่ง +30–60% ➔ ต้องเพิ่ม <b>Safety Stock +20–30%</b>, ทำ Nearshoring และใช้ <b>Agentic AI &amp; Digital Twins</b> (ลด Lead Time ได้ <b>-27%</b>)
+        </div>
+        <div class="info-card green">
+          <b>🌱 Case Study: Unilever &amp; McDonald's (สไลด์ 61–64):</b><br>
+          • <b>Unilever:</b> ผู้นำ Gartner Top 25 เน้นความรับผิดชอบต่อสิ่งแวดล้อมและนวัตกรรมประหยัดน้ำ<br>
+          • <b>McDonald's:</b> ร่วมมือกับคู่ค้าเน้น 4 เสาหลัก <b>Cost, Health &amp; Safety, Quality, Innovation</b> (Ray Kroc: <i>"Look after the customers and the business will take care of itself."</i>)
+        </div>
       </div>
     </div>
   </div>
 </div>`;
-tipDb[8] = `<b>จุดเช็กคำตอบในห้องสอบ:</b> ถ้าโจทย์ให้ H เป็น <b>% ของราคาสินค้า (C)</b> ต้องคำนวณ <b>H = i × C</b> ก่อนเสมอ และที่จุด Q* ค่า <b>Ordering Cost ต้องเท่ากับ Holding Cost เป๊ะ!</b>`;
+tipDb[8] = `<b>เก็งข้อสอบสไลด์ที่ 8:</b> จำตัวเลขโจทย์ในสไลด์ให้แม่น! <b>เข็มฉีดยา (D=1,000 ➔ Q*=200, TC=$100)</b> • <b>บริษัท ABC (D=2,500 ➔ Q*=250, TC=$375)</b> • <b>ROP (D=8,000, 250 วัน ➔ d=32 ➔ L=3 ได้ 96 / L=4 ได้ 128)</b> และจำ <b>Class A (15% รายการ = 70-80% มูลค่า)</b>!`;
 
-/* ---------------- STEP 9 : Productivity Measurement ---------------- */
+/* ---------------- STEP 9 : Business Continuity Management (BCM & ISO 22301 — สไลด์ 9) ---------------- */
 vizDb[9] = `
 <div class="viz-grid">
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">1</span>4 ภัยคุกคามทางธุรกิจ, วัตถุประสงค์หลัก BCM "3S" &amp; 5 องค์ประกอบของ BCM (สไลด์ 4–18)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="tiles t2" style="width:100%;">
+          <div class="tile" data-tip="พายุ น้ำท่วม แผ่นดินไหว ไฟป่า"><span class="ico">🌊</span><b>1. Natural Disasters</b>ภัยพิบัติทางธรรมชาติ</div>
+          <div class="tile" data-tip="อุบัติเหตุ ลบข้อมูลสำคัญโดยไม่ตั้งใจ"><span class="ico">🤦</span><b>2. Human Error</b>ความผิดพลาดของมนุษย์</div>
+          <div class="tile" data-tip="การโจมตีทางไซเบอร์ (Cyberattacks) ระบบเซิร์ฟเวอร์ล่ม"><span class="ico">💻</span><b>3. Tech Failures</b>ระบบล่ม • ภัยไซเบอร์</div>
+          <div class="tile danger" data-tip="โควิด-19, ถนนทรุดตัวหน้า รพ.วชิรพยาบาล (สไลด์หน้า 6), สารเคมีรั่วไหล"><span class="ico">🚨</span><b>4. Unplanned Incidents</b>โควิด-19 • ถนนทรุดหน้า รพ.</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="tiles t3">
+          <div class="tile hl" data-tip="<b>Survive</b> เอาตัวรอดจากเหตุการณ์ขัดข้องโดยได้รับผลกระทบน้อยที่สุด"><span class="badge-corner">3S #1</span><span class="ico">🛡️</span><b>1. SURVIVE</b>เอาตัวรอดผลกระทบน้อยสุด</div>
+          <div class="tile hl" data-tip="<b>Serve</b> รักษาความสามารถในการให้บริการลูกค้าอย่างต่อเนื่อง"><span class="badge-corner">3S #2</span><span class="ico">🤝</span><b>2. SERVE</b>บริการลูกค้าอย่างต่อเนื่อง</div>
+          <div class="tile hl" data-tip="<b>Sustain</b> ปกป้องกระแสเงินสดและผลกำไรขององค์กร"><span class="badge-corner">3S #3</span><span class="ico">💰</span><b>3. SUSTAIN</b>ปกป้องกระแสเงินสด &amp; กำไร</div>
+        </div>
+        <div class="info-card acc" style="margin-top:4px;">
+          <b>🔄 5 องค์ประกอบหลักของ BCM (ISO, 2019 — สไลด์หน้า 9):</b><br>
+          <b>1)</b> Operational Planning &amp; Control ➔ <b>2)</b> BIA &amp; Risk Assessment ➔ <b>3)</b> BC Strategy ➔ <b>4)</b> Establish &amp; Implement BC Procedures ➔ <b>5)</b> Exercising &amp; Testing
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="viz-panel">
-    <div class="viz-h"><span class="n">1</span>Production vs. Productivity &amp; 5 วิธีเพิ่มผลิตภาพ</div>
+    <div class="viz-h"><span class="n">2</span>BIA (Business Impact Analysis) 3 ระดับสีความเร่งด่วน (สไลด์ 10–11)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div style="width:100%;display:flex;flex-direction:column;gap:8px;">
+          <div class="info-card" style="border-left:6px solid #DC2626;background:#FEF2F2;" data-tip="กิจกรรมวิกฤตที่ต้องกู้คืนทันที หยุดชะงักไม่ได้เลย">
+            <b style="color:#B91C1C;">🔴 ระดับสูงสุด (สีแดง — STOP / Critical)</b>
+            กิจกรรมหลักที่ <b>ไม่สามารถยอมรับการหยุดชะงักได้เลย</b> หากหยุดจะสร้างความเสียหายรุนแรงทันที
+          </div>
+          <div class="info-card" style="border-left:6px solid #F59E0B;background:#FFFBEB;" data-tip="กิจกรรมที่พอยอมรับการหยุดชะงักได้ระยะสั้น">
+            <b style="color:#B45309;">🟡 ระดับปานกลาง (สีเหลือง — Medium)</b>
+            กิจกรรมที่ <b>ยอมรับการหยุดชะงักได้ในระยะสั้น</b> หรือพอลดขนาดการดำเนินงานลงชั่วคราวได้
+          </div>
+          <div class="info-card" style="border-left:6px solid #16A34A;background:#F0FDF4;" data-tip="กิจกรรมที่สามารถพักไว้ก่อนได้ในยามวิกฤต">
+            <b style="color:#15803D;">🟢 ระดับต่ำ (สีเขียว — Low)</b>
+            กิจกรรมที่ <b>สามารถระงับไว้ก่อนชั่วคราวได้</b> หากมีความจำเป็นในภาวะวิกฤต
+          </div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>📈 แกนการวิเคราะห์ BIA (สไลด์หน้า 10):</b><br>
+          วัดความสัมพันธ์ระหว่าง <b>Severity of Organizational Damage (ความรุนแรงของความเสียหาย)</b> เทียบกับ <b>Duration of Disruption (ระยะเวลาที่หยุดชะงัก)</b> เพื่อจัดลำดับว่างานใดต้องกู้คืนก่อน-หลัง
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">3</span>กลยุทธ์ความต่อเนื่องทางธุรกิจ 5 ทรัพยากรหลัก (BC Strategy — PAS 2015, สไลด์ 12–13)</div>
+    <div class="tiles t5">
+      <div class="tile hl" data-tip="<b>1. People (บุคลากร)</b> กำหนดจำนวนคนขั้นต่ำ ทักษะสำคัญ ผู้มีอำนาจตัดสินใจ ➔ กลยุทธ์: Cross-training (ฝึกอบรมข้ามสายงาน)">
+        <span class="ico">👥</span><b>1. People</b>บุคลากรขั้นต่ำ • อำนาจตัดสินใจ<br><small class="acc"><b>(Cross-training)</b></small>
+      </div>
+      <div class="tile" data-tip="<b>2. Premises (สถานที่)</b> พื้นที่ปฏิบัติงานสำรอง (Alternate Site) เครื่องจักร และสิ่งอำนวยความสะดวก">
+        <span class="ico">🏢</span><b>2. Premises</b>สถานที่ปฏิบัติงานสำรอง<br><small><b>(Alternate Site)</b></small>
+      </div>
+      <div class="tile" data-tip="<b>3. Technology (เทคโนโลยี)</b> อุปกรณ์ IT สำคัญ ระบบไฟสำรอง เครือข่ายสื่อสาร ➔ กลยุทธ์: Preventive Maintenance">
+        <span class="ico">🖥️</span><b>3. Technology</b>ระบบ IT • ไฟสำรอง<br><small><b>(Preventive Maint.)</b></small>
+      </div>
+      <div class="tile" data-tip="<b>4. Information (ข้อมูล)</b> ฐานข้อมูลสำคัญ เอกสารจำเป็น ระบบสำรองข้อมูล (Data Backup & Recovery)">
+        <span class="ico">💾</span><b>4. Information</b>ฐานข้อมูล • เอกสารสำคัญ<br><small><b>(Data Backup)</b></small>
+      </div>
+      <div class="tile hl" data-tip="<b>5. Suppliers & Partners</b> พันธมิตรหลัก สัญญาจ้างเหมา ข้อตกลงช่วยเหลือร่วมกัน ➔ กลยุทธ์: Diversifying suppliers">
+        <span class="ico">🤝</span><b>5. Suppliers</b>คู่ค้าหลัก • ข้อตกลงร่วม<br><small class="acc"><b>(Diversify Suppliers)</b></small>
+      </div>
+    </div>
+    <div class="viz-cap">ครอบคลุมการนำไปปฏิบัติ (เช่น <b>XYZ Tech Solutions</b>) และการซ้อมแผน <b>Tabletop Exercise &amp; AAR</b> (เช่น <b>ABC Healthcare</b>)</div>
+  </div>
+
+  <div class="viz-panel wide">
+    <div class="viz-h"><span class="n">4</span>แผนปฏิบัติการความต่อเนื่องทางธุรกิจ 4 ระยะ พร้อม KPI เป้าหมาย (สไลด์หน้า 19 — ออกสอบ!)</div>
+    <div class="tiles t4">
+      <div class="tile" style="text-align:left;padding:12px;" data-tip="ระยะที่ 1: การป้องกันและเตรียมความพร้อมก่อนเกิดวิกฤต">
+        <span class="badge-corner">Phase 1</span>
+        <b>🛡️ 1. Prevention &amp; Preparedness</b>
+        <div style="font-size:0.75rem;color:#334155;margin-top:6px;line-height:1.5;">
+          • ทำ BIA ครอบคลุมหน่วยงาน: <b>100%</b><br>
+          • ประเมินความเสี่ยง (RA): <b>ทุก 6 เดือน</b><br>
+          • สำรองข้อมูล (Data Loss): <b>0%</b><br>
+          • ตั้งทีม BCT/CMT สำรองครบ: <b>100%</b><br>
+          • เตรียมสถานที่สำรองพร้อมใช้: <b style="color:#E11D48;">≤ 24 ชม. (RTO)</b>
+        </div>
+      </div>
+      <div class="tile danger" style="text-align:left;padding:12px;" data-tip="ระยะที่ 2: การตอบสนองทันทีเมื่อเกิดเหตุวิกฤต">
+        <span class="badge-corner red">Phase 2 🚨</span>
+        <b>⚡ 2. Response (ตอบสนองทันที)</b>
+        <div style="font-size:0.75rem;color:#334155;margin-top:6px;line-height:1.5;">
+          • ประกาศฉุกเฉิน/เปิดใช้ BCP: <b style="color:#DC2626;">≤ 30 นาที</b><br>
+          • แจ้งเตือนกลุ่มเป้าหมายครบ: <b>100%</b><br>
+          • ประเมินเสียหายเบื้องต้น: <b style="color:#DC2626;">≤ 60 นาที</b><br>
+          • เปิดใช้ระบบ/สถานที่สำรองสำเร็จ: <b>≥ 95%</b><br>
+          • ความปลอดภัยชีวิต (บาดเจ็บ/ตาย): <b>0 ราย</b>
+        </div>
+      </div>
+      <div class="tile" style="text-align:left;padding:12px;" data-tip="ระยะที่ 3: การฟื้นฟูและกลับสู่สภาวะปกติหลังเกิดวิกฤต">
+        <span class="badge-corner">Phase 3</span>
+        <b>🔧 3. Recovery (ฟื้นฟูหลังวิกฤต)</b>
+        <div style="font-size:0.75rem;color:#334155;margin-top:6px;line-height:1.5;">
+          • ประเมินความเสียหายเชิงลึก: <b>≤ 72 ชม.</b><br>
+          • กู้คืนและฟื้นฟูระบบ IT สำเร็จ: <b>95%</b><br>
+          • ย้ายกลับสถานที่หลักตามปกติ: <b style="color:#0D9488;">≤ 14 วันทำการ</b><br>
+          • ดูแลช่วยเหลือพนักงาน: <b>100%</b><br>
+          • สรุปบทเรียน (AAR) ภายใน: <b>≤ 2 เดือน</b>
+        </div>
+      </div>
+      <div class="tile hl" style="text-align:left;padding:12px;" data-tip="ระยะที่ 4: การทดสอบและปรับปรุงแผนอย่างต่อเนื่อง">
+        <span class="badge-corner">Phase 4 ★</span>
+        <b>🔄 4. Testing &amp; Improvement</b>
+        <div style="font-size:0.75rem;color:#334155;margin-top:6px;line-height:1.5;">
+          • ซ้อมแผนบนโต๊ะ (Tabletop Exercise): <b>ทุกไตรมาส</b> (เข้าร่วม 100%)<br>
+          • ซ้อมใหญ่เสมือนจริง (Full-scale Drill): <b>ปีละ 1 ครั้ง</b><br>
+          • ทบทวนและอัปเดตแผน BCP: <b>ทุก 6 เดือน</b> (อนุมัติตามกำหนด 100%)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">5</span>การประเมินความเสี่ยง 3 ขั้นตอน, ISO 31000 (7 Risks) &amp; 5×5 Risk Matrix (สไลด์ 20–27)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="risk">
+          <div class="ax y">Likelihood (1–5) ▲</div>
+          <div class="cell r-y" data-tip="Moderate Risk (5–9)">Moderate</div>
+          <div class="cell r-o" data-tip="High Risk (10–16)">High</div>
+          <div class="cell r-r" data-tip="Extreme Risk (17–25): Certain (5) × Catastrophic (5) = 25 ➔ ต้องจัดการทันที!">Extreme 🚨</div>
+          <div class="cell r-g" data-tip="Low Risk (1–4)">Low</div>
+          <div class="cell r-y" data-tip="Moderate Risk (5–9)">Moderate</div>
+          <div class="cell r-o" data-tip="High Risk (10–16)">High</div>
+          <div class="cell r-g" data-tip="Rare (1) × Negligible (1) = 1">Low (1–4)</div>
+          <div class="cell r-g" data-tip="Low Risk">Low</div>
+          <div class="cell r-y" data-tip="Moderate Risk">Moderate</div>
+          <div class="ax x">Severity (1–5: Negligible ➔ Catastrophic) ➔</div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>🔍 Step 1: Identify Risks — 7 ความเสี่ยงตาม ISO 31000:2018 (สไลด์ 23–24):</b><br>
+          <b>1)</b> Strategic • <b>2)</b> Operational • <b>3)</b> Financial • <b>4)</b> Human Resource • <b>5)</b> Information Security • <b>6)</b> Environmental • <b>7)</b> Project Risks
+        </div>
+        <div class="info-card acc">
+          <b>📊 Step 2 &amp; 3: Analyze &amp; Evaluate (สไลด์ 25–27):</b><br>
+          ประเมินโอกาสเกิด 5 ระดับ (<i>Rare, Unlikely, Possible, Very Likely, Certain</i>) × ความรุนแรง 5 ระดับ = คะแนน <b>1–25</b> เทียบกับ <b>Risk Tolerance</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">6</span>กรณีศึกษา BCP: Kodak vs. Fujifilm &amp; มาตรฐาน ISO 22301 (10 Clauses — สไลด์ 28–48)</div>
+    <div class="split-duo top">
+      <div class="duo-side">
+        <div class="vs" style="width:100%;">
+          <div class="vs-card amber" data-tip="ปี 1997 Kodak มีส่วนแบ่งในสหรัฐฯ 70% และโลก 44% แม้คิดค้นกล้องดิจิทัลตัวแรกแต่ยึดติดฟิล์ม จนล้มละลาย Chapter 11 ในปี 2012">
+            <span class="ico">📉</span><b>Kodak (ล้มละลายปี 2012)</b>ยึดติดรายได้ฟิล์มเดิม<br>แพ้ภัยกล้องดิจิทัล/สมาร์ทโฟน
+          </div>
+          <div class="vs-mid">VS</div>
+          <div class="vs-card green" data-tip="Fujifilm ใช้ BCP ต่อยอดเทคโนโลยีเคมีและคอลลาเจนจากฟิล์มสู่ 3 ธุรกิจ: 1) Document, 2) Healthcare & Material (ครีม ASTALIFT), 3) Imaging">
+            <span class="ico">🚀</span><b>Fujifilm (รอด &amp; เติบโต)</b>แตกไลน์สู่ <b>Document, Healthcare (ครีม ASTALIFT) &amp; Imaging</b>
+          </div>
+        </div>
+      </div>
+      <div class="duo-info">
+        <div class="info-card">
+          <b>📜 โครงสร้าง ISO 22301 ทั้ง 10 Clauses (สไลด์หน้า 48):</b><br>
+          • <b>1–3 (ทั่วไป):</b> 1.Scope • 2.Normative references • 3.Terms &amp; definitions<br>
+          • <b>4–7 (PLAN):</b> 4.Context • 5.Leadership • 6.Planning • 7.Support<br>
+          • <b>8 (DO):</b> 8.Operation (ทำ BIA, RA, BC Strategy, BCP)<br>
+          • <b>9 (CHECK):</b> 9.Performance evaluation &nbsp;|&nbsp; • <b>10 (ACT):</b> 10.Improvement
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+tipDb[9] = `<b>เก็งปรนัยสไลด์ที่ 9:</b> จำ <b>วัตถุประสงค์ BCM "3S" (Survive, Serve, Sustain)</b> • <b>5 ทรัพยากร BC Strategy (People, Premises, Technology, Information, Suppliers)</b> • <b>KPI สไลด์หน้า 19 (RTO ≤ 24 ชม., เปิดใช้ BCP ≤ 30 นาที)</b> • <b>Fujifilm ต่อยอดฟิล์มสู่เครื่องสำอาง ASTALIFT</b> • และ <b>ISO 22301 มี 10 Clauses</b>!`;
+
+/* ---------------- STEP 10 : Productivity Measurement (สไลด์ 10) ---------------- */
+vizDb[10] = `
+<div class="viz-grid">
+  <div class="viz-panel">
+    <div class="viz-h"><span class="n">1</span>Production vs. Productivity &amp; 5 วิธีเพิ่มผลิตภาพ (สไลด์ 10)</div>
     <div class="split-duo top">
       <div class="duo-side">
         <div class="vs" style="width:100%;">
@@ -2793,7 +3102,7 @@ vizDb[9] = `
           <div class="tile hl" data-tip="ดีที่สุด: ผลผลิตเพิ่ม พร้อมลดทรัพยากร"><span class="badge-corner">ดีที่สุด ★</span><b>Out ↑</b>In ↓</div>
         </div>
         <div class="info-card acc" style="margin-top:4px;">
-          <b>⭐ หัวใจของ Lean:</b> มุ่งสู่แนวทางที่ 5 คือ <b>Output เพิ่มขึ้น พร้อมกับ Input ลดลง</b> ผ่านการกำจัดความสูญเปล่า NVA ออกจากกระบวนการ
+          <b>⭐ หัวใจของการเพิ่ม Productivity:</b> มุ่งสู่แนวทางที่ 5 คือ <b>Output เพิ่มขึ้น พร้อมกับ Input ลดลง</b>
         </div>
       </div>
     </div>
@@ -2804,13 +3113,13 @@ vizDb[9] = `
     <div class="ftiles" style="grid-template-columns:1fr;">
       <div class="ftile" data-tip="ใช้วัดปัจจัยเดียว เช่น แรงงาน (ชั่วโมงคน), เครื่องจักร (ชั่วโมงเครื่อง)">
         <span class="lbl">1. ผลิตภาพปัจจัยเดี่ยว (Single-Factor / Labor Productivity)</span>
-        <b>Labor Prod. = Output ÷ (จำนวนคน × ชั่วโมงทำงาน)</b>
+        <b>Labor Prod. = Units Produced ÷ (จำนวนคน × ชั่วโมงทำงาน)</b>
         <span class="note">หน่วย: ชิ้น ต่อ ชั่วโมงแรงงาน (Units / Labor-Hour)</span>
       </div>
       <div class="ftile" data-tip="ตัวหารต้องแปลงทุกปัจจัยให้อยู่ในหน่วยเงินเดียวกัน (บาท หรือ $) ก่อนนำมาบวกกัน!">
         <span class="lbl">2. ผลิตภาพพหุปัจจัย (Multi-Factor Productivity: MFP)</span>
-        <b>MFP = Output ÷ (Labor + Material + Energy + Capital + Misc.)</b>
-        <span class="note">หน่วย: ชิ้น ต่อ บาท (หรือ บาท ต่อ บาท)</span>
+        <b>MFP = Output ÷ (Labor + Material + Energy + Capital + Overhead)</b>
+        <span class="note">หน่วย: ชิ้น ต่อ ดอลลาร์/บาท (ตัวหารต้องรวมเป็นหน่วยเงินเดียวกัน!)</span>
       </div>
       <div class="ftile" data-tip="ต้องเอาค่าเก่า (Old / Base Period) เป็นตัวหารเสมอ!">
         <span class="lbl">3. อัตราการเปลี่ยนแปลงของผลิตภาพ (% Change)</span>
@@ -2821,7 +3130,7 @@ vizDb[9] = `
   </div>
 
   <div class="viz-panel wide">
-    <div class="viz-h"><span class="n">3</span>เคสคำนวณในสไลด์: Lisa Company (เปรียบเทียบระบบเก่า vs ระบบคอมพิวเตอร์ใหม่)</div>
+    <div class="viz-h"><span class="n">3</span>เคสคำนวณในสไลด์ที่ 10: Lisa Company (เปรียบเทียบระบบเก่า vs ระบบคอมพิวเตอร์ใหม่)</div>
     <div class="viz-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;">
       <div class="tile" style="text-align:left;padding:14px;" data-tip="พนักงาน 4 คน × 8 ชม. = 32 ชม./วัน เท่ากันทั้งระบบเก่าและใหม่ แต่ผลผลิตเพิ่มจาก 8 เป็น 14 ฉบับ/วัน">
         <b>👷 A. Labor Productivity (ฉบับ / ชม.แรงงาน)</b>
@@ -2844,18 +3153,18 @@ vizDb[9] = `
         <div style="font-size:0.74rem;color:#475569;margin-bottom:8px;">Input รวม: เก่า ($640+$400 = <b>$1,040</b>) ➔ ใหม่ ($640+$800 = <b>$1,440</b>)</div>
         <div class="bar-row">
           <span>ระบบเก่า</span>
-          <div class="bar-track"><div class="bar-fill old" style="width:79%;">8 ÷ 1,040 = 0.00769</div></div>
+          <div class="bar-track"><div class="bar-fill old" style="width:79%;">8 ÷ 1,040 = 0.0077</div></div>
         </div>
         <div class="bar-row">
           <span>ระบบใหม่</span>
-          <div class="bar-track"><div class="bar-fill new" style="width:100%;">14 ÷ 1,440 = 0.00972</div></div>
+          <div class="bar-track"><div class="bar-fill new" style="width:100%;">14 ÷ 1,440 = 0.0097</div></div>
         </div>
         <div style="margin-top:8px;font-size:0.8rem;font-weight:700;color:#0F172A;">
-          การเปลี่ยนแปลง: (0.00972 − 0.00769) ÷ 0.00769 <span class="delta">▲ +26.4%</span>
+          การเปลี่ยนแปลง: (0.0097 − 0.0077) ÷ 0.0077 <span class="delta">▲ +26.0%</span>
         </div>
       </div>
     </div>
-    <div class="viz-cap">ข้อสังเกตสำคัญ: ดูเฉพาะ Labor Productivity เหมือนโตขึ้น +75% แต่พอคิดต้นทุนเครื่องจักรเพิ่มใน <b>MFP</b> โตจริง <b>+26.4%</b> (สะท้อนภาพรวมแม่นยำกว่า!)</div>
+    <div class="viz-cap">ข้อสังเกตสำคัญ: ดูเฉพาะ Labor Productivity โตขึ้น +75% แต่พอคิดต้นทุน Overhead เพิ่มใน <b>MFP</b> โตจริง <b>+26%</b> (สะท้อนภาพรวมแม่นยำกว่า!)</div>
   </div>
 
   <div class="viz-panel wide">
@@ -2883,10 +3192,10 @@ vizDb[9] = `
     </div>
   </div>
 </div>`;
-tipDb[9] = `<b>จุดพลาดบ่อยในห้องสอบ:</b> 1) ลืมคูณ <b>จำนวนคน × ชั่วโมงต่อวัน</b> ตอนหา Labor-Hours • 2) ตอนคิด <b>% การเปลี่ยนแปลง</b> ต้องหารด้วย <b>ค่าเก่า (Old)</b> เสมอ!`;
+tipDb[10] = `<b>จุดพลาดบ่อยในห้องสอบ:</b> 1) ลืมคูณ <b>จำนวนคน × ชั่วโมงต่อวัน</b> ตอนหา Labor-Hours • 2) ตอนคิด <b>% การเปลี่ยนแปลง</b> ต้องหารด้วย <b>ค่าเก่า (Old)</b> เสมอ!`;
 
-/* ---------------- STEP 10 : Lean Management & 8 Wastes ---------------- */
-vizDb[10] = `
+/* ---------------- STEP 11 : Lean Management & 8 Wastes (สไลด์ 11) ---------------- */
+vizDb[11] = `
 <div class="viz-grid">
   <div class="viz-panel wide">
     <div class="viz-h"><span class="n">1</span>หลักการลีน 5 ขั้นตอน (5 Lean Principles — Womack &amp; Jones)</div>
@@ -2994,148 +3303,99 @@ vizDb[10] = `
         <span class="badge-corner">ออกสอบบ่อย! ★</span>
         <span class="ico">🛡️</span><b>Poka-Yoke</b>ระบบป้องกันความผิดพลาด<br>(Mistake-Proofing)
       </div>
-      <div class="tile" data-tip="<b>Kanban & VSM</b> บัตรส่งสัญญาณดึงงานตามระบบ Pull และแผนผังสายธารคุณค่า">
+      <div class="tile" data-tip="<b>Kanban & VSM</b> บัตรส่งสัญญาณดึงงานตามระบบ Pull และแผนผังสายธารคุณค่า (เช่น เคส Good Work Hospital)">
         <span class="ico">📋</span><b>Kanban &amp; VSM</b>สัญญาณดึงงาน (Pull) &amp;<br>แผนผังสายธารคุณค่า
       </div>
     </div>
   </div>
 </div>`;
-tipDb[10] = `<b>ระวังข้อสอบหลอกคู่แฝด:</b> <b>Transportation</b> = การเคลื่อนย้าย <b>“สิ่งของ/ชิ้นงาน”</b> vs. <b>Motion</b> = การเคลื่อนไหวของ <b>“คน”</b> (ก้ม เงย เอื้อม เดิน) และความสูญเปล่าที่เลวร้ายที่สุดคือ <b>Overproduction</b>!`;
+tipDb[11] = `<b>ระวังข้อสอบหลอกคู่แฝด:</b> <b>Transportation</b> = การเคลื่อนย้าย <b>“สิ่งของ/ชิ้นงาน”</b> vs. <b>Motion</b> = การเคลื่อนไหวของ <b>“คน”</b> (ก้ม เงย เอื้อม เดิน) และความสูญเปล่าที่เลวร้ายที่สุดคือ <b>Overproduction</b>!`;
 
-/* ---------------- STEP 11 : Agility, Resilience & BCM / ISO 22301 ---------------- */
-vizDb[11] = `
+/* ---------------- STEP 12 : Business Process Improvement with Agility & Resilience (สไลด์ 12) ---------------- */
+vizDb[12] = `
 <div class="viz-grid">
   <div class="viz-panel wide">
-    <div class="viz-h"><span class="n">1</span>Agility vs. Resilience (เกราะคู่ยุค VUCA)</div>
+    <div class="viz-h"><span class="n">1</span>Agility vs. Resilience ในกระบวนการทางธุรกิจ (นิยาม AMA — สไลด์ที่ 12 หน้า 5, 13)</div>
     <div class="split-duo top">
       <div class="duo-side">
         <div class="vs" style="width:100%;">
-          <div class="vs-card blue" data-tip="<b>Agility</b> รับรู้การเปลี่ยนแปลงและปรับตัวคว้าโอกาสใหม่ได้อย่างรวดเร็ว">
-            <span class="ico">⚡</span><b>Agility (ความคล่องตัว)</b><b>เชิงรุก (Proactive)</b>
+          <div class="vs-card blue" data-tip="<b>Agility (AMA, 2006)</b> ความสามารถของกระบวนการในการตอบสนองและปรับตัวได้อย่างรวดเร็ว (Respond and adapt quickly) ต่อการเปลี่ยนแปลง">
+            <span class="ico">⚡</span><b>Agility (ความคล่องตัว)</b><b>เชิงรุก (Proactive Speed)</b>
             <ul>
+              <li>Respond &amp; adapt quickly</li>
               <li>เน้น Speed &amp; Flexibility</li>
-              <li>ปรับกระบวนการรวดเร็ว</li>
-              <li>คว้าโอกาสใหม่ในตลาด</li>
+              <li>ปรับกระบวนการรับโอกาสใหม่</li>
             </ul>
           </div>
           <div class="vs-mid">&amp;</div>
-          <div class="vs-card green" data-tip="<b>Resilience</b> ดูดซับแรงกระแทก ประคองธุรกิจไม่ให้ล้ม และฟื้นตัวหลังวิกฤต">
-            <span class="ico">🛡️</span><b>Resilience (การฟื้นตัว)</b><b>เชิงรับและฟื้นฟู (Recovery)</b>
+          <div class="vs-card green" data-tip="<b>Resilience (AMA, 2018)</b> ขีดความสามารถในการดูดซับแรงกดดัน (Absorb stress) และฟื้นคืนฟังก์ชันสำคัญ (Recover critical functionality)">
+            <span class="ico">🛡️</span><b>Resilience (การฟื้นตัว)</b><b>ดูดซับแรงกระแทก &amp; กู้คืน</b>
             <ul>
+              <li>Absorb stress &amp; recover</li>
               <li>เน้น Continuity &amp; Robustness</li>
-              <li>ทนทานต่อวิกฤต/ภัยพิบัติ</li>
-              <li>กู้คืนระบบกลับมาทำงานต่อ</li>
+              <li>เติบโตได้แม้ในสภาวะวิกฤต</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="duo-info">
-        <div class="chips center" style="margin-bottom:8px;">
-          <span class="chip acc" data-tip="ส่งมอบคุณค่าทีละรอบสั้นๆ">🔄 Iterative / Sprint</span>
-          <span class="chip acc" data-tip="ทีมข้ามสายงานตัดสินใจไว">🤝 Cross-Functional</span>
-          <span class="chip acc" data-tip="มีซัพพลายเออร์สำรอง">🔗 Multi-Sourcing</span>
-        </div>
         <div class="info-card">
-          <b>VUCA World ต้องมีทั้งสองอย่าง:</b> ขาด Agility ➔ ปรับตัวช้า ตกรุ่น / ขาด Resilience ➔ เจอมรสุมหรือไซเบอร์โจมตีครั้งเดียวอาจถึงขั้นล้มละลาย
+          <b>⚡ หลักการ Agile 12 ข้อ (สไลด์ 7–11):</b><br>
+          <b>1)</b> Customer Satisfaction • <b>2)</b> Welcome Changing Requirements • <b>3)</b> Frequent Delivery (2-4 สัปดาห์) • <b>4)</b> Daily Collaboration • <b>5)</b> Motivated Individuals • <b>6)</b> Face-to-Face Conversation • <b>7)</b> Working Output • <b>8)</b> Sustainable Pace • <b>9)</b> Technical Excellence • <b>10)</b> Simplicity is Essential • <b>11)</b> Self-Organizing Teams • <b>12)</b> Regular Reflection (Retrospective)
+        </div>
+        <div class="info-card acc">
+          <b>🛡️ หลักการ Resilience 5 ข้อของ Rodin (2014 — สไลด์ 15–19):</b><br>
+          <b>1)</b> Awareness (ตระหนักรู้จุดแข็ง/ความเสี่ยง) • <b>2)</b> Diverse &amp; Redundant Capacity (ทางเลือกหลากหลายและระบบสำรอง) • <b>3)</b> Integration &amp; Coordination (บูรณาการไร้รอยต่อ) • <b>4)</b> Self-Regulation (ควบคุมสมดุลตนเอง Fail-safe) • <b>5)</b> Adaptive Capacity (เรียนรู้และปรับตัว)
         </div>
       </div>
     </div>
   </div>
 
   <div class="viz-panel">
-    <div class="viz-h"><span class="n">2</span>เมทริกซ์ประเมินความเสี่ยง (Risk Matrix: โอกาสเกิด × ผลกระทบ)</div>
-    <div class="split-duo top">
-      <div class="duo-side">
-        <div class="risk">
-          <div class="ax y">โอกาสเกิด (Likelihood) ▲</div>
-          <div class="cell r-y" data-tip="โอกาสสูง ผลกระทบต่ำ ➔ เฝ้าระวัง">ปานกลาง</div>
-          <div class="cell r-o" data-tip="โอกาสสูง ผลกระทบปานกลาง ➔ คุมเข้ม">สูง</div>
-          <div class="cell r-r" data-tip="วิกฤต! โอกาสสูง ผลกระทบรุนแรง ➔ ต้องมี BCP/DRP ทันที!">วิกฤต 🚨</div>
-          <div class="cell r-g" data-tip="ความเสี่ยงต่ำ">ต่ำ</div>
-          <div class="cell r-y" data-tip="ความเสี่ยงปานกลาง">ปานกลาง</div>
-          <div class="cell r-o" data-tip="โอกาสปานกลาง แต่กระทบหนัก ➔ ต้องมีแผนสำรอง">สูง</div>
-          <div class="cell r-g" data-tip="ยอมรับได้ (Accept)">ต่ำมาก</div>
-          <div class="cell r-g" data-tip="ความเสี่ยงต่ำ">ต่ำ</div>
-          <div class="cell r-y" data-tip="โอกาสเกิดน้อยแต่กระทบมหาศาล (Black Swan)">ปานกลาง</div>
-          <div class="ax x">ผลกระทบ (Impact) ➔</div>
-        </div>
-      </div>
-      <div class="duo-info">
-        <div class="info-card">
-          <b>🛡️ 4 กลยุทธ์จัดการความเสี่ยง</b>
-          • <b>Avoid (หลีกเลี่ยง):</b> หยุดกิจกรรมที่เสี่ยงรุนแรงเกินรับไหว<br>
-          • <b>Mitigate (ลดผลกระทบ):</b> ติดตั้งระบบป้องกัน/เตือนภัย<br>
-          • <b>Transfer (โอนย้าย):</b> ทำประกันภัย / จ้าง Outsource<br>
-          • <b>Accept (ยอมรับ):</b> ความเสี่ยงต่ำ คอยมอนิเตอร์ตามรอบ
-        </div>
-      </div>
+    <div class="viz-h"><span class="n">2</span>6 เทคนิคการสร้าง Agility ในกระบวนการ (สไลด์หน้า 21)</div>
+    <div class="tiles t3">
+      <div class="tile hl" data-tip="ตัดความสูญเปล่า NVA ออกเพื่อให้กระบวนการเบาและเคลื่อนตัวเร็ว"><span class="ico">🧹</span><b>1. Lean Management</b>ตัดความสูญเปล่าให้คล่องตัว</div>
+      <div class="tile hl" data-tip="รวมคนจากหลายแผนกมาทำงานด้วยกัน ตัดสินใจได้ทันทีไม่ต้องรอข้ามฝ่าย"><span class="ico">🤝</span><b>2. Cross-Functional</b>ทีมข้ามสายงานตัดสินใจไว</div>
+      <div class="tile" data-tip="ออกแบบขั้นตอนงานให้ปรับเปลี่ยนลำดับหรือวิธีทำงานได้ง่าย"><span class="ico">🔀</span><b>3. Flexible Workflows</b>ขั้นตอนการทำงานยืดหยุ่น</div>
+      <div class="tile" data-tip="รับฟังเสียงสะท้อนลูกค้าอย่างสม่ำเสมอเพื่อปรับปรุงทันที"><span class="ico">💬</span><b>4. Feedback Loops</b>วงจรรับฟังลูกค้าอย่างไว</div>
+      <div class="tile" data-tip="ใช้ระบบ Cloud หรือโครงสร้างที่ขยาย/ลดขนาดตามปริมาณงานได้ทันที"><span class="ico">☁️</span><b>5. Scalable Infra</b>โครงสร้างพื้นฐานขยายขนาดได้</div>
+      <div class="tile" data-tip="พัฒนาทักษะพนักงานให้ทำงานได้หลากหลาย (Multi-skilled)"><span class="ico">🎓</span><b>6. Skill Development</b>ฝึกอบรมพัฒนาทักษะรอบด้าน</div>
     </div>
   </div>
 
   <div class="viz-panel">
-    <div class="viz-h"><span class="n">3</span>มาตรฐาน ISO 22301 (วงจร PDCA ของ BCMS)</div>
+    <div class="viz-h"><span class="n">3</span>5 เทคนิคการสร้าง Resilience &amp; เครื่องมือ SLA / TCO (สไลด์หน้า 29–42)</div>
     <div class="split-duo top">
       <div class="duo-side">
-        <div class="pdca">
-          <div class="q1" data-tip="<b>Plan</b> กำหนดนโยบาย BCM, ทำ RA & BIA หา RTO/RPO">
-            <b>P — Plan</b>ทำ RA &amp; BIA<br>กำหนด RTO/RPO
-          </div>
-          <div class="q2" data-tip="<b>Do</b> จัดทำแผน IRP, BCP, DRP">
-            <b>D — Do</b>จัดทำแผน<br>IRP/BCP/DRP
-          </div>
-          <div class="q3" data-tip="<b>Act</b> แก้ไขจุดบกพร่องจากการซ้อมแผน">
-            <b>A — Act</b>แก้ไขจุดอ่อน<br>พัฒนาต่อเนื่อง
-          </div>
-          <div class="q4" data-tip="<b>Check</b> ซ้อมแผนจำลองภาวะวิกฤต (Drill), ตรวจประเมินภายใน">
-            <b>C — Check</b>ซ้อมแผน (Drill)<br>&amp; ตรวจติดตาม
-          </div>
-          <div class="pdca-center" data-tip="ISO 22301 = ระบบบริหารความต่อเนื่องทางธุรกิจ (BCMS)"><b>ISO 22301</b>BCMS<br>Standard</div>
+        <div class="tiles t2" style="width:100%;">
+          <div class="tile" data-tip="วางแผนความต่อเนื่องทางธุรกิจรองรับเหตุไม่คาดฝัน"><span class="ico">📋</span><b>1. BCP</b>แผนความต่อเนื่องธุรกิจ</div>
+          <div class="tile" data-tip="ระบุ วิเคราะห์ และจัดการความเสี่ยงเชิงรุก"><span class="ico">⚠️</span><b>2. Risk Mgmt</b>บริหารจัดการความเสี่ยง</div>
+          <div class="tile" data-tip="โยกย้ายงบประมาณ คน และเครื่องจักรไปจุดวิกฤตได้ทันที"><span class="ico">🔄</span><b>3. Flexible Resource</b>จัดสรรทรัพยากรยืดหยุ่น</div>
+          <div class="tile hl" data-tip="กระจายผู้จัดหาหลายราย พร้อมทำสัญญา SLA และวิเคราะห์ TCO"><span class="ico">🌐</span><b>4. SC Diversification</b>กระจายคู่ค้า + SLA/TCO</div>
         </div>
       </div>
       <div class="duo-info">
-        <div class="pyramid" style="width:100%;">
-          <div class="pyr-layer bg-a1" style="width:60%;" data-tip="<b>IRP</b> แผนเผชิญเหตุฉุกเฉินระยะแรก ดูแลความปลอดภัยชีวิต">① IRP (เผชิญเหตุฉุกเฉิน)<small>ความปลอดภัยชีวิต &amp; ระงับเหตุ</small></div>
-          <div class="pyr-layer bg-a2" style="width:80%;" data-tip="<b>DRP</b> แผนกู้คืนระบบ IT & ฐานข้อมูล">② DRP (กู้ระบบ IT &amp; ข้อมูล)<small>กู้เซิร์ฟเวอร์ตาม RPO / RTO</small></div>
-          <div class="pyr-layer bg-a3" style="width:100%;" data-tip="<b>BCP</b> แผนแม่บทความต่อเนื่องทางธุรกิจ">③ BCP (แผนความต่อเนื่องธุรกิจ)<small>ประคองกระบวนการหลักให้เดินต่อได้</small></div>
+        <div class="info-card acc">
+          <b>📑 SLA (Service Level Agreement):</b> ข้อตกลงระดับการให้บริการที่ระบุมาตรฐานคุณภาพ ความเร็ว ความพร้อมใช้งาน (Uptime) และบทลงโทษชัดเจนกับซัพพลายเออร์
+        </div>
+        <div class="info-card green">
+          <b>💰 TCO (Total Cost of Ownership):</b> การคิด <b>ต้นทุนรวมในการเป็นเจ้าของตลอดอายุใช้งาน</b> (ราคาซื้อ + ขนส่ง + ติดตั้ง + บำรุงรักษา + เก็บรักษา + ความเสี่ยงของเสีย) ไม่ใช่ดูแค่ราคาหน้าป้าย!
         </div>
       </div>
     </div>
   </div>
 
   <div class="viz-panel wide">
-    <div class="viz-h"><span class="n">4</span>ไทม์ไลน์วิเคราะห์ผลกระทบทางธุรกิจ (BIA): แยกความต่าง RPO vs. RTO</div>
-    <div class="viz-scroll">
-      <div class="rto">
-        <div class="pt" data-tip="จุดที่สำรองข้อมูล (Backup) ครั้งล่าสุดก่อนเกิดเหตุ">
-          <div class="dot" style="border-color:#0284C7;">💾</div>
-          <b>Last Backup</b>สำรองข้อมูลล่าสุด
-        </div>
-        <div class="seg rpo" data-tip="<b>RPO (Recovery Point Objective)</b> ย้อนไปทางซ้าย: ข้อมูลสูญหายได้สูงสุดไม่เกินกี่ ชม./นาที ➔ กำหนดความถี่ในการ Backup">
-          <span class="up">◀ <b>RPO (ข้อมูลสูญหายได้สูงสุด)</b> ▶</span>
-          <span class="down">วัดย้อนหลัง = กำหนดความถี่ Backup</span>
-        </div>
-        <div class="pt" data-tip="เหตุการณ์วิกฤต เช่น เซิร์ฟเวอร์ล่ม ไฟไหม้ น้ำท่วม โดน Ransomware">
-          <div class="dot" style="border-color:#DC2626;background:#FEF2F2;">⚡</div>
-          <b style="color:#DC2626;">Incident!</b>เกิดเหตุระบบล่ม
-        </div>
-        <div class="seg rtoz" data-tip="<b>RTO (Recovery Time Objective)</b> มองไปข้างหน้า: ระบบหยุดทำงานได้นานสุดกี่ ชม. ก่อนธุรกิจเสียหายหนัก">
-          <span class="up">◀ <b>RTO (เวลาที่ระบบหยุดได้สูงสุด)</b> ▶</span>
-          <span class="down">วัดไปข้างหน้า = เวลาเป้าหมายในการกู้คืนระบบ</span>
-        </div>
-        <div class="pt" data-tip="กู้คืนระบบสำคัญกลับมาทำงานได้ในระดับขั้นต่ำที่ยอมรับได้ (Minimum Business Continuity Objective: MBCO)">
-          <div class="dot" style="border-color:#16A34A;background:#F0FDF4;">🛠️</div>
-          <b style="color:#15803D;">Recovered</b>กู้คืนระบบสำเร็จ
-        </div>
-        <div class="flow-arrow">➔</div>
-        <div class="pt" data-tip="กลับสู่การดำเนินธุรกิจตามปกติ 100%">
-          <div class="dot" style="border-color:#0D9488;">🏢</div>
-          <b>Normal Ops</b>กลับสู่สภาวะปกติ
-        </div>
-      </div>
+    <div class="viz-h"><span class="n">4</span>กรณีศึกษาองค์กรระดับโลก &amp; โจทย์ประยุกต์โรงงานน้ำตาลไทย (สไลด์หน้า 43–55)</div>
+    <div class="tiles t4">
+      <div class="tile" data-tip="Zara ใช้เวลาออกแบบถึงวางขายเพียง 15 วัน รับฟีดแบ็กหน้าร้านทุกวันเพื่อปรับแผนผลิตทันที"><span class="ico">👗</span><b>Zara (Fast Fashion)</b>ต้นแบบ Agility ปรับคอลเลกชันใน 15 วันตามข้อมูลขายจริง</div>
+      <div class="tile" data-tip="Toyota สร้างฐานข้อมูลซัพพลายเชนหลายชั้นและกระจายฐานผลิตหลังแผ่นดินไหวปี 2011"><span class="ico">🚗</span><b>Toyota</b>ผสาน Lean + Resilience สร้าง Multi-tier SC Visibility</div>
+      <div class="tile" data-tip="Netflix ใช้ Cloud (Scalable Infrastructure) และ Chaos Monkey ทดสอบระบบล่มแบบสุ่ม"><span class="ico">🎬</span><b>Netflix</b>ใช้ Scalable Cloud &amp; ซ้อมระบบล่มด้วย Chaos Monkey</div>
+      <div class="tile hl" data-tip="โจทย์ในสไลด์หน้า 53–55: ปรับปรุงกระบวนการจัดซื้ออ้อยเข้าหีบของโรงงานน้ำตาลด้วย Agility & Resilience"><span class="badge-corner">เคสในสไลด์ ★</span><span class="ico">🌾</span><b>โรงงานน้ำตาลไทย</b>จัดคิวรถอ้อยเรียลไทม์ + กระจายโซนรับซื้อ &amp; สัญญา SLA/TCO</div>
     </div>
   </div>
 </div>`;
-tipDb[11] = `<b>เก็งปรนัยเน้นๆ:</b> <b>ISO 22301</b> = มาตรฐานระบบบริหารความต่อเนื่องทางธุรกิจ (BCMS) • <b>RPO</b> = ยอมให้ <b>“ข้อมูล”</b> หายย้อนหลังได้เท่าไหร่ • <b>RTO</b> = ยอมให้ระบบ <b>“หยุดทำงาน”</b> ได้นานสุดเท่าไหร่`;
+tipDb[12] = `<b>เก็งข้อสอบสไลด์ที่ 12:</b> แยกความต่าง <b>Agility (ปรับตัวไวเชิงรุก — Lean, Cross-functional, Scalable Infra)</b> vs. <b>Resilience (ดูดซับแรงกระแทกและฟื้นตัว — BCP, Risk Mgmt, Supply Chain Diversification)</b> และจำนิยามของ <b>SLA</b> กับ <b>TCO</b> ให้แม่น!`;
 
 
         let currentSelectedStep = null;
@@ -3183,9 +3443,9 @@ tipDb[11] = `<b>เก็งปรนัยเน้นๆ:</b> <b>ISO 22301</b>
             drawer.style.setProperty('--drawer-border', data.color);
 
             const prevDisabled = stepNum <= 1 ? 'disabled' : '';
-            const nextDisabled = stepNum >= 11 ? 'disabled' : '';
+            const nextDisabled = stepNum >= 12 ? 'disabled' : '';
             const prevLabel = stepNum > 1 ? `◀ Step ${stepNum - 1}` : '◀ Step แรก';
-            const nextLabel = stepNum < 11 ? `Step ${stepNum + 1} ▶` : 'Step สุดท้าย ▶';
+            const nextLabel = stepNum < 12 ? `Step ${stepNum + 1} ▶` : 'Step สุดท้าย ▶';
 
             const innerHtml = `
                 <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
@@ -3201,7 +3461,7 @@ tipDb[11] = `<b>เก็งปรนัยเน้นๆ:</b> <b>ISO 22301</b>
                 </div>
                 <div class="drawer-nav-footer">
                     <button class="step-nav-btn" ${prevDisabled} onclick="selectStep(${stepNum - 1})">${prevLabel}</button>
-                    <span style="font-size:0.78rem;color:#64748B;font-weight:700;">กำลังดู ${data.num} จาก 11 ขั้นตอน</span>
+                    <span style="font-size:0.78rem;color:#64748B;font-weight:700;">กำลังดู ${data.num} จาก 12 ขั้นตอน</span>
                     <button class="step-nav-btn" ${nextDisabled} onclick="selectStep(${stepNum + 1})">${nextLabel}</button>
                 </div>
             `;
@@ -3244,7 +3504,7 @@ tipDb[11] = `<b>เก็งปรนัยเน้นๆ:</b> <b>ISO 22301</b>
                     if (crd) crd.classList.remove('active');
                 }
             } else {
-                for (let i = 7; i <= 11; i++) {
+                for (let i = 7; i <= 12; i++) {
                     const c = document.getElementById(`chev-${i}`);
                     const crd = document.getElementById(`card-${i}`);
                     if (c) c.classList.remove('active');
